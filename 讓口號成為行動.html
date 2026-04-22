@@ -1,0 +1,2903 @@
+<!DOCTYPE html>
+<!-- saved from url=(0132)blob:https://58iuh3hfhxzan46v0utf0zpi2o6n3lbwfyjvzaalrn0z72fade-h899562818.scf.usercontent.goog/b42614e4-37a9-4b86-95ab-70a39a174d47 -->
+<html class=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script>(function(firebaseConfig, initialAuthToken, appId) {
+        window.__firebase_config = firebaseConfig;
+        window.__initial_auth_token = initialAuthToken;
+        window.__app_id = appId;
+            })("\n{\n  \"apiKey\": \"AIzaSyCqyCcs2R2e7AegGjvFAwG98wlamtbHvZY\",\n  \"authDomain\": \"bard-frontend.firebaseapp.com\",\n  \"projectId\": \"bard-frontend\",\n  \"storageBucket\": \"bard-frontend.firebasestorage.app\",\n  \"messagingSenderId\": \"175205271074\",\n  \"appId\": \"1:175205271074:web:2b7bd4d34d33bf38e6ec7b\"\n}\n","eyJhbGciOiJSUzI1NiIsImtpZCI6IjIzMWY0NDIyYmI5Y2VmMTA3OTdkMjYzZjBlYzQ4ZDNiODVhOTg5NTAiLCJ0eXAiOiJKV1QifQ.eyJzdWIiOiJmaXJlYmFzZS1hZG1pbnNkay1mYnN2Y0BiYXJkLWZyb250ZW5kLmlhbS5nc2VydmljZWFjY291bnQuY29tIiwiYXVkIjoiaHR0cHM6Ly9pZGVudGl0eXRvb2xraXQuZ29vZ2xlYXBpcy5jb20vZ29vZ2xlLmlkZW50aXR5LmlkZW50aXR5dG9vbGtpdC52MS5JZGVudGl0eVRvb2xraXQiLCJ1aWQiOiIxMTYzMTgxMTg3MjUyMDgxNjI4MyIsImlzcyI6ImZpcmViYXNlLWFkbWluc2RrLWZic3ZjQGJhcmQtZnJvbnRlbmQuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJjbGFpbXMiOnsiYXBwSWQiOiI2M2E3YzY3ZjViMjMtc29jaWFsX3NraWxsc19yZXZpZXcuanN4LTE1MiJ9LCJleHAiOjE3NzY4NDM4ODIsImlhdCI6MTc3Njg0MDI4MiwiYWxnIjoiUlMyNTYifQ.JlQx25thphj8bt5UDnLLQxDNUCzlGbnGIi1AoTb_suGS-_ztjP7Otl_PbxJQZ4K4Oc9u_krkqBEMUWqzJTXW3oPFIxSG5qqZjWK3aWgn7_fy9ns0iUFAM1gtoPXSss1i3Y6_6p2OSnE6peN8p-f3qGKsRIs4swGI6X9ENaGnuffRjqlOBv0OukE982s3pucGrxYS9S2ajgGn-ckKG1kDf8oyYmjM7vCbwg4TCoNSSmUmtvQMy48Bd4f9brYsq1W_K1PXHM0U2nHgaThidyL7ll0cCEuhBehnqJm801PLwDQg-fEA6lHizBipXW-Nko0mKW8M6-S3_Asar8A-1deHgQ","63a7c67f5b23-social_skills_review.jsx-152")</script><script>(function(){'use strict';var h=typeof Object.defineProperties=="function"?Object.defineProperty:function(a,b,d){if(a==Array.prototype||a==Object.prototype)return a;a[b]=d.value;return a};function l(a){a=["object"==typeof globalThis&&globalThis,a,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var b=0;b<a.length;++b){var d=a[b];if(d&&d.Math==Math)return d}throw Error("Cannot find global object");}var n=l(this);
+function p(a,b){if(b)a:{var d=n;a=a.split(".");for(var c=0;c<a.length-1;c++){var e=a[c];if(!(e in d))break a;d=d[e]}a=a[a.length-1];c=d[a];b=b(c);b!=c&&b!=null&&h(d,a,{configurable:!0,writable:!0,value:b})}}function r(a){function b(c){return a.next(c)}function d(c){return a.throw(c)}return new Promise(function(c,e){function f(g){g.done?c(g.value):Promise.resolve(g.value).then(b,d).then(f,e)}f(a.next())})}function t(a){return r(a())}
+p("Object.values",function(a){return a?a:function(b){var d=[],c;for(c in b)Object.prototype.hasOwnProperty.call(b,c)&&d.push(b[c]);return d}});p("Array.prototype.includes",function(a){return a?a:function(b,d){var c=this;c instanceof String&&(c=String(c));var e=c.length;d=d||0;for(d<0&&(d=Math.max(d+e,0));d<e;d++){var f=c[d];if(f===b||Object.is(f,b))return!0}return!1}});/*
+
+ MIT License
+
+ Copyright (c) 2017-2023 W.Y.
+
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to deal
+ in the Software without restriction, including without limitation the rights
+ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+
+ The above copyright notice and this permission notice shall be included in
+ all copies or substantial portions of the Software.
+
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ SOFTWARE.
+
+*/
+function u(a,b){const d=a.style;b.backgroundColor&&(d.backgroundColor=b.backgroundColor);b.width&&(d.width=`${b.width}px`);b.height&&(d.height=`${b.height}px`);const c=b.style;c!=null&&Object.keys(c).forEach(e=>{d[e]=c[e]})};var v=(()=>{let a=0;return()=>{a+=1;return`u${`0000${(Math.random()*1679616<<0).toString(36)}`.slice(-4)}${a}`}})();function w(a){const b=[];for(let d=0,c=a.length;d<c;d++)b.push(a[d]);return b}let x=null;function y(a={}){return x?x:a.l?x=a.l:x=w(window.getComputedStyle(document.documentElement))}function z(a,b){return(a=(a.ownerDocument.defaultView||window).getComputedStyle(a).getPropertyValue(b))?parseFloat(a.replace("px","")):0}
+function A(a,b={}){var d;if(!(d=b.width)){d=z(a,"border-left-width");var c=z(a,"border-right-width");d=a.clientWidth+d+c}(b=b.height)||(b=z(a,"border-top-width"),c=z(a,"border-bottom-width"),b=a.clientHeight+b+c);return{width:d,height:b}}function B(a){return new Promise((b,d)=>{const c=new Image;c.onload=()=>{c.decode().then(()=>{requestAnimationFrame(()=>b(c))})};c.onerror=d;c.crossOrigin="anonymous";c.decoding="async";c.src=a})}
+function C(a){return t(function*(){return Promise.resolve().then(()=>(new XMLSerializer).serializeToString(a)).then(encodeURIComponent).then(b=>`data:image/svg+xml;charset=utf-8,${b}`)})}
+function D(a,b,d){return t(function*(){const c=document.createElementNS("http://www.w3.org/2000/svg","svg"),e=document.createElementNS("http://www.w3.org/2000/svg","foreignObject");c.setAttribute("width",`${b}`);c.setAttribute("height",`${d}`);c.setAttribute("viewBox",`0 0 ${b} ${d}`);e.setAttribute("width","100%");e.setAttribute("height","100%");e.setAttribute("x","0");e.setAttribute("y","0");e.setAttribute("externalResourcesRequired","true");c.appendChild(e);e.appendChild(a);return C(c)})}
+var E=(a,b)=>{if(a instanceof b)return!0;a=Object.getPrototypeOf(a);return a===null?!1:a.constructor.name===b.name||E(a,b)};function F(a,b){return y(b).map(d=>{const c=a.getPropertyValue(d),e=a.getPropertyPriority(d);return`${d}: ${c}${e?" !important":""};`}).join(" ")}
+function G(a,b,d,c){a=window.getComputedStyle(a,d);var e=a.getPropertyValue("content");if(e!==""&&e!=="none"){var f=v();try{b.className=`${b.className} ${f}`}catch(k){return}e=document.createElement("style");var g=e.appendChild;d=`.${f}:${d}`;a.cssText?(c=a.getPropertyValue("content"),c=`${a.cssText} content: '${c.replace(/'|"/g,"")}';`):c=F(a,c);g.call(e,document.createTextNode(`${d}{${c}}`));b.appendChild(e)}};function H(a){return a.search(/^(data:)/)!==-1}function I(a,b,d){return t(function*(){const c=yield fetch(a,b);if(c.status===404)throw Error(`Resource "${c.url}" not found`);const e=yield c.blob();return new Promise((f,g)=>{const k=new FileReader;k.onerror=g;k.onloadend=()=>{try{f(d({o:c,result:k.result}))}catch(m){g(m)}};k.readAsDataURL(e)})})}const J={};function K(a,b,d){let c=a.replace(/\?.*/,"");d&&(c=a);/ttf|otf|eot|woff2?/i.test(c)&&(c=c.replace(/.*\//,""));return b?`[${b}]${c}`:c}
+function L(a,b,d){return t(function*(){const c=K(a,b,d.C);if(J[c]!=null)return J[c];d.u&&(a+=(/\?/.test(a)?"&":"?")+(new Date).getTime());let e;try{const f=yield I(a,d.i,({o:g,result:k})=>{b||(b=g.headers.get("Content-Type")||"");return k.split(/,/)[1]});e=`data:${b};base64,${f}`}catch(f){e=d.B||""}return J[c]=e})};const M={P:"application/font-woff",R:"application/font-woff",N:"application/font-truetype",v:"application/vnd.ms-fontobject",H:"image/png",F:"image/jpeg",D:"image/jpeg",A:"image/gif",M:"image/tiff",L:"image/svg+xml",O:"image/webp"};function N(a){return(a=/\.([^./]*?)$/g.exec(a))?a[1]:""};function O(a){return t(function*(){const b=a.toDataURL();return b==="data:,"?a.cloneNode(!1):B(b)})}function aa(a,b){return t(function*(){if(a.currentSrc){var d=document.createElement("canvas");const c=d.getContext("2d");d.width=a.clientWidth;d.height=a.clientHeight;c==null||c.drawImage(a,0,0,d.width,d.height);d=d.toDataURL();return B(d)}d=a.poster;d=yield L(d,M[N(d).toLowerCase()]||"",b);return B(d)})}
+function ba(a,b){return t(function*(){try{let d;if(a==null?0:(d=a.contentDocument)==null?0:d.body)return yield P(a.contentDocument.body,b,!0)}catch(d){}return a.cloneNode(!1)})}function ca(a,b){return t(function*(){return E(a,HTMLCanvasElement)?O(a):E(a,HTMLVideoElement)?aa(a,b):E(a,HTMLIFrameElement)?ba(a,b):a.cloneNode(a.tagName!=null&&a.tagName.toUpperCase()==="SVG")})}
+function da(a,b,d){return t(function*(){if(b.tagName!=null&&b.tagName.toUpperCase()==="SVG")return b;let c=[];if(a.tagName!=null&&a.tagName.toUpperCase()==="SLOT"&&a.assignedNodes)c=w(a.assignedNodes());else{let e;if(E(a,HTMLIFrameElement)&&((e=a.contentDocument)==null?0:e.body))c=w(a.contentDocument.body.childNodes);else{let f;c=w(((f=a.shadowRoot)!=null?f:a).childNodes)}}if(c.length===0||E(a,HTMLVideoElement))return b;yield c.reduce((e,f)=>e.then(()=>P(f,d)).then(g=>{g&&b.appendChild(g)}),Promise.resolve());
+return b})}function ea(a,b,d){const c=b.style;if(c){var e=window.getComputedStyle(a);e.cssText?(c.cssText=e.cssText,c.transformOrigin=e.transformOrigin):y(d).forEach(f=>{let g=e.getPropertyValue(f);f==="font-size"&&g.endsWith("px")&&(g=`${Math.floor(parseFloat(g.substring(0,g.length-2)))-.1}px`);E(a,HTMLIFrameElement)&&f==="display"&&g==="inline"&&(g="block");f==="d"&&b.getAttribute("d")&&(g=`path(${b.getAttribute("d")})`);c.setProperty(f,g,e.getPropertyPriority(f))})}}
+function fa(a,b){E(a,HTMLSelectElement)&&(b=Array.from(b.children).find(d=>a.value===d.getAttribute("value")))&&b.setAttribute("selected","")}
+function ha(a,b){return t(function*(){var d=a.querySelectorAll?a.querySelectorAll("use"):[];if(d.length===0)return a;var c={};for(var e=0;e<d.length;e++){var f=d[e].getAttribute("xlink:href");if(f){const g=document.querySelector(f);a.querySelector(f)||!g||c[f]||(c[f]=yield P(g,b,!0))}}d=Object.values(c);if(d.length){c=document.createElementNS("http://www.w3.org/1999/xhtml","svg");c.setAttribute("xmlns","http://www.w3.org/1999/xhtml");c.style.position="absolute";c.style.width="0";c.style.height="0";
+c.style.overflow="hidden";c.style.display="none";e=document.createElementNS("http://www.w3.org/1999/xhtml","defs");c.appendChild(e);for(f=0;f<d.length;f++)e.appendChild(d[f]);a.appendChild(c)}return a})}
+function P(a,b,d){return t(function*(){return d||!b.filter||b.filter(a)?Promise.resolve(a).then(c=>ca(c,b)).then(c=>da(a,c,b)).then(c=>{E(c,Element)&&(ea(a,c,b),G(a,c,":before",b),G(a,c,":after",b),E(a,HTMLTextAreaElement)&&(c.textContent=a.value),E(a,HTMLInputElement)&&c.setAttribute("value",a.value),fa(a,c));return c}).then(c=>ha(c,b)):null})};const Q=/url\((['"]?)([^'"]+?)\1\)/g,ia=/url\([^)]+\)\s*format\((["']?)([^"']+)\1\)/g,ja=/src:\s*(?:url\([^)]+\)\s*format\([^)]+\)[,;]\s*)+/g;function ka(a){const b=[];a.replace(Q,(d,c,e)=>{b.push(e);return d});return b.filter(d=>!H(d))}
+function la(a,b,d,c){return t(function*(){try{const e=d?(new URL(b,d||void 0)).toString():b;let f;f=yield L(e,M[N(b).toLowerCase()]||"",c);return a.replace(new RegExp(`(url\\(['"]?)(${b.replace(/([.*+?^${}()|\[\]\/\\])/g,"\\$1")})(['"]?\\))`,"g"),`$1${f}$3`)}catch(e){}return a})}function ma(a,{I:b}){return b?a.replace(ja,d=>{for(;;){const [c,,e]=ia.exec(d)||[];if(!e)return"";if(e===b)return`src: ${c};`}}):a}
+function R(a,b,d){return t(function*(){if(a.search(Q)===-1)return a;const c=ma(a,d);return ka(c).reduce((e,f)=>e.then(g=>la(g,f,b,d)),Promise.resolve(c))})};function S(a,b,d){return t(function*(){var c;const e=(c=b.style)==null?void 0:c.getPropertyValue(a);return e?(c=yield R(e,null,d),b.style.setProperty(a,c,b.style.getPropertyPriority(a)),!0):!1})}function na(a,b){return t(function*(){(yield S("background",a,b))||(yield S("background-image",a,b));(yield S("mask",a,b))||(yield S("-webkit-mask",a,b))||(yield S("mask-image",a,b))||(yield S("-webkit-mask-image",a,b))})}
+function oa(a,b){return t(function*(){const d=E(a,HTMLImageElement);if(d&&!H(a.src)||E(a,SVGImageElement)&&!H(a.href.baseVal)){var c=d?a.src:a.href.baseVal,e=yield L(c,M[N(c).toLowerCase()]||"",b);yield new Promise((f,g)=>{a.onload=f;a.onerror=b.m?(...k)=>{try{f(b.m(...k))}catch(m){g(m)}}:g;a.decode&&(a.decode=f);a.loading==="lazy"&&(a.loading="eager");d?(a.srcset="",a.src=e):a.href.baseVal=e})}})}
+function pa(a,b){return t(function*(){const d=w(a.childNodes).map(c=>T(c,b));yield Promise.all(d).then(()=>a)})}function T(a,b){return t(function*(){E(a,Element)&&(yield na(a,b),yield oa(a,b),yield pa(a,b))})};const U={};function V(a){return t(function*(){var b=U[a];if(b!=null)return b;b=yield(yield fetch(a)).text();b={url:a,cssText:b};return U[a]=b})}function W(a,b){return t(function*(){let d=a.cssText;const c=/url\(["']?([^"')]+)["']?\)/g,e=(d.match(/url\([^)]+\)/g)||[]).map(f=>t(function*(){let g=f.replace(c,"$1");g.startsWith("https://")||(g=(new URL(g,a.url)).href);return I(g,b.i,({result:k})=>{d=d.replace(f,`url(${k})`);return[f,k]})}));return Promise.all(e).then(()=>d)})}
+function X(a){if(a==null)return[];const b=[];a=a.replace(/(\/\*[\s\S]*?\*\/)/gi,"");for(var d=RegExp("((@.*?keyframes [\\s\\S]*?){([\\s\\S]*?}\\s*?)})","gi");;){var c=d.exec(a);if(c===null)break;b.push(c[0])}a=a.replace(d,"");d=/@import[\s\S]*?url\([^)]*\)[\s\S]*?;/gi;for(c=RegExp("((\\s*?(?:\\/\\*[\\s\\S]*?\\*\\/)?\\s*?@media[\\s\\S]*?){([\\s\\S]*?)}\\s*?})|(([\\s\\S]*?){([\\s\\S]*?)})","gi");;){let e=d.exec(a);if(e===null)if(e=c.exec(a),e===null)break;else d.lastIndex=c.lastIndex;else c.lastIndex=
+d.lastIndex;b.push(e[0])}return b}
+function qa(a,b){return t(function*(){const d=[],c=[];a.forEach(e=>{if("cssRules"in e)try{w(e.cssRules||[]).forEach((f,g)=>{if(f.type===CSSRule.IMPORT_RULE){let k=g+1;f=V(f.href).then(m=>W(m,b)).then(m=>X(m).forEach(q=>{try{e.insertRule(q,q.startsWith("@import")?k+=1:e.cssRules.length)}catch(Da){}})).catch(()=>{});c.push(f)}})}catch(f){const g=a.find(k=>k.href==null)||document.styleSheets[0];e.href!=null&&c.push(V(e.href).then(k=>W(k,b)).then(k=>X(k).forEach(m=>{g.insertRule(m,g.cssRules.length)})).catch(()=>
+{}))}});return Promise.all(c).then(()=>{a.forEach(e=>{if("cssRules"in e)try{w(e.cssRules||[]).forEach(f=>{d.push(f)})}catch(f){}});return d})})}function ra(a){return a.filter(b=>b.type===CSSRule.FONT_FACE_RULE).filter(b=>b.style.getPropertyValue("src").search(Q)!==-1)}function sa(a,b){return t(function*(){if(a.ownerDocument==null)throw Error("Provided element is not within a Document");var d=w(a.ownerDocument.styleSheets);d=yield qa(d,b);return ra(d)})}
+function ta(a){function b(c){(c.style.fontFamily||getComputedStyle(c).fontFamily).split(",").forEach(e=>{d.add(e.trim().replace(/["']/g,""))});Array.from(c.children).forEach(e=>{e instanceof HTMLElement&&b(e)})}const d=new Set;b(a);return d}function ua(a,b){return t(function*(){const d=yield sa(a,b),c=ta(a);return(yield Promise.all(d.filter(e=>c.has(e.style.fontFamily.trim().replace(/["']/g,""))).map(e=>R(e.cssText,e.parentStyleSheet?e.parentStyleSheet.href:null,b)))).join("\n")})}
+function va(a,b){return t(function*(){const d=b.j!=null?b.j:b.K?null:yield ua(a,b);if(d){const c=document.createElement("style");c.appendChild(document.createTextNode(d));a.firstChild?a.insertBefore(c,a.firstChild):a.appendChild(c)}})};function wa(a,b={}){return t(function*(){const {width:d,height:c}=A(a,b),e=yield P(a,b,!0);yield va(e,b);yield T(e,b);u(e,b);return yield D(e,d,c)})}
+function xa(a,b={}){return t(function*(){const {width:d,height:c}=A(a,b);var e=yield wa(a,b);e=yield B(e);const f=document.createElement("canvas"),g=f.getContext("2d"),k=b.G||window.devicePixelRatio||1,m=b.h||d,q=b.g||c;f.width=m*k;f.height=q*k;!b.J&&(f.width>16384||f.height>16384)&&(f.width>16384&&f.height>16384?f.width>f.height?(f.height*=16384/f.width,f.width=16384):(f.width*=16384/f.height,f.height=16384):f.width>16384?(f.height*=16384/f.width,f.width=16384):(f.width*=16384/f.height,f.height=
+16384));f.style.width=`${m}`;f.style.height=`${q}`;b.backgroundColor&&(g.fillStyle=b.backgroundColor,g.fillRect(0,0,f.width,f.height));g.drawImage(e,0,0,f.width,f.height);return f})}function ya(a,b={}){return t(function*(){return(yield xa(a,b)).toDataURL()})};const za=["gemini.google.com","corp.google.com","proxy.googlers.com"];function Y(){return document.body.querySelectorAll('[class*="animate"]').length>0}function Z(a){return t(function*(){try{return yield ya(a,{h:a.offsetWidth,g:a.offsetHeight})}catch(d){var b=a.offsetHeight;const c=document.createElement("canvas");c.width=a.offsetWidth;c.height=b;return c.toDataURL("image/png")}})}
+function Aa(){return t(function*(){const a=document.body.offsetWidth,b=document.body.offsetHeight,d=document.body.cloneNode(!0);d.querySelectorAll('[class*="animate"]').forEach(c=>{c.classList.remove(...Array.from(c.classList).filter(e=>e.startsWith("animate")))});d.style.width=`${a}px`;d.style.height=`${b}px`;return d})}
+function Ba(a){return t(function*(){let b=document.body;if(Y()){var d=yield Aa();b=d;document.body.appendChild(d)}d=yield Z(b);Y()&&document.body.removeChild(b);window.parent.postMessage({type:"SEND_SCREENSHOT",image:d,topOffset:document.documentElement.scrollTop},a.origin)})}function Ca(a){return t(function*(){const b={type:"SEND_SCREENSHOT_FOR_DATA_VISUALIZATION",image:yield Z(document.body),topOffset:0};window.parent.postMessage(b,a.origin)})}
+window.addEventListener("message",a=>t(function*(){if(za.some(d=>a.origin.includes(d))){var b=a.data;b&&(b.type==="MAKE_SCREENSHOT"&&(yield Ba(a)),b.type==="MAKE_SCREENSHOT_FOR_DATA_VISUALIZATION"&&(yield Ca(a)))}}));
+})();</script><script>(function() {
+  // Ensure this script is executed only once
+  if (window.firebaseAuthBridgeScriptLoaded) {
+    return;
+  }
+  window.firebaseAuthBridgeScriptLoaded = true;
+
+  let nextTokenPromiseId = 0;
+
+  // Stores { resolve, reject } for ongoing token requests
+  const pendingTokenPromises = {};
+
+  // Listen for messages from the Host Application
+  window.addEventListener('message', function(event) {
+
+    const messageData = event.data;
+
+  if (messageData && messageData.type === 'RESOLVE_NEW_FIREBASE_TOKEN') {
+      const { success, token, error, promiseId } = messageData ?? {};
+      if (pendingTokenPromises[promiseId]) {
+        if (success) {
+          pendingTokenPromises[promiseId].resolve(token);
+        } else {
+          pendingTokenPromises[promiseId].reject(new Error(error || 'Token refresh failed from host.'));
+        }
+        delete pendingTokenPromises[promiseId];
+      }
+    }
+  });
+
+  // Expose a function for the Generated App to request a new Firebase token
+  window.requestNewFirebaseToken = function() {
+    const currentPromiseId = nextTokenPromiseId++;
+    const promise = new Promise((resolve, reject) => {
+      pendingTokenPromises[currentPromiseId] = { resolve, reject };
+    });
+    if (window.parent && window.parent !== window) {
+      window.parent.postMessage({
+        type: 'REQUEST_NEW_FIREBASE_TOKEN',
+        promiseId: currentPromiseId
+      }, '*');
+    } else {
+      pendingTokenPromises[currentPromiseId].reject(new Error('No parent window to request token from.'));
+      delete pendingTokenPromises[currentPromiseId];
+    }
+    return promise;
+  };
+})();</script><script>
+let realOriginalGetUserMedia = null;
+if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+  realOriginalGetUserMedia = navigator.mediaDevices.getUserMedia.bind(navigator.mediaDevices);
+}
+
+(function() {
+  if (navigator.mediaDevices && navigator.mediaDevices.__proto__) {
+    try {
+      Object.defineProperty(navigator.mediaDevices.__proto__, 'getUserMedia', {
+        get: function() {
+          return undefined; // Or throw an error
+        },
+        configurable: false
+      });
+    } catch (error) {
+      console.error("Error defining prototype getter:", error);
+    }
+  }
+})();
+
+(function() {
+  const pendingMediaResolvers = {};
+  let nextMediaPromiseId = 0;
+
+  function requestMediaPermissions(constraints) {
+    const mediaPromiseId = nextMediaPromiseId++;
+    const promise = new Promise((resolve, reject) => {
+      pendingMediaResolvers[mediaPromiseId] = (granted) => {
+        delete pendingMediaResolvers[mediaPromiseId];
+        resolve(granted);
+      };
+    });
+
+    window.parent.postMessage({
+      type: 'requestMediaPermission',
+      constraints: constraints,
+      promiseId: mediaPromiseId,
+    }, '*');
+
+    return promise;
+  }
+
+  let originalGetUserMedia = realOriginalGetUserMedia;
+
+  function interceptGetUserMedia() {
+    if (navigator.mediaDevices) {
+      Object.defineProperty(navigator.mediaDevices, 'getUserMedia', {
+        value: function(constraints) {
+          return requestMediaPermissions(constraints).then((granted) => {
+            if (granted) {
+              if (originalGetUserMedia) {
+                return originalGetUserMedia(constraints);
+              } else {
+                throw new Error("Original getUserMedia not available.");
+              }
+            } else {
+              throw new DOMException('Permission denied', 'NotAllowedError');
+            }
+          });
+        },
+        writable: false,
+        configurable: false
+      });
+    }
+  }
+
+  interceptGetUserMedia();
+
+  const observer = new MutationObserver(function(mutationsList, observer) {
+    for (const mutation of mutationsList) {
+      if (mutation.type === 'reconfigured' && mutation.name === 'getUserMedia' && mutation.object === navigator.mediaDevices) {
+        interceptGetUserMedia();
+      } else if (mutation.type === 'attributes' && mutation.attributeName === 'getUserMedia' && mutation.target === navigator.mediaDevices) {
+        interceptGetUserMedia();
+      } else if (mutation.type === 'childList' && mutation.addedNodes) {
+        mutation.addedNodes.forEach(node => {
+          if (node === navigator.mediaDevices) {
+            interceptGetUserMedia();
+          }
+        });
+      }
+    }
+  });
+
+  function interceptSpeechRecognition() {
+    if (!window.SpeechRecognition && !window.webkitSpeechRecognition) {
+      return;
+    }
+
+    const OriginalSpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+
+    const SpeechRecognitionWrapper = function(...args) {
+      const recognizer = new OriginalSpeechRecognition(...args);
+      const originalStart = recognizer.start.bind(recognizer);
+
+      recognizer.start = function() {
+        requestMediaPermissions({ audio: true }).then(granted => {
+          if (granted) {
+            originalStart();
+          } else {
+            const errorEvent = new SpeechRecognitionErrorEvent('error');
+            errorEvent.error = 'not-allowed'; // This is the standard error for permission denial.
+            recognizer.dispatchEvent(errorEvent);
+          }
+        });
+      };
+
+      return recognizer;
+    };
+
+    SpeechRecognitionWrapper.prototype = OriginalSpeechRecognition.prototype;
+    SpeechRecognitionWrapper.prototype.constructor = SpeechRecognitionWrapper;
+
+    if (window.SpeechRecognition) {
+      window.SpeechRecognition = SpeechRecognitionWrapper;
+    }
+    if (window.webkitSpeechRecognition) {
+      window.webkitSpeechRecognition = SpeechRecognitionWrapper;
+    }
+  }
+
+  interceptSpeechRecognition();
+
+  window.addEventListener('message', function(event) {
+    if (event.data) {
+      if (event.data.type === 'resolveMediaPermission') {
+        const { promiseId, granted } = event.data;
+        if (pendingMediaResolvers[promiseId]) {
+          pendingMediaResolvers[promiseId](granted);
+        }
+      }
+    }
+  });
+
+})();</script><script ws-interception-config="{&quot;parentOrigin&quot;:&quot;https://gemini.google.com&quot;,&quot;proxiedDomains&quot;:[]}">(function(){'use strict';var u=typeof Object.defineProperties=="function"?Object.defineProperty:function(b,d,e){if(b==Array.prototype||b==Object.prototype)return b;b[d]=e.value;return b};function v(b){b=["object"==typeof globalThis&&globalThis,b,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var d=0;d<b.length;++d){var e=b[d];if(e&&e.Math==Math)return e}throw Error("Cannot find global object");}var w=v(this);
+function y(b,d){if(d)a:{var e=w;b=b.split(".");for(var h=0;h<b.length-1;h++){var k=b[h];if(!(k in e))break a;e=e[k]}b=b[b.length-1];h=e[b];d=d(h);d!=h&&d!=null&&u(e,b,{configurable:!0,writable:!0,value:d})}}function z(b){function d(h){return b.next(h)}function e(h){return b.throw(h)}return new Promise(function(h,k){function m(n){n.done?h(n.value):Promise.resolve(n.value).then(d,e).then(m,k)}m(b.next())})}y("globalThis",function(b){return b||w});/*
+
+ Copyright The Closure Library Authors.
+ SPDX-License-Identifier: Apache-2.0
+*/
+function A(b,d){function e(){}e.prototype=d.prototype;b.i=d.prototype;b.prototype=new e;b.prototype.constructor=b;b.g=function(h,k,m){for(var n=Array(arguments.length-2),p=2;p<arguments.length;p++)n[p-2]=arguments[p];return d.prototype[k].apply(h,n)}};function B(b,d,e="*"){function h(a){if(typeof a==="string")return F.encode(a).buffer;if(a instanceof ArrayBuffer)return a.slice(0);if(ArrayBuffer.isView(a))return a.buffer.slice(a.byteOffset,a.byteOffset+a.byteLength);throw Error("Invalid data type");}function k(a){a=h(a);const f={type:"send",data:new Uint8Array(a)};let g;(g=r)==null||g.postMessage(f,[a])}function m(){if(!r)throw Error("Data port not captured yet.");r.onmessage=a=>{if(a.data.type==="message"){a=new MessageEvent("message",{data:G.decode(a.data.data)});
+let f;(f=c.onmessage)==null||f.call(c,a);c.dispatchEvent(a)}}}function n(){if(!t)throw Error("Control port not captured yet.");t.onmessage=a=>{switch(a.data.type){case "open":l=1;var f=new Event("open"),g;(g=c.onopen)==null||g.call(c,f);c.dispatchEvent(f);q.forEach(H=>{k(H)});q=[];break;case "close":g=a.data;l=3;g=new CloseEvent("close",{code:g.code,reason:g.reason,wasClean:g.wasClean});(f=c.onclose)==null||f.call(c,g);c.dispatchEvent(g);break;case "error":l=3;f=new Event("error");let x;(x=c.onerror)==
+null||x.call(c,f);c.dispatchEvent(f)}}}function p(a){return z(function*(){const f=new MessageChannel;t=f.port1;const g=new MessageChannel;r=g.port1;n();m();window.parent.postMessage({type:"websocket_open",portOrdering:["control","data"],url:b,protocols:a||[],connectionId:I},e,[f.port2,g.port2])}())}const c=Reflect.construct(EventTarget,[],new.target);c.CONNECTING=0;c.OPEN=1;c.CLOSING=2;c.CLOSED=3;c.url=b;c.binaryType="arraybuffer";c.protocol="";c.h="";let l=0,t=null,r=null,q=[];const F=new TextEncoder,
+G=new TextDecoder;c.onopen=null;c.onmessage=null;c.onclose=null;c.onerror=null;Object.defineProperty(c,"readyState",{get:()=>l,enumerable:!0,configurable:!0});Object.defineProperty(c,"bufferedAmount",{get:()=>{let a=0;q.forEach(f=>{a+=typeof f==="string"?f.length:f.byteLength});return a},enumerable:!0,configurable:!0});const I=function(){let a;return((a=globalThis.crypto)==null?0:a.randomUUID)?globalThis.crypto.randomUUID():"xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g,f=>{const g=Math.random()*
+16|0;return(f==="x"?g:g&3|8).toString(16)})}();c.send=a=>{if(l===1)a instanceof Blob?a.arrayBuffer().then(f=>{k(f)}):k(a);else if(l===0)if(typeof a==="string")q.push(a);else if(a instanceof ArrayBuffer||ArrayBuffer.isView(a))q.push(h(a));else throw Error("Sending Blob is not supported before the connection is open.");else console.debug("WebSocket send called in CLOSING or CLOSED state; ignored.")};c.close=(a=1E3,f="")=>{if(l!==2&&l!==3){l=2;a={type:"close",code:a,reason:f,wasClean:a===1E3};var g;
+(g=t)==null||g.postMessage(a)}};Promise.resolve().then(()=>p(d));return c}A(B,EventTarget);const C=document.currentScript,D=C==null?void 0:C.getAttribute("ws-interception-config");if(!D)throw Error("WebSocket Interceptor: Missing ws-interception-config attribute in the script tag.");const E=JSON.parse(D);if(!E.parentOrigin||typeof E.parentOrigin!=="string")throw Error("WebSocket Interceptor: Invalid parentOrigin in ws-interception-config");
+(function(b){var d=Object.getOwnPropertyDescriptor(window,"WebSocket");if(!d||d.writable||d.configurable)d=Object.assign(function(e,h){try{const k=(new URL(e)).hostname;if(b.proxiedDomains.some(m=>k===m||k.endsWith(`.${m}`)))return new B(e,h,b.parentOrigin)}catch(k){throw window.parent.postMessage({type:"websocket_blocked",url:e,reason:"blocked_invalid_url"},b.parentOrigin),new DOMException(`WebSocket connection to '${e}' is not allowed in Canvas.`,"SecurityError");}window.parent.postMessage({type:"websocket_blocked",
+url:e,reason:"blocked_domain_not_allowlisted"},b.parentOrigin);throw new DOMException(`WebSocket connection to '${e}' is not allowed in Canvas.`,"SecurityError");},{CONNECTING:0,OPEN:1,CLOSING:2,CLOSED:3}),Object.defineProperty(window,"WebSocket",{value:d,writable:!1,configurable:!1})})({proxiedDomains:E.proxiedDomains||[],parentOrigin:E.parentOrigin});}).call(this);
+</script><script>((function(modelInformation) {
+  const originalFetch = window.fetch;
+  // TODO: b/421908508 - Move these out of the script and match all generative AI model calls.
+  let googleLlmBaseApiUrls = [
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.textModelName + ':streamGenerateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.textModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageModelName + ':predict',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageModelName + ':predictLongRunning',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageEditModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageTransformModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.videoModelName + ':predict',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.videoModelName + ':predictLongRunning',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.ttsModelName + ':generateContent',
+  ];
+  modelInformation.deprecatedTextModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+    );
+  });
+  modelInformation.deprecatedImageModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':predict',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':predictLongRunning',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+
+  const pendingFetchResolvers = {};
+  let nextPromiseId = 0;
+
+  function handleStringInput(input, optionsArgument) {
+    const actualUrl = input;
+    const fetchCallArgs = [actualUrl, optionsArgument];
+    const effectiveOptions = optionsArgument || {};
+    const bodyForApiKeyCheck = effectiveOptions.body;
+    const bodyForPostMessage = effectiveOptions.body;
+    return { actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage };
+  }
+
+  function handleRequestInput(input, optionsArgument) {
+    const actualUrl = input.url;
+    const fetchCallArgs = [input, optionsArgument];
+    const effectiveOptions = { method: input.method, headers: new Headers(input.headers) };
+    let bodyForApiKeyCheck;
+    let bodyForPostMessage;
+
+    if (optionsArgument) {
+      if (optionsArgument.method) effectiveOptions.method = optionsArgument.method;
+      if (optionsArgument.headers) effectiveOptions.headers = new Headers(optionsArgument.headers);
+      if ('body' in optionsArgument) {
+        bodyForApiKeyCheck = optionsArgument.body;
+        bodyForPostMessage = optionsArgument.body;
+      } else {
+        bodyForApiKeyCheck = undefined;
+        bodyForPostMessage = input.body;
+      }
+    } else {
+      bodyForApiKeyCheck = undefined;
+      bodyForPostMessage = input.body;
+    }
+    return { actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage };
+  }
+
+  window.fetch = function(input, optionsArgument) {
+    let actualUrl;
+    let fetchCallArgs;
+    let effectiveOptions = {};
+    let bodyForApiKeyCheck;
+    let bodyForPostMessage;
+
+    if (typeof input === 'string') {
+      ({actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage} = handleStringInput(input, optionsArgument));
+    } else if (input instanceof Request) {
+      ({actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage} = handleRequestInput(input, optionsArgument));
+    } else {
+      return originalFetch.apply(window, [input, optionsArgument]);
+    }
+
+    effectiveOptions.method = effectiveOptions.method || 'GET';
+    if (!effectiveOptions.headers) {
+      effectiveOptions.headers = new Headers();
+    }
+
+
+    if (typeof actualUrl === 'string' && googleLlmBaseApiUrls.some((url) => actualUrl.startsWith(url))) {
+      let apiKeyIsNull = true;
+
+      const regex = new RegExp("models/([^:]+)");
+      const modelNameMatch = actualUrl.match(regex);
+      const modelName = modelNameMatch ? modelNameMatch[1] : 'unspecified';
+
+
+      try {
+        const urlObject = new URL(actualUrl);  // Use URL object for robust parsing
+        const apiKeyParam = urlObject.searchParams.get('key');
+        if (apiKeyParam) {
+          apiKeyIsNull = false;
+        }
+      } catch (e) {
+        // Continue checks even if URL parsing fails
+      }
+
+      if (apiKeyIsNull && effectiveOptions.headers) {
+        const h = new Headers(effectiveOptions.headers);
+        const apiKeyHeaderValue = h.get('X-API-Key') || h.get('x-api-key');
+        if (apiKeyHeaderValue) {
+          apiKeyIsNull = false;
+          return originalFetch.apply(window, fetchCallArgs);
+        }
+      }
+
+      if (apiKeyIsNull && effectiveOptions.method && ['POST', 'PUT', 'PATCH'].includes(effectiveOptions.method.toUpperCase()) && typeof bodyForApiKeyCheck === 'string') {
+        try {
+          const bodyData = JSON.parse(bodyForApiKeyCheck);
+          if (bodyData && bodyData.apiKey) {
+            apiKeyIsNull = false;
+            return originalFetch.apply(window, fetchCallArgs);
+          }
+        } catch (e) {
+          // Ignore JSON parsing errors
+        }
+      }
+
+      if(apiKeyIsNull) {
+        const promiseId = nextPromiseId++;
+        const promise = new Promise((resolve) => {
+          pendingFetchResolvers[promiseId] = (resolvedResponse) => {
+            delete pendingFetchResolvers[promiseId];
+            resolve(resolvedResponse);
+          };
+        });
+
+        let serializedBodyForPostMessage;
+        if (typeof bodyForPostMessage === 'string' || bodyForPostMessage == null) {
+            serializedBodyForPostMessage = bodyForPostMessage;
+        } else if (bodyForPostMessage instanceof ReadableStream) {
+            serializedBodyForPostMessage = null;
+        } else {
+            try {
+                serializedBodyForPostMessage = JSON.stringify(bodyForPostMessage);
+            } catch (e) {
+                serializedBodyForPostMessage = null;
+            }
+        }
+
+        const messageOptions = {
+            method: effectiveOptions.method,
+            headers: Object.fromEntries(new Headers(effectiveOptions.headers).entries()),
+            body: serializedBodyForPostMessage
+        };
+
+        window.parent.postMessage({
+          type: 'requestFetch',
+          url: actualUrl,
+          modelName: modelName,
+          options: messageOptions,
+          promiseId: promiseId,
+        }, '*');
+
+        return promise;
+      }
+      return originalFetch.apply(window, fetchCallArgs);
+    }
+    return originalFetch.apply(window, fetchCallArgs);
+  };
+
+  window.addEventListener('message', function(event) {
+    if (event.data && event.data.type === 'resolveFetch') {
+      const { promiseId, response } = event.data;
+      if (pendingFetchResolvers[promiseId]) {
+        try {
+          const reconstructedResponse = new Response(response.body, {
+            status: response.status,
+            statusText: response.statusText,
+            headers: new Headers(response.headers),
+          });
+          pendingFetchResolvers[promiseId](reconstructedResponse);
+        } catch (error) {
+          pendingFetchResolvers[promiseId](new Response(null, { status: 500, statusText: "Interceptor Response Reconstruction Error" }));
+        }
+      }
+    }
+  });
+
+}))({"textModelName":"gemini-3-flash-preview","imageModelName":"imagen-4.0-generate-001","imageEditModelName":"gemini-2.5-flash-image-preview","imageTransformModelName":"gemini-3-pro-image-preview-11-2025","videoModelName":"veo-2.0-generate-001","ttsModelName":"gemini-2.5-flash-preview-tts","deprecatedTextModelNames":["gemini-2.0-flash","gemini-2.5-flash","gemini-2.5-flash-preview-04-17","gemini-2.5-flash-preview-05-20","gemini-2.5-flash-preview-09-2025"],"deprecatedImageModelNames":["imagen-3.0-generate-001","imagen-3.0-generate-002"]})</script><script>(function(){'use strict';function a(){window.parent.postMessage({type:"interaction"},"*")}window.addEventListener("click",a,{capture:!0,passive:!0});window.addEventListener("touchstart",a,{capture:!0,passive:!0});window.addEventListener("keydown",a,{capture:!0,passive:!0});}).call(this);
+</script><script>(function() {
+  const originalConsoleLog = console.log;
+  const originalConsoleError = console.error;
+
+    /**
+   * Normalizes an error event or a promise rejection reason into a structured error object.
+   * @param {*} errorEventOrReason The error object or reason.
+   * @return {object} Structured error data { message, name, stack }.
+   */
+  function getErrorObject(errorEventOrReason) {
+    if (errorEventOrReason instanceof Error) {
+      return {
+        message: errorEventOrReason.message,
+        name: errorEventOrReason.name,
+        stack: errorEventOrReason.stack,
+      };
+    }
+    // Fallback for non-Error objects.
+    try {
+      return {
+        message: JSON.stringify(errorEventOrReason),
+        name: 'UnknownErrorType',
+        stack: null,
+      };
+    } catch (e) {
+      return {
+        message: String(errorEventOrReason),
+        name: 'UnknownErrorTypeNonStringifiable',
+        stack: null,
+      };
+    }
+  }
+
+  /**
+   * Converts an array of arguments (from log/error) into a single string.
+   * Handles Error objects specially to include their message and stack.
+   * @param {Array<*>} args - Arguments passed to console methods.
+   * @return {string} A string representation of the arguments.
+   */
+  function stringifyArgs(args) {
+    return args
+      .map((arg) => {
+        if (arg instanceof Error) {
+          const {message, stack} = arg;
+          return `Error: ${message}${stack ? ('\nStack: ' + stack) : ''}`;
+        }
+        if (typeof arg === 'object' && arg !== null) {
+          try {
+            return JSON.stringify(arg);
+          } catch (error) {
+            return '[Circular Object]';
+          }
+        } else {
+          return String(arg);
+        }
+      })
+      .join(' ');
+  }
+
+  console.log = function(...args) {
+    const logString = stringifyArgs(args);
+    window.parent.postMessage({ type: 'log', message: logString }, '*');
+    originalConsoleLog.apply(console, args);
+  };
+
+  console.error = function(...args) {
+    let errorData;
+    if (args.length > 0 && args[0] instanceof Error) {
+      const err = args[0];
+      // If the first arg is an Error, capture its details.
+      errorData = {
+        type: 'error',
+        source: 'CONSOLE_ERROR',
+        ...getErrorObject(err),
+        rawArgsString: stringifyArgs(args.slice(1)),
+        timestamp: new Date().toISOString(),
+      };
+    } else {
+      // If not an Error object, treat all args as a general error message.
+      errorData = {
+        type: 'error',
+        source: 'CONSOLE_ERROR',
+        message: stringifyArgs(args),
+        name: 'ConsoleLoggedError',
+        stack: null,
+        timestamp: new Date().toISOString(),
+      };
+    }
+    window.parent.postMessage(errorData, '*');
+    originalConsoleError.apply(console, args);
+  };
+
+  // Listen for global unhandled synchronous errors.
+  window.addEventListener('error', function(event) {
+    const errorDetails = event.error ? getErrorObject(event.error) : {
+      message: event.message,
+      name: 'GlobalError',
+      stack: null,
+      filename: event.filename,
+      lineno: event.lineno,
+      colno: event.colno,
+    };
+
+    window.parent.postMessage({
+      type: 'error',
+      source: 'global',
+      ...errorDetails,
+      message: errorDetails.message || event.message,
+      timestamp: new Date().toISOString(),
+    }, '*');
+  });
+
+  // Listen for unhandled promise rejections (asynchronous errors).
+  window.addEventListener('unhandledrejection', function(event) {
+    const errorDetails = getErrorObject(event.reason);
+
+    window.parent.postMessage({
+      type: 'error',
+      source: 'unhandledrejection',
+      ...errorDetails,
+      message: errorDetails.message || 'Unhandled Promise Rejection',
+      timestamp: new Date().toISOString(),
+    }, '*');
+  });
+
+})();</script>
+        
+        <style>
+            .error-boundary {
+                border: 2px dashed rgba(255, 0, 0, 0.3);
+                position: relative;
+            }
+            .error-boundary::after {
+                content: "⚠️";
+                position: absolute;
+                top: 0;
+                right: 0;
+                background: rgba(255, 0, 0, 0.1);
+                color: red;
+                font-size: 14px;
+                padding: 2px 6px;
+                border-radius: 0 0 0 4px;
+                pointer-events: none;
+            }
+            .loading-spinner {
+                @apply flex items-center justify-center;
+                @apply min-h-[200px];
+                @apply bg-gradient-to-br from-white/5 to-white/10;
+                @apply rounded-xl;
+                @apply backdrop-blur-sm;
+            }
+            .loading-spinner::after {
+                content: '';
+                @apply w-12 h-12;
+                @apply border-4 border-primary/20;
+                @apply border-t-primary;
+                @apply rounded-full;
+                @apply animate-spin;
+                @apply shadow-lg;
+            }
+
+            /* Base text and background colors for all elements */
+            body {
+                @apply bg-background text-foreground;
+            }
+
+            /* Form elements styling */
+            input, textarea, select {
+                @apply bg-background text-foreground border-input;
+                @apply placeholder:text-muted-foreground;
+                @apply focus:outline-none focus:ring-2 focus:ring-ring;
+            }
+
+            /* Handle filled state */
+            input:not(:placeholder-shown),
+            textarea:not(:placeholder-shown),
+            select:not(:placeholder-shown) {
+                @apply bg-background;
+            }
+
+            /* Ensure proper contrast in both modes */
+            .dark input, .dark textarea, .dark select {
+                @apply bg-background/95;
+            }
+
+            input, textarea, select {
+                @apply bg-background/95;
+            }
+
+            /* Handle disabled state */
+            input:disabled,
+            textarea:disabled,
+            select:disabled {
+                @apply opacity-50 cursor-not-allowed;
+            }
+
+            /* Button styling */
+            button {
+                @apply bg-primary text-primary-foreground hover:bg-primary/90;
+                @apply disabled:opacity-50 disabled:cursor-not-allowed;
+                @apply focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2;
+            }
+
+            /* Secondary button variant */
+            button.secondary {
+                @apply bg-secondary text-secondary-foreground hover:bg-secondary/80;
+            }
+
+            /* Card styling */
+            .card {
+                @apply bg-card text-card-foreground;
+                @apply border border-border;
+                @apply rounded-lg shadow-sm;
+            }
+
+            /* Popover and dropdown styling */
+            .popover {
+                @apply bg-popover text-popover-foreground;
+                @apply border border-border;
+                @apply shadow-md rounded-md;
+            }
+
+            /* Link styling */
+            a {
+                @apply text-primary hover:text-primary/80;
+                @apply focus:outline-none focus:ring-2 focus:ring-ring;
+            }
+
+            /* Muted text */
+            .text-muted {
+                @apply text-muted-foreground;
+            }
+
+            /* Accent backgrounds */
+            .bg-accent {
+                @apply bg-accent text-accent-foreground;
+            }
+
+            /* Destructive elements */
+            .destructive {
+                @apply bg-destructive text-destructive-foreground hover:bg-destructive/90;
+            }
+
+            /* Code blocks and pre elements */
+            pre, code {
+                @apply bg-muted text-muted-foreground;
+                @apply rounded px-[0.3em] py-[0.2em];
+            }
+
+            /* Table styling */
+            table {
+                @apply border-collapse w-full;
+            }
+
+            th, td {
+                @apply border border-border;
+                @apply p-2 text-left;
+            }
+
+            th {
+                @apply bg-muted font-semibold;
+            }
+
+            /* Badge/tag styling */
+            .badge {
+                @apply inline-flex items-center rounded-full;
+                @apply px-2.5 py-0.5 text-xs font-semibold;
+                @apply bg-primary/10 text-primary-foreground;
+            }
+
+            /* Focus outline for accessibility */
+            :focus-visible {
+                @apply outline-none ring-2 ring-ring ring-offset-2;
+            }
+
+            /* Selection styling */
+            ::selection {
+                @apply bg-primary/20 text-foreground;
+            }
+        </style>
+
+        <!-- Styles -->
+        <style>
+            :root {
+                --background: 0 0% 100%;
+                --foreground: 222.2 84% 4.9%;
+                --card: 0 0% 100%;
+                --card-foreground: 222.2 84% 4.9%;
+                --popover: 0 0% 100%;
+                --popover-foreground: 222.2 84% 4.9%;
+                --primary: 222.2 47.4% 11.2%;
+                --primary-foreground: 210 40% 98%;
+                --secondary: 210 40% 96.1%;
+                --secondary-foreground: 222.2 47.4% 11.2%;
+                --muted: 210 40% 96.1%;
+                --muted-foreground: 215.4 16.3% 46.9%;
+                --accent: 210 40% 96.1%;
+                --accent-foreground: 222.2 47.4% 11.2%;
+                --destructive: 0 84.2% 60.2%;
+                --destructive-foreground: 210 40% 98%;
+                --border: 214.3 31.8% 91.4%;
+                --input: 214.3 31.8% 91.4%;
+                --ring: 222.2 84% 4.9%;
+                --radius: 0.5rem;
+            }
+            .dark {
+                --background: 222.2 84% 4.9%;
+                --foreground: 210 40% 98%;
+                --card: 222.2 84% 4.9%;
+                --card-foreground: 210 40% 98%;
+                --popover: 222.2 84% 4.9%;
+                --popover-foreground: 210 40% 98%;
+                --primary: 210 40% 98%;
+                --primary-foreground: 222.2 47.4% 11.2%;
+                --secondary: 217.2 32.6% 17.5%;
+                --secondary-foreground: 210 40% 98%;
+                --muted: 217.2 32.6% 17.5%;
+                --muted-foreground: 215 20.2% 65.1%;
+                --accent: 217.2 32.6% 17.5%;
+                --accent-foreground: 210 40% 98%;
+                --destructive: 0 62.8% 30.6%;
+                --destructive-foreground: 210 40% 98%;
+                --border: 217.2 32.6% 17.5%;
+                --input: 217.2 32.6% 17.5%;
+                --ring: 212.7 26.8% 83.9%;
+            }
+        </style>
+        <script src="https://cdn.tailwindcss.com/"></script>
+        <script>
+            tailwind.config = {
+                darkMode: ["class"],
+                theme: {
+                    container: {
+                        center: true,
+                        padding: "2rem",
+                        screens: {
+                            "2xl": "1400px",
+                        },
+                    },
+                    extend: {
+                        colors: {
+                            border: "hsl(var(--border))",
+                            input: "hsl(var(--input))",
+                            ring: "hsl(var(--ring))",
+                            background: "hsl(var(--background))",
+                            foreground: "hsl(var(--foreground))",
+                            primary: {
+                                DEFAULT: "hsl(var(--primary))",
+                                foreground: "hsl(var(--primary-foreground))",
+                            },
+                            secondary: {
+                                DEFAULT: "hsl(var(--secondary))",
+                                foreground: "hsl(var(--secondary-foreground))",
+                            },
+                            destructive: {
+                                DEFAULT: "hsl(var(--destructive))",
+                                foreground: "hsl(var(--destructive-foreground))",
+                            },
+                            muted: {
+                                DEFAULT: "hsl(var(--muted))",
+                                foreground: "hsl(var(--muted-foreground))",
+                            },
+                            accent: {
+                                DEFAULT: "hsl(var(--accent))",
+                                foreground: "hsl(var(--accent-foreground))",
+                            },
+                            popover: {
+                                DEFAULT: "hsl(var(--popover))",
+                                foreground: "hsl(var(--popover-foreground))",
+                            },
+                            card: {
+                                DEFAULT: "hsl(var(--card))",
+                                foreground: "hsl(var(--card-foreground))",
+                            },
+                        },
+                        borderRadius: {
+                            lg: "var(--radius)",
+                            md: "calc(var(--radius) - 2px)",
+                            sm: "calc(var(--radius) - 4px)",
+                        },
+                    },
+                },
+            }
+        </script>
+
+        <!-- Load React only -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.development.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.development.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" crossorigin="anonymous"></script>
+
+        <script>
+            // Ensure React and ReactDOM are globally available
+            if (!window.React || !window.ReactDOM) {
+               throw new Error('React or ReactDOM not loaded');
+            }
+
+            window.React = React;
+            window.ReactDOM = ReactDOM;
+            window.createPortal = ReactDOM.createPortal;
+        </script>
+    <style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.absolute{position:absolute}.relative{position:relative}.-bottom-2{bottom:-0.5rem}.-right-2{right:-0.5rem}.left-1{left:0.25rem}.top-1{top:0.25rem}.z-10{z-index:10}.mx-auto{margin-left:auto;margin-right:auto}.mb-2{margin-bottom:0.5rem}.mb-6{margin-bottom:1.5rem}.mt-1{margin-top:0.25rem}.mt-8{margin-top:2rem}.inline-block{display:inline-block}.flex{display:flex}.grid{display:grid}.hidden{display:none}.h-16{height:4rem}.h-2{height:0.5rem}.h-32{height:8rem}.h-4{height:1rem}.h-5{height:1.25rem}.h-6{height:1.5rem}.h-8{height:2rem}.min-h-screen{min-height:100vh}.w-12{width:3rem}.w-16{width:4rem}.w-3{width:0.75rem}.w-4{width:1rem}.w-5{width:1.25rem}.w-8{width:2rem}.max-w-6xl{max-width:72rem}.cursor-not-allowed{cursor:not-allowed}.cursor-pointer{cursor:pointer}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.flex-col{flex-direction:column}.items-center{align-items:center}.justify-between{justify-content:space-between}.gap-1{gap:0.25rem}.gap-2{gap:0.5rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.space-y-8 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(2rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(2rem * var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.rounded-2xl{border-radius:1rem}.rounded-3xl{border-radius:1.5rem}.rounded-\[2rem\]{border-radius:2rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:var(--radius)}.rounded-md{border-radius:calc(var(--radius) - 2px)}.border-2{border-width:2px}.border-b-8{border-bottom-width:8px}.border-indigo-100{--tw-border-opacity:1;border-color:rgb(224 231 255 / var(--tw-border-opacity, 1))}.border-indigo-600{--tw-border-opacity:1;border-color:rgb(79 70 229 / var(--tw-border-opacity, 1))}.border-slate-100{--tw-border-opacity:1;border-color:rgb(241 245 249 / var(--tw-border-opacity, 1))}.bg-background{background-color:hsl(var(--background))}.bg-indigo-50{--tw-bg-opacity:1;background-color:rgb(238 242 255 / var(--tw-bg-opacity, 1))}.bg-indigo-600{--tw-bg-opacity:1;background-color:rgb(79 70 229 / var(--tw-bg-opacity, 1))}.bg-slate-200{--tw-bg-opacity:1;background-color:rgb(226 232 240 / var(--tw-bg-opacity, 1))}.bg-slate-300{--tw-bg-opacity:1;background-color:rgb(203 213 225 / var(--tw-bg-opacity, 1))}.bg-slate-50{--tw-bg-opacity:1;background-color:rgb(248 250 252 / var(--tw-bg-opacity, 1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.p-2{padding:0.5rem}.p-3{padding:0.75rem}.p-4{padding:1rem}.p-6{padding:1.5rem}.px-2{padding-left:0.5rem;padding-right:0.5rem}.px-8{padding-left:2rem;padding-right:2rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.text-left{text-align:left}.text-center{text-align:center}.text-right{text-align:right}.font-sans{font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-black{font-weight:900}.font-bold{font-weight:700}.uppercase{text-transform:uppercase}.italic{font-style:italic}.leading-tight{line-height:1.25}.tracking-tight{letter-spacing:-0.025em}.tracking-wider{letter-spacing:0.05em}.tracking-widest{letter-spacing:0.1em}.text-foreground{color:hsl(var(--foreground))}.text-indigo-900{--tw-text-opacity:1;color:rgb(49 46 129 / var(--tw-text-opacity, 1))}.text-slate-400{--tw-text-opacity:1;color:rgb(148 163 184 / var(--tw-text-opacity, 1))}.text-slate-500{--tw-text-opacity:1;color:rgb(100 116 139 / var(--tw-text-opacity, 1))}.text-slate-600{--tw-text-opacity:1;color:rgb(71 85 105 / var(--tw-text-opacity, 1))}.text-slate-700{--tw-text-opacity:1;color:rgb(51 65 85 / var(--tw-text-opacity, 1))}.text-slate-800{--tw-text-opacity:1;color:rgb(30 41 59 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.opacity-10{opacity:0.1}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-opacity{transition-property:opacity;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-500{transition-duration:500ms}.hover\:border-indigo-500:hover{--tw-border-opacity:1;border-color:rgb(99 102 241 / var(--tw-border-opacity, 1))}.hover\:shadow-lg:hover{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.group:hover .group-hover\:text-indigo-600{--tw-text-opacity:1;color:rgb(79 70 229 / var(--tw-text-opacity, 1))}.group:hover .group-hover\:opacity-20{opacity:0.2}@media (min-width: 768px){.md\:block{display:block}.md\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.md\:flex-row{flex-direction:row}.md\:p-6{padding:1.5rem}}@media (min-width: 1024px){.lg\:grid-cols-5{grid-template-columns:repeat(5, minmax(0, 1fr))}}</style></head>
+    <body class="bg-background text-foreground">
+        <div id="root"><div class="min-h-screen bg-slate-50 p-4 md:p-6 font-sans"><div class="max-w-6xl mx-auto"><header class="bg-white rounded-3xl p-6 shadow-sm mb-6 border-b-8 border-indigo-600 flex flex-col md:flex-row justify-between items-center gap-4 relative overflow-hidden"><div class="flex items-center gap-4 z-10"><div class="bg-indigo-600 p-3 rounded-2xl text-white shadow-lg cursor-pointer"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users-round w-8 h-8" aria-hidden="true"><path d="M18 21a8 8 0 0 0-16 0"></path><circle cx="10" cy="8" r="5"></circle><path d="M22 20c0-3.37-2-6.5-4-8a5 5 0 0 0-.45-8.3"></path></svg></div><div><h1 class="text-2xl font-black text-slate-800 tracking-tight italic">SOCIAL SKILLS 15 CHALLENGE</h1><div class="flex items-center gap-2"><span class="text-xs font-bold uppercase tracking-wider text-slate-400">教學模式</span><button class="relative w-12 h-6 rounded-full transition-colors bg-slate-300"><div class="absolute top-1 w-4 h-4 bg-white rounded-full transition-transform left-1"></div></button></div></div></div><div class="flex items-center gap-4 z-10"><div class="text-right hidden md:block"><p class="text-xs font-bold text-slate-400">複習進度</p><div class="flex gap-1 mt-1"><div class="h-2 w-3 rounded-full bg-slate-200 transition-all"></div><div class="h-2 w-3 rounded-full bg-slate-200 transition-all"></div><div class="h-2 w-3 rounded-full bg-slate-200 transition-all"></div><div class="h-2 w-3 rounded-full bg-slate-200 transition-all"></div><div class="h-2 w-3 rounded-full bg-slate-200 transition-all"></div><div class="h-2 w-3 rounded-full bg-slate-200 transition-all"></div><div class="h-2 w-3 rounded-full bg-slate-200 transition-all"></div><div class="h-2 w-3 rounded-full bg-slate-200 transition-all"></div><div class="h-2 w-3 rounded-full bg-slate-200 transition-all"></div><div class="h-2 w-3 rounded-full bg-slate-200 transition-all"></div><div class="h-2 w-3 rounded-full bg-slate-200 transition-all"></div><div class="h-2 w-3 rounded-full bg-slate-200 transition-all"></div><div class="h-2 w-3 rounded-full bg-slate-200 transition-all"></div><div class="h-2 w-3 rounded-full bg-slate-200 transition-all"></div><div class="h-2 w-3 rounded-full bg-slate-200 transition-all"></div></div></div></div></header><div class="animate-in fade-in duration-500 space-y-8"><div class="text-center space-y-2"><h2 class="text-3xl font-black text-slate-800">情境選擇主選單</h2><p class="text-slate-500 font-bold">今天想先修煉哪一個心法？</p></div><div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4"><button class="p-4 rounded-2xl border-2 transition-all text-left flex flex-col justify-between h-32 relative overflow-hidden group bg-white border-slate-100 hover:border-indigo-500 hover:shadow-lg"><div class="z-10"><span class="text-xs font-black px-2 py-1 rounded-md mb-2 inline-block bg-slate-200 text-slate-600">#1 </span><p class="text-sm font-bold text-slate-700 leading-tight group-hover:text-indigo-600">社群被封鎖、檢舉、被酸語</p></div><div class="absolute -right-2 -bottom-2 opacity-10 group-hover:opacity-20 transition-opacity"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lightbulb w-16 h-16" aria-hidden="true"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"></path><path d="M9 18h6"></path><path d="M10 22h4"></path></svg></div></button><button class="p-4 rounded-2xl border-2 transition-all text-left flex flex-col justify-between h-32 relative overflow-hidden group bg-white border-slate-100 hover:border-indigo-500 hover:shadow-lg"><div class="z-10"><span class="text-xs font-black px-2 py-1 rounded-md mb-2 inline-block bg-slate-200 text-slate-600">#2 </span><p class="text-sm font-bold text-slate-700 leading-tight group-hover:text-indigo-600">班上氣氛尷尬、被看笑話</p></div><div class="absolute -right-2 -bottom-2 opacity-10 group-hover:opacity-20 transition-opacity"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lightbulb w-16 h-16" aria-hidden="true"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"></path><path d="M9 18h6"></path><path d="M10 22h4"></path></svg></div></button><button class="p-4 rounded-2xl border-2 transition-all text-left flex flex-col justify-between h-32 relative overflow-hidden group bg-white border-slate-100 hover:border-indigo-500 hover:shadow-lg"><div class="z-10"><span class="text-xs font-black px-2 py-1 rounded-md mb-2 inline-block bg-slate-200 text-slate-600">#3 </span><p class="text-sm font-bold text-slate-700 leading-tight group-hover:text-indigo-600">太常找某人聊天，對方冷淡</p></div><div class="absolute -right-2 -bottom-2 opacity-10 group-hover:opacity-20 transition-opacity"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lightbulb w-16 h-16" aria-hidden="true"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"></path><path d="M9 18h6"></path><path d="M10 22h4"></path></svg></div></button><button class="p-4 rounded-2xl border-2 transition-all text-left flex flex-col justify-between h-32 relative overflow-hidden group bg-white border-slate-100 hover:border-indigo-500 hover:shadow-lg"><div class="z-10"><span class="text-xs font-black px-2 py-1 rounded-md mb-2 inline-block bg-slate-200 text-slate-600">#4 </span><p class="text-sm font-bold text-slate-700 leading-tight group-hover:text-indigo-600">對方回話只有「喔」、「恩」</p></div><div class="absolute -right-2 -bottom-2 opacity-10 group-hover:opacity-20 transition-opacity"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lightbulb w-16 h-16" aria-hidden="true"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"></path><path d="M9 18h6"></path><path d="M10 22h4"></path></svg></div></button><button class="p-4 rounded-2xl border-2 transition-all text-left flex flex-col justify-between h-32 relative overflow-hidden group bg-white border-slate-100 hover:border-indigo-500 hover:shadow-lg"><div class="z-10"><span class="text-xs font-black px-2 py-1 rounded-md mb-2 inline-block bg-slate-200 text-slate-600">#5 </span><p class="text-sm font-bold text-slate-700 leading-tight group-hover:text-indigo-600">分組時發現「沒有人跟我一組」</p></div><div class="absolute -right-2 -bottom-2 opacity-10 group-hover:opacity-20 transition-opacity"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lightbulb w-16 h-16" aria-hidden="true"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"></path><path d="M9 18h6"></path><path d="M10 22h4"></path></svg></div></button><button class="p-4 rounded-2xl border-2 transition-all text-left flex flex-col justify-between h-32 relative overflow-hidden group bg-white border-slate-100 hover:border-indigo-500 hover:shadow-lg"><div class="z-10"><span class="text-xs font-black px-2 py-1 rounded-md mb-2 inline-block bg-slate-200 text-slate-600">#6 </span><p class="text-sm font-bold text-slate-700 leading-tight group-hover:text-indigo-600">被模仿叫綽號、被冷淡對待</p></div><div class="absolute -right-2 -bottom-2 opacity-10 group-hover:opacity-20 transition-opacity"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lightbulb w-16 h-16" aria-hidden="true"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"></path><path d="M9 18h6"></path><path d="M10 22h4"></path></svg></div></button><button class="p-4 rounded-2xl border-2 transition-all text-left flex flex-col justify-between h-32 relative overflow-hidden group bg-white border-slate-100 hover:border-indigo-500 hover:shadow-lg"><div class="z-10"><span class="text-xs font-black px-2 py-1 rounded-md mb-2 inline-block bg-slate-200 text-slate-600">#7 </span><p class="text-sm font-bold text-slate-700 leading-tight group-hover:text-indigo-600">肢體碰撞、亂開玩笑過火</p></div><div class="absolute -right-2 -bottom-2 opacity-10 group-hover:opacity-20 transition-opacity"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lightbulb w-16 h-16" aria-hidden="true"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"></path><path d="M9 18h6"></path><path d="M10 22h4"></path></svg></div></button><button class="p-4 rounded-2xl border-2 transition-all text-left flex flex-col justify-between h-32 relative overflow-hidden group bg-white border-slate-100 hover:border-indigo-500 hover:shadow-lg"><div class="z-10"><span class="text-xs font-black px-2 py-1 rounded-md mb-2 inline-block bg-slate-200 text-slate-600">#8 </span><p class="text-sm font-bold text-slate-700 leading-tight group-hover:text-indigo-600">開口先問對方「知不知道...」</p></div><div class="absolute -right-2 -bottom-2 opacity-10 group-hover:opacity-20 transition-opacity"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lightbulb w-16 h-16" aria-hidden="true"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"></path><path d="M9 18h6"></path><path d="M10 22h4"></path></svg></div></button><button class="p-4 rounded-2xl border-2 transition-all text-left flex flex-col justify-between h-32 relative overflow-hidden group bg-white border-slate-100 hover:border-indigo-500 hover:shadow-lg"><div class="z-10"><span class="text-xs font-black px-2 py-1 rounded-md mb-2 inline-block bg-slate-200 text-slate-600">#9 </span><p class="text-sm font-bold text-slate-700 leading-tight group-hover:text-indigo-600">常講大道理、唉聲嘆氣</p></div><div class="absolute -right-2 -bottom-2 opacity-10 group-hover:opacity-20 transition-opacity"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lightbulb w-16 h-16" aria-hidden="true"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"></path><path d="M9 18h6"></path><path d="M10 22h4"></path></svg></div></button><button class="p-4 rounded-2xl border-2 transition-all text-left flex flex-col justify-between h-32 relative overflow-hidden group bg-white border-slate-100 hover:border-indigo-500 hover:shadow-lg"><div class="z-10"><span class="text-xs font-black px-2 py-1 rounded-md mb-2 inline-block bg-slate-200 text-slate-600">#10 </span><p class="text-sm font-bold text-slate-700 leading-tight group-hover:text-indigo-600">炫富、曬醜照、黃色笑話</p></div><div class="absolute -right-2 -bottom-2 opacity-10 group-hover:opacity-20 transition-opacity"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lightbulb w-16 h-16" aria-hidden="true"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"></path><path d="M9 18h6"></path><path d="M10 22h4"></path></svg></div></button><button class="p-4 rounded-2xl border-2 transition-all text-left flex flex-col justify-between h-32 relative overflow-hidden group bg-white border-slate-100 hover:border-indigo-500 hover:shadow-lg"><div class="z-10"><span class="text-xs font-black px-2 py-1 rounded-md mb-2 inline-block bg-slate-200 text-slate-600">#11 </span><p class="text-sm font-bold text-slate-700 leading-tight group-hover:text-indigo-600">聽到好朋友在背後傳你的八卦</p></div><div class="absolute -right-2 -bottom-2 opacity-10 group-hover:opacity-20 transition-opacity"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lightbulb w-16 h-16" aria-hidden="true"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"></path><path d="M9 18h6"></path><path d="M10 22h4"></path></svg></div></button><button class="p-4 rounded-2xl border-2 transition-all text-left flex flex-col justify-between h-32 relative overflow-hidden group bg-white border-slate-100 hover:border-indigo-500 hover:shadow-lg"><div class="z-10"><span class="text-xs font-black px-2 py-1 rounded-md mb-2 inline-block bg-slate-200 text-slate-600">#12 </span><p class="text-sm font-bold text-slate-700 leading-tight group-hover:text-indigo-600">告白失敗後的走廊相遇</p></div><div class="absolute -right-2 -bottom-2 opacity-10 group-hover:opacity-20 transition-opacity"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lightbulb w-16 h-16" aria-hidden="true"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"></path><path d="M9 18h6"></path><path d="M10 22h4"></path></svg></div></button><button class="p-4 rounded-2xl border-2 transition-all text-left flex flex-col justify-between h-32 relative overflow-hidden group bg-white border-slate-100 hover:border-indigo-500 hover:shadow-lg"><div class="z-10"><span class="text-xs font-black px-2 py-1 rounded-md mb-2 inline-block bg-slate-200 text-slate-600">#13 </span><p class="text-sm font-bold text-slate-700 leading-tight group-hover:text-indigo-600">被捲入班上的派系鬥爭</p></div><div class="absolute -right-2 -bottom-2 opacity-10 group-hover:opacity-20 transition-opacity"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lightbulb w-16 h-16" aria-hidden="true"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"></path><path d="M9 18h6"></path><path d="M10 22h4"></path></svg></div></button><button class="p-4 rounded-2xl border-2 transition-all text-left flex flex-col justify-between h-32 relative overflow-hidden group bg-white border-slate-100 hover:border-indigo-500 hover:shadow-lg"><div class="z-10"><span class="text-xs font-black px-2 py-1 rounded-md mb-2 inline-block bg-slate-200 text-slate-600">#14 </span><p class="text-sm font-bold text-slate-700 leading-tight group-hover:text-indigo-600">送出的心意被退回或冷處理</p></div><div class="absolute -right-2 -bottom-2 opacity-10 group-hover:opacity-20 transition-opacity"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lightbulb w-16 h-16" aria-hidden="true"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"></path><path d="M9 18h6"></path><path d="M10 22h4"></path></svg></div></button><button class="p-4 rounded-2xl border-2 transition-all text-left flex flex-col justify-between h-32 relative overflow-hidden group bg-white border-slate-100 hover:border-indigo-500 hover:shadow-lg"><div class="z-10"><span class="text-xs font-black px-2 py-1 rounded-md mb-2 inline-block bg-slate-200 text-slate-600">#15 </span><p class="text-sm font-bold text-slate-700 leading-tight group-hover:text-indigo-600">分組報告意見不合、產生衝突</p></div><div class="absolute -right-2 -bottom-2 opacity-10 group-hover:opacity-20 transition-opacity"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lightbulb w-16 h-16" aria-hidden="true"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"></path><path d="M9 18h6"></path><path d="M10 22h4"></path></svg></div></button></div><div class="bg-indigo-50 p-6 rounded-[2rem] border-2 border-indigo-100 flex flex-col md:flex-row items-center justify-between gap-4"><div class="flex items-center gap-3"><div class="bg-indigo-600 p-2 rounded-lg text-white"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big w-5 h-5" aria-hidden="true"><path d="M21.801 10A10 10 0 1 1 17 3.335"></path><path d="m9 11 3 3L22 4"></path></svg></div><p class="font-bold text-indigo-900">目前修煉進度：0 / 15</p></div><button disabled="" class="px-8 py-3 rounded-full font-black transition-all bg-slate-200 text-slate-400 cursor-not-allowed">查看最終修煉報告</button></div></div></div><footer class="mt-8 text-center text-slate-400 text-xs font-bold uppercase tracking-widest">114-2 社會技巧課程複習系統</footer></div></div>
+        <script>
+            var App = (() => {
+  var __create = Object.create;
+  var __defProp = Object.defineProperty;
+  var __defProps = Object.defineProperties;
+  var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
+  var __getOwnPropDescs = Object.getOwnPropertyDescriptors;
+  var __getOwnPropNames = Object.getOwnPropertyNames;
+  var __getOwnPropSymbols = Object.getOwnPropertySymbols;
+  var __getProtoOf = Object.getPrototypeOf;
+  var __hasOwnProp = Object.prototype.hasOwnProperty;
+  var __propIsEnum = Object.prototype.propertyIsEnumerable;
+  var __defNormalProp = (obj, key, value) => key in obj ? __defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
+  var __spreadValues = (a, b) => {
+    for (var prop in b || (b = {}))
+      if (__hasOwnProp.call(b, prop))
+        __defNormalProp(a, prop, b[prop]);
+    if (__getOwnPropSymbols)
+      for (var prop of __getOwnPropSymbols(b)) {
+        if (__propIsEnum.call(b, prop))
+          __defNormalProp(a, prop, b[prop]);
+      }
+    return a;
+  };
+  var __spreadProps = (a, b) => __defProps(a, __getOwnPropDescs(b));
+  var __objRest = (source, exclude) => {
+    var target = {};
+    for (var prop in source)
+      if (__hasOwnProp.call(source, prop) && exclude.indexOf(prop) < 0)
+        target[prop] = source[prop];
+    if (source != null && __getOwnPropSymbols)
+      for (var prop of __getOwnPropSymbols(source)) {
+        if (exclude.indexOf(prop) < 0 && __propIsEnum.call(source, prop))
+          target[prop] = source[prop];
+      }
+    return target;
+  };
+  var __commonJS = (cb, mod) => function __require() {
+    return mod || (0, cb[__getOwnPropNames(cb)[0]])((mod = { exports: {} }).exports, mod), mod.exports;
+  };
+  var __export = (target, all) => {
+    for (var name in all)
+      __defProp(target, name, { get: all[name], enumerable: true });
+  };
+  var __copyProps = (to, from, except, desc) => {
+    if (from && typeof from === "object" || typeof from === "function") {
+      for (let key of __getOwnPropNames(from))
+        if (!__hasOwnProp.call(to, key) && key !== except)
+          __defProp(to, key, { get: () => from[key], enumerable: !(desc = __getOwnPropDesc(from, key)) || desc.enumerable });
+    }
+    return to;
+  };
+  var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__getProtoOf(mod)) : {}, __copyProps(
+    // If the importer is in node compatibility mode or this is not an ESM
+    // file that has been converted to a CommonJS file using a Babel-
+    // compatible transform (i.e. "__esModule" has not been set), then set
+    // "default" to the CommonJS "module.exports" for node compatibility.
+    isNodeMode || !mod || !mod.__esModule ? __defProp(target, "default", { value: mod, enumerable: true }) : target,
+    mod
+  ));
+  var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
+
+  // react-globals:react
+  var require_react = __commonJS({
+    "react-globals:react"(exports, module) {
+      module.exports = window.React;
+    }
+  });
+
+  // <stdin>
+  var stdin_exports = {};
+  __export(stdin_exports, {
+    default: () => stdin_default
+  });
+  var import_react3 = __toESM(require_react());
+
+  // node_modules/lucide-react/dist/esm/createLucideIcon.js
+  var import_react2 = __toESM(require_react());
+
+  // node_modules/lucide-react/dist/esm/shared/src/utils.js
+  var toKebabCase = (string) => string.replace(/([a-z0-9])([A-Z])/g, "$1-$2").toLowerCase();
+  var toCamelCase = (string) => string.replace(
+    /^([A-Z])|[\s-_]+(\w)/g,
+    (match, p1, p2) => p2 ? p2.toUpperCase() : p1.toLowerCase()
+  );
+  var toPascalCase = (string) => {
+    const camelCase = toCamelCase(string);
+    return camelCase.charAt(0).toUpperCase() + camelCase.slice(1);
+  };
+  var mergeClasses = (...classes) => classes.filter((className, index, array) => {
+    return Boolean(className) && className.trim() !== "" && array.indexOf(className) === index;
+  }).join(" ").trim();
+  var hasA11yProp = (props) => {
+    for (const prop in props) {
+      if (prop.startsWith("aria-") || prop === "role" || prop === "title") {
+        return true;
+      }
+    }
+  };
+
+  // node_modules/lucide-react/dist/esm/Icon.js
+  var import_react = __toESM(require_react());
+
+  // node_modules/lucide-react/dist/esm/defaultAttributes.js
+  var defaultAttributes = {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: 24,
+    height: 24,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    stroke: "currentColor",
+    strokeWidth: 2,
+    strokeLinecap: "round",
+    strokeLinejoin: "round"
+  };
+
+  // node_modules/lucide-react/dist/esm/Icon.js
+  var Icon = (0, import_react.forwardRef)(
+    (_a, ref) => {
+      var _b = _a, {
+        color = "currentColor",
+        size = 24,
+        strokeWidth = 2,
+        absoluteStrokeWidth,
+        className = "",
+        children,
+        iconNode
+      } = _b, rest = __objRest(_b, [
+        "color",
+        "size",
+        "strokeWidth",
+        "absoluteStrokeWidth",
+        "className",
+        "children",
+        "iconNode"
+      ]);
+      return (0, import_react.createElement)(
+        "svg",
+        __spreadValues(__spreadValues(__spreadProps(__spreadValues({
+          ref
+        }, defaultAttributes), {
+          width: size,
+          height: size,
+          stroke: color,
+          strokeWidth: absoluteStrokeWidth ? Number(strokeWidth) * 24 / Number(size) : strokeWidth,
+          className: mergeClasses("lucide", className)
+        }), !children && !hasA11yProp(rest) && { "aria-hidden": "true" }), rest),
+        [
+          ...iconNode.map(([tag, attrs]) => (0, import_react.createElement)(tag, attrs)),
+          ...Array.isArray(children) ? children : [children]
+        ]
+      );
+    }
+  );
+
+  // node_modules/lucide-react/dist/esm/createLucideIcon.js
+  var createLucideIcon = (iconName, iconNode) => {
+    const Component = (0, import_react2.forwardRef)(
+      (_a, ref) => {
+        var _b = _a, { className } = _b, props = __objRest(_b, ["className"]);
+        return (0, import_react2.createElement)(Icon, __spreadValues({
+          ref,
+          iconNode,
+          className: mergeClasses(
+            `lucide-${toKebabCase(toPascalCase(iconName))}`,
+            `lucide-${iconName}`,
+            className
+          )
+        }, props));
+      }
+    );
+    Component.displayName = toPascalCase(iconName);
+    return Component;
+  };
+
+  // node_modules/lucide-react/dist/esm/icons/chart-column.js
+  var __iconNode = [
+    ["path", { d: "M3 3v16a2 2 0 0 0 2 2h16", key: "c24i48" }],
+    ["path", { d: "M18 17V9", key: "2bz60n" }],
+    ["path", { d: "M13 17V5", key: "1frdt8" }],
+    ["path", { d: "M8 17v-3", key: "17ska0" }]
+  ];
+  var ChartColumn = createLucideIcon("chart-column", __iconNode);
+
+  // node_modules/lucide-react/dist/esm/icons/chevron-right.js
+  var __iconNode2 = [["path", { d: "m9 18 6-6-6-6", key: "mthhwq" }]];
+  var ChevronRight = createLucideIcon("chevron-right", __iconNode2);
+
+  // node_modules/lucide-react/dist/esm/icons/circle-check-big.js
+  var __iconNode3 = [
+    ["path", { d: "M21.801 10A10 10 0 1 1 17 3.335", key: "yps3ct" }],
+    ["path", { d: "m9 11 3 3L22 4", key: "1pflzl" }]
+  ];
+  var CircleCheckBig = createLucideIcon("circle-check-big", __iconNode3);
+
+  // node_modules/lucide-react/dist/esm/icons/heart.js
+  var __iconNode4 = [
+    [
+      "path",
+      {
+        d: "M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z",
+        key: "c3ymky"
+      }
+    ]
+  ];
+  var Heart = createLucideIcon("heart", __iconNode4);
+
+  // node_modules/lucide-react/dist/esm/icons/house.js
+  var __iconNode5 = [
+    ["path", { d: "M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8", key: "5wwlr5" }],
+    [
+      "path",
+      {
+        d: "M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z",
+        key: "1d0kgt"
+      }
+    ]
+  ];
+  var House = createLucideIcon("house", __iconNode5);
+
+  // node_modules/lucide-react/dist/esm/icons/layout-grid.js
+  var __iconNode6 = [
+    ["rect", { width: "7", height: "7", x: "3", y: "3", rx: "1", key: "1g98yp" }],
+    ["rect", { width: "7", height: "7", x: "14", y: "3", rx: "1", key: "6d4xhi" }],
+    ["rect", { width: "7", height: "7", x: "14", y: "14", rx: "1", key: "nxv5o0" }],
+    ["rect", { width: "7", height: "7", x: "3", y: "14", rx: "1", key: "1bb6yr" }]
+  ];
+  var LayoutGrid = createLucideIcon("layout-grid", __iconNode6);
+
+  // node_modules/lucide-react/dist/esm/icons/lightbulb.js
+  var __iconNode7 = [
+    [
+      "path",
+      {
+        d: "M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5",
+        key: "1gvzjb"
+      }
+    ],
+    ["path", { d: "M9 18h6", key: "x1upvd" }],
+    ["path", { d: "M10 22h4", key: "ceow96" }]
+  ];
+  var Lightbulb = createLucideIcon("lightbulb", __iconNode7);
+
+  // node_modules/lucide-react/dist/esm/icons/refresh-ccw.js
+  var __iconNode8 = [
+    ["path", { d: "M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8", key: "14sxne" }],
+    ["path", { d: "M3 3v5h5", key: "1xhq8a" }],
+    ["path", { d: "M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16", key: "1hlbsb" }],
+    ["path", { d: "M16 16h5v5", key: "ccwih5" }]
+  ];
+  var RefreshCcw = createLucideIcon("refresh-ccw", __iconNode8);
+
+  // node_modules/lucide-react/dist/esm/icons/shield.js
+  var __iconNode9 = [
+    [
+      "path",
+      {
+        d: "M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z",
+        key: "oel41y"
+      }
+    ]
+  ];
+  var Shield = createLucideIcon("shield", __iconNode9);
+
+  // node_modules/lucide-react/dist/esm/icons/sparkles.js
+  var __iconNode10 = [
+    [
+      "path",
+      {
+        d: "M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z",
+        key: "4pj2yx"
+      }
+    ],
+    ["path", { d: "M20 3v4", key: "1olli1" }],
+    ["path", { d: "M22 5h-4", key: "1gvqau" }],
+    ["path", { d: "M4 17v2", key: "vumght" }],
+    ["path", { d: "M5 18H3", key: "zchphs" }]
+  ];
+  var Sparkles = createLucideIcon("sparkles", __iconNode10);
+
+  // node_modules/lucide-react/dist/esm/icons/users-round.js
+  var __iconNode11 = [
+    ["path", { d: "M18 21a8 8 0 0 0-16 0", key: "3ypg7q" }],
+    ["circle", { cx: "10", cy: "8", r: "5", key: "o932ke" }],
+    ["path", { d: "M22 20c0-3.37-2-6.5-4-8a5 5 0 0 0-.45-8.3", key: "10s06x" }]
+  ];
+  var UsersRound = createLucideIcon("users-round", __iconNode11);
+
+  // node_modules/lucide-react/dist/esm/icons/users.js
+  var __iconNode12 = [
+    ["path", { d: "M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2", key: "1yyitq" }],
+    ["path", { d: "M16 3.128a4 4 0 0 1 0 7.744", key: "16gr8j" }],
+    ["path", { d: "M22 21v-2a4 4 0 0 0-3-3.87", key: "kshegd" }],
+    ["circle", { cx: "9", cy: "7", r: "4", key: "nufk8" }]
+  ];
+  var Users = createLucideIcon("users", __iconNode12);
+
+  // <stdin>
+  var App = () => {
+    const [stage, setStage] = (0, import_react3.useState)("menu");
+    const [currentScenario, setCurrentScenario] = (0, import_react3.useState)(0);
+    const [selectedTool, setSelectedTool] = (0, import_react3.useState)(null);
+    const [voteStats, setVoteStats] = (0, import_react3.useState)({ cooldown: 0, self: 0, peace: 0 });
+    const [isClassMode, setIsClassMode] = (0, import_react3.useState)(false);
+    const [completedScenarios, setCompletedScenarios] = (0, import_react3.useState)([]);
+    const scenarios = [
+      {
+        title: "\u60C5\u5883 1\uFF1A\u793E\u7FA4\u88AB\u5C01\u9396\u3001\u6AA2\u8209\u3001\u88AB\u9178\u8A9E",
+        description: "\u767C\u73FE\u88AB\u5C0D\u65B9\u5C01\u9396\u4E86\uFF0C\u6216\u5728 Threads \u770B\u5230\u6709\u4EBA\u5728\u96B1\u5C04\u3001\u5632\u8AF7\u4F60...",
+        strategies: {
+          cooldown: "\u95DC\u6389\u8EDF\u9AD4\u4E26\u65B7\u7DB2\uFF0C\u4E0D\u56DE\u8986\u3001\u4E0D\u8A66\u5716\u6F84\u6E05\uFF0C\u8B93\u60C5\u7DD2\u7269\u7406\u65B7\u9023\u3002",
+          self: "\u53BB\u7403\u5834\u5831\u968A\u6216\u7DF4\u7FD2\u6A02\u5668\uFF0C\u7528\u771F\u5BE6\u4E16\u754C\u7684\u6210\u5C31\u611F\u84CB\u904E\u865B\u64EC\u4E16\u754C\u7684\u8CA0\u80FD\u91CF\u3002",
+          peace: "\u5728\u5B78\u6821\u9047\u5230\u6642\u4ECD\u7DAD\u6301\u9EDE\u982D\u79AE\u8C8C\uFF0C\u4F46\u4E0D\u4E3B\u52D5\u6500\u8AC7\uFF0C\u5B88\u4F4F\u5FC3\u4E2D\u7684\u5B89\u5BE7\u3002"
+        },
+        challenge: "\u8A66\u8457\u793A\u7BC4\uFF1A\u7576\u4F60\u5FCD\u4E0D\u4F4F\u60F3\u770B\u624B\u6A5F\u6642\uFF0C\u4F60\u6703\u5C0D\u81EA\u5DF1\u8AAA\u54EA\u4E00\u53E5\u300C\u6B62\u640D\u300D\u7684\u8A71\uFF1F"
+      },
+      {
+        title: "\u60C5\u5883 2\uFF1A\u73ED\u4E0A\u6C23\u6C1B\u5C37\u5C2C\u3001\u88AB\u770B\u7B11\u8A71",
+        description: "\u8DDF\u540C\u5B78\u9B27\u4E0D\u6109\u5FEB\uFF0C\u9032\u6559\u5BA4\u7E3D\u89BA\u5F97\u5927\u5BB6\u90FD\u5728\u80CC\u5F8C\u6307\u6307\u9EDE\u9EDE...",
+        strategies: {
+          cooldown: "\u4E0B\u8AB2\u53BB\u5716\u66F8\u9928\u6216\u798F\u5229\u793E\uFF0C\u66AB\u6642\u96E2\u958B\u5145\u6EFF\u58D3\u529B\u7684\u6559\u5BA4\u7A7A\u9593\u3002",
+          self: "\u5C08\u6CE8\u5728\u5BE6\u7FD2\u8AB2\u7684\u4F5C\u54C1\uFF0C\u544A\u8A34\u81EA\u5DF1\uFF1A\u5225\u4EBA\u7684\u8A55\u50F9\u662F\u4ED6\u7684\u8AB2\u984C\uFF0C\u6211\u7684\u4F5C\u54C1\u624D\u662F\u6211\u7684\u3002",
+          peace: "\u5C0D\u4E8B\u4E0D\u5C0D\u4EBA\uFF0C\u5FC5\u8981\u63A5\u89F8\u6642\u4FDD\u6301\u5C08\u696D\u6709\u79AE\uFF0C\u4E0D\u5E36\u60C5\u7DD2\u5730\u5B8C\u6210\u73ED\u7D1A\u4E8B\u52D9\u3002"
+        },
+        challenge: "\u601D\u8003\u4E00\u4E0B\uFF1A\u5982\u679C\u4F60\u5728\u6559\u5BA4\u611F\u5230\u7A92\u606F\uFF0C\u6821\u5712\u4E2D\u54EA\u4E00\u500B\u89D2\u843D\u662F\u4F60\u7684\u300C\u907F\u98A8\u6E2F\u300D\uFF1F"
+      },
+      {
+        title: "\u60C5\u5883 3\uFF1A\u592A\u5E38\u627E\u67D0\u4EBA\u804A\u5929\uFF0C\u5C0D\u65B9\u51B7\u6DE1",
+        description: "\u4F60\u767C\u73FE\u5C0D\u65B9\u56DE\u8A0A\u606F\u8B8A\u6162\u3001\u751A\u81F3\u5728\u907F\u958B\u4F60\uFF0C\u8B93\u4F60\u611F\u5230\u632B\u6298...",
+        strategies: {
+          cooldown: "\u5FCD\u4F4F\u60F3\u50B3\u8A0A\u606F\u7684\u885D\u52D5\uFF0C\u5C07\u5C0D\u65B9\u7684\u901A\u77E5\u95DC\u9589\uFF0C\u7D66\u5F7C\u6B64\u4E00\u6BB5\u300C\u771F\u7A7A\u671F\u300D\u3002",
+          self: "\u628A\u6642\u9593\u62FF\u4F86\u898F\u5283\u4E0B\u661F\u671F\u7684\u65C5\u884C\u6216\u8208\u8DA3\uFF0C\u627E\u56DE\u539F\u672C\u6C92\u6709\u4ED6\u4E5F\u5F88\u7CBE\u5F69\u7684\u751F\u6D3B\u3002",
+          peace: "\u9047\u5230\u6642\u7DAD\u6301\u6700\u57FA\u672C\u7684\u6253\u62DB\u547C\uFF0C\u4E0D\u518D\u4E3B\u52D5\u958B\u8A71\u984C\uFF0C\u628A\u8DDD\u96E2\u62C9\u56DE\u9EDE\u982D\u4E4B\u4EA4\u3002"
+        },
+        challenge: "\u73FE\u5834\u6F14\u7DF4\uFF1A\u5728\u8D70\u5ECA\u9047\u5230\u5C0D\u65B9\u6642\uFF0C\u4E00\u500B\u300C\u6709\u79AE\u8C8C\u4F46\u4E0D\u904E\u71B1\u300D\u7684\u9EDE\u982D\u662F\u4EC0\u9EBC\u6A23\u5B50\uFF1F"
+      },
+      {
+        title: "\u60C5\u5883 4\uFF1A\u5C0D\u65B9\u56DE\u8A71\u53EA\u6709\u300C\u5594\u300D\u3001\u300C\u6069\u300D",
+        description: "\u4F60\u71B1\u60C5\u5206\u4EAB\u751F\u6D3B\uFF0C\u5C0D\u65B9\u537B\u53EA\u56DE\u4E00\u500B\u5B57\uFF0C\u8B93\u4F60\u77AC\u9593\u611F\u5230\u51B7\u5834...",
+        strategies: {
+          cooldown: "\u505C\u6B62\u55AE\u65B9\u9762\u7684\u8A71\u984C\u8F5F\u70B8\u3002\u65E2\u7136\u4ED6\u4E0D\u60F3\u804A\uFF0C\u90A3\u5C31\u628A\u5C0D\u8A71\u300C\u51B7\u537B\u300D\u4E0B\u4F86\u3002",
+          self: "\u628A\u6709\u8DA3\u7684\u4E8B\u60C5\u8A18\u5728\u65E5\u8A18\u88E1\uFF0C\u6216\u8005\u5206\u4EAB\u7D66\u66F4\u60F3\u807D\u3001\u6709\u5171\u9CF4\u7684\u597D\u670B\u53CB\u3002",
+          peace: "\u4E0D\u5F37\u6C42\u6DF1\u5EA6\u5C0D\u8AC7\u3002\u63A5\u53D7\u9019\u662F\u4E00\u500B\u300C\u7C21\u77ED\u5C0D\u8A71\u300D\u7684\u72C0\u614B\uFF0C\u5BA2\u6C23\u7D50\u675F\u8A71\u984C\u3002"
+        },
+        challenge: "\u8F49\u5411\u601D\u8003\uFF1A\u7576\u5C0D\u65B9\u56DE\u300C\u5594\u300D\u7684\u6642\u5019\uFF0C\u4F60\u6703\u7528\u4EC0\u9EBC\u5FC3\u614B\u8B93\u81EA\u5DF1\u4E0D\u5C37\u5C2C\uFF1F"
+      },
+      {
+        title: "\u60C5\u5883 5\uFF1A\u5206\u7D44\u6642\u767C\u73FE\u300C\u6C92\u6709\u4EBA\u8DDF\u6211\u4E00\u7D44\u300D",
+        description: "\u8001\u5E2B\u8AAA\u8981\u5206\u7D44\uFF0C\u770B\u8457\u5927\u5BB6\u90FD\u6709\u4F34\uFF0C\u81EA\u5DF1\u537B\u843D\u55AE\u4E86\uFF0C\u611F\u5230\u5F88\u632B\u6298...",
+        strategies: {
+          cooldown: "\u6DF1\u547C\u5438\u4E09\u6B21\u3002\u63A5\u53D7\u9019\u53EA\u662F\u4E00\u500B\u66AB\u6642\u7684\u72C0\u614B\uFF0C\u4E0D\u8B93\u7126\u616E\u541E\u566C\u7406\u667A\u3002",
+          self: "\u601D\u8003\uFF1A\u6211\u5728\u5C0F\u7D44\u4E2D\u80FD\u8CA2\u737B\u4EC0\u9EBC\u5F37\u9805\uFF1F\uFF08\u4F8B\u5982\uFF1A\u7F8E\u7DE8\u3001PPT\u3001\u5831\u544A\uFF09\u3002",
+          peace: "\u4E3B\u52D5\u8A62\u554F\u5C1A\u672A\u6EFF\u54E1\u7684\u7D44\u5225\uFF0C\u7528\u7A69\u5B9A\u6709\u79AE\u7684\u614B\u5EA6\u8AAA\uFF1A\u300C\u9019\u7D44\u9084\u7F3A\u4EBA\u55CE\uFF1F\u300D"
+        },
+        challenge: "\u884C\u52D5\u6311\u6230\uFF1A\u8A66\u8457\u7DF4\u7FD2\u4E00\u53E5\u300C\u4E0D\u59D4\u5C48\u3001\u6709\u79AE\u8C8C\u300D\u7684\u4E3B\u52D5\u8A62\u554F\u53F0\u8A5E\u3002"
+      },
+      {
+        title: "\u60C5\u5883 6\uFF1A\u88AB\u6A21\u4EFF\u53EB\u7DBD\u865F\u3001\u88AB\u51B7\u6DE1\u5C0D\u5F85",
+        description: "\u6709\u4EBA\u6545\u610F\u5B78\u4F60\u8B1B\u8A71\u6216\u53EB\u4F60\u8A0E\u53AD\u7684\u7DBD\u865F\uFF0C\u751A\u81F3\u6545\u610F\u4E0D\u7406\u4F60...",
+        strategies: {
+          cooldown: "\u4E0D\u7D66\u5C0D\u65B9\u53CD\u61C9\u3002\u7576\u5C0D\u65B9\u767C\u73FE\u4F60\u6C92\u88AB\u6FC0\u6012\uFF0C\u9019\u7A2E\u60E1\u4F5C\u5287\u5F80\u5F80\u6703\u5931\u53BB\u6A02\u8DA3\u3002",
+          self: "\u7CBE\u9032\u81EA\u5DF1\u7684\u5C08\u696D\u6216\u904B\u52D5\u3002\u7576\u4F60\u8B8A\u5F97\u5F37\u5927\uFF0C\u9019\u4E9B\u8072\u97F3\u6703\u986F\u5F97\u975E\u5E38\u6E3A\u5C0F\u3002",
+          peace: "\u5E73\u975C\u5730\u544A\u8A34\u5C0D\u65B9\uFF1A\u300C\u6211\u4E0D\u559C\u6B61\u9019\u500B\u7A31\u547C\uFF0C\u8ACB\u4E0D\u8981\u518D\u53EB\u4E86\u3002\u300D\u4E0D\u5E36\u722D\u5435\u60C5\u7DD2\u3002"
+        },
+        challenge: "\u8868\u60C5\u6F14\u6280\uFF1A\u8ACB\u4E00\u4F4D\u540C\u5B78\u5C0D\u4F60\u53EB\u7DBD\u865F\uFF0C\u793A\u7BC4\u5982\u4F55\u7DAD\u6301\u300C\u5167\u5FC3\u6BEB\u7121\u6CE2\u52D5\u300D\u7684\u6DE1\u5B9A\u8868\u60C5\uFF0C\u7136\u5F8C\u8F49\u982D\u7E7C\u7E8C\u505A\u81EA\u5DF1\u7684\u4E8B\u3002"
+      },
+      {
+        title: "\u60C5\u5883 7\uFF1A\u80A2\u9AD4\u78B0\u649E\u3001\u4E82\u958B\u73A9\u7B11\u904E\u706B",
+        description: "\u6709\u4EBA\u4E82\u52D5\u4F60\u7684\u6771\u897F\u6216\u96A8\u610F\u62CD\u6253\u4F60\uFF0C\u4E26\u8AAA\u300C\u53EA\u662F\u958B\u73A9\u7B11\u5566\u300D...",
+        strategies: {
+          cooldown: "\u7ACB\u523B\u62C9\u958B\u7269\u7406\u8DDD\u96E2\u3002\u4E0D\u8981\u5728\u5C0D\u65B9\u5B09\u9B27\u6642\u52A0\u5165\uFF0C\u4EE5\u514D\u8B93\u4ED6\u4EE5\u70BA\u4F60\u53EF\u4EE5\u63A5\u53D7\u3002",
+          self: "\u628A\u5C08\u6CE8\u529B\u79FB\u56DE\u539F\u672C\u5728\u505A\u7684\u4E8B\uFF0C\u4E0D\u8B93\u5C0D\u65B9\u7684\u7121\u7406\u884C\u70BA\u6253\u4E82\u4F60\u7684\u7BC0\u594F\u3002",
+          peace: "\u660E\u78BA\u8868\u614B\u3002\u770B\u8457\u5C0D\u65B9\u7684\u773C\u775B\u8AAA\uFF1A\u300C\u9019\u500B\u52D5\u4F5C\u8B93\u6211\u4E0D\u8212\u670D\uFF0C\u8ACB\u505C\u6B62\u3002\u300D"
+        },
+        challenge: "\u8EAB\u9AD4\u754C\u7DDA\uFF1A\u793A\u7BC4\u4E00\u500B\u300C\u9632\u885B\u6027\u7A7A\u9593\u300D\u7684\u59FF\u52E2\uFF08\u4F8B\u5982\uFF1A\u7A0D\u5FAE\u5F8C\u9000\u3001\u624B\u90E8\u963B\u9694\uFF09\u3002"
+      },
+      {
+        title: "\u60C5\u5883 8\uFF1A\u958B\u53E3\u5148\u554F\u5C0D\u65B9\u300C\u77E5\u4E0D\u77E5\u9053...\u300D",
+        description: "\u4F60\u60F3\u5C55\u73FE\u535A\u5B78\uFF0C\u958B\u53E3\u5C31\u554F\u300C\u4F60\u77E5\u4E0D\u77E5\u9053\u67D0\u67D0\u4E8B\uFF1F\u300D\uFF0C\u537B\u8B93\u5C0D\u65B9\u89BA\u5F97\u5728\u8AAA\u6559...",
+        strategies: {
+          cooldown: "\u66AB\u6642\u505C\u6B62\u9019\u7A2E\u8003\u9A57\u5F0F\u7684\u554F\u8A71\u3002\u89C0\u5BDF\u5C0D\u65B9\u7684\u8868\u60C5\u662F\u5426\u611F\u5230\u75B2\u5026\u3002",
+          self: "\u628A\u5FC3\u601D\u82B1\u5728\u771F\u6B63\u7684\u5B78\u7FD2\u4E0A\uFF0C\u800C\u4E0D\u662F\u900F\u904E\u300C\u8003\u8003\u5225\u4EBA\u300D\u4F86\u7372\u5F97\u512A\u8D8A\u611F\u3002",
+          peace: "\u6539\u8B8A\u53E3\u543B\u3002\u6539\u7528\u5206\u4EAB\u7684\u65B9\u5F0F\uFF1A\u300C\u6211\u6700\u8FD1\u770B\u5230\u4E00\u500B\u5F88\u6709\u8DA3\u7684\u4E8B\uFF0C\u60F3\u5206\u4EAB\u7D66\u4F60...\u300D"
+        },
+        challenge: "\u8AAA\u8A71\u7DF4\u7FD2\uFF1A\u628A\u300C\u4F60\u77E5\u4E0D\u77E5\u9053...\u300D\u6539\u6210\u300C\u6211\u6709\u500B\u6709\u8DA3\u7684\u767C\u73FE\u60F3\u5206\u4EAB...\u300D"
+      },
+      {
+        title: "\u60C5\u5883 9\uFF1A\u5E38\u8B1B\u5927\u9053\u7406\u3001\u5509\u8072\u5606\u6C23",
+        description: "\u4F60\u5E38\u60F3\u7D66\u5EFA\u8B70\uFF0C\u6216\u8005\u4E0D\u65B7\u5606\u6C23\uFF0C\u8B93\u5468\u906D\u7684\u4EBA\u89BA\u5F97\u8CA0\u80FD\u91CF\u5F88\u91CD...",
+        strategies: {
+          cooldown: "\u7DF4\u7FD2\u6C88\u9ED8\u3002\u7576\u60F3\u62B1\u6028\u6216\u5606\u6C23\u6642\uFF0C\u5148\u7D66\u81EA\u5DF1\u4E94\u5206\u9418\u975C\u5750\u7684\u6642\u9593\u3002",
+          self: "\u53BB\u904B\u52D5\u6D41\u6C57\u6216\u627E\u8AEE\u5546\u8001\u5E2B\u8AC7\u8AC7\uFF0C\u628A\u5FC3\u88E1\u7684\u5783\u573E\u6E05\u7406\u6389\uFF0C\u627E\u56DE\u6B63\u5411\u52D5\u529B\u3002",
+          peace: "\u5B78\u7FD2\u50BE\u807D\u3002\u4E0D\u518D\u6025\u8457\u7D66\u7B54\u6848\uFF0C\u800C\u662F\u554F\u5C0D\u65B9\uFF1A\u300C\u4F60\u89BA\u5F97\u9019\u4EF6\u4E8B\u600E\u9EBC\u770B\uFF1F\u300D"
+        },
+        challenge: "\u6B63\u5411\u8F49\u5411\uFF1A\u73FE\u5728\u8A66\u8457\u8AAA\u51FA\u4E00\u4EF6\u4F60\u89BA\u5F97\u4ECA\u5929\u767C\u751F\u904E\u6700\u68D2\u7684\u4E00\u4EF6\u5C0F\u4E8B\u3002"
+      },
+      {
+        title: "\u60C5\u5883 10\uFF1A\u70AB\u5BCC\u3001\u66EC\u919C\u7167\u3001\u9EC3\u8272\u7B11\u8A71",
+        description: "\u5728\u7FA4\u7D44\u6216\u73FE\u5834\u8B1B\u9EC3\u8272\u7B11\u8A71\u3001\u6216\u6545\u610F\u70AB\u8000\uFF0C\u8B93\u6C23\u6C1B\u8B8A\u5F97\u5F88\u5C37\u5C2C...",
+        strategies: {
+          cooldown: "\u4E0D\u53C3\u8207\u5C0D\u8A71\uFF0C\u6216\u77ED\u66AB\u96E2\u5E2D\u53BB\u6D17\u624B\u9593\uFF0C\u8B93\u5C37\u5C2C\u7684\u5834\u666F\u81EA\u52D5\u964D\u6EAB\u3002",
+          self: "\u5145\u5BE6\u81EA\u5DF1\u7684\u5167\u6DB5\u3002\u6BD4\u8D77\u5916\u8868\u7684\u70AB\u8000\uFF0C\u5167\u5FC3\u7684\u7A69\u5B9A\u66F4\u6709\u9B45\u529B\u3002",
+          peace: "\u6EAB\u548C\u5730\u8F49\u79FB\u8A71\u984C\uFF0C\u6216\u6709\u79AE\u8C8C\u5730\u8868\u9054\uFF1A\u300C\u9019\u500B\u8A71\u984C\u6211\u4E0D\u592A\u611F\u8208\u8DA3\uFF0C\u63DB\u4E00\u500B\u5427\uFF1F\u300D"
+        },
+        challenge: "\u512A\u96C5\u8F49\u5834\uFF1A\u6709\u4EBA\u5728\u8B1B\u5C37\u5C2C\u7B11\u8A71\u6642\uFF0C\u4F60\u6703\u5982\u4F55\u81EA\u7136\u5730\u958B\u555F\u4E0B\u4E00\u500B\u5065\u5EB7\u8A71\u984C\uFF1F"
+      },
+      {
+        title: "\u60C5\u5883 11\uFF1A\u807D\u5230\u597D\u670B\u53CB\u5728\u80CC\u5F8C\u50B3\u4F60\u7684\u516B\u5366",
+        description: "\u539F\u672C\u4FE1\u4EFB\u7684\u670B\u53CB\uFF0C\u7ADF\u7136\u628A\u4F60\u7684\u79D8\u5BC6\u544A\u8A34\u5225\u4EBA\u9084\u52A0\u6CB9\u6DFB\u918B...",
+        strategies: {
+          cooldown: "\u66AB\u6642\u505C\u6B62\u8207\u8A72\u670B\u53CB\u7684\u6240\u6709\u79C1\u4EBA\u8A0A\u606F\uFF0C\u907F\u514D\u5728\u61A4\u6012\u4E0B\u8AAA\u51FA\u50B7\u4EBA\u7684\u8A71\u3002",
+          self: "\u53BB\u8DDF\u5176\u4ED6\u5708\u5B50\u7684\u670B\u53CB\u805A\u6703\uFF0C\u4E0D\u8B93\u55AE\u4E00\u670B\u53CB\u5708\u5B9A\u7FA9\u4F60\u7684\u50F9\u503C\u3002",
+          peace: "\u4E0D\u518D\u5206\u4EAB\u5FC3\u4E8B\uFF0C\u4F46\u78B0\u9762\u6642\u7DAD\u6301\u57FA\u672C\u5BA2\u6C23\u3002\u8A8D\u6E05\u5C0D\u65B9\u7684\u754C\u7DDA\uFF0C\u4FDD\u6301\u5B89\u5168\u8DDD\u96E2\u3002"
+        },
+        challenge: "\u60C5\u7DD2\u6025\u6551\u7BB1\uFF1A\u5982\u679C\u807D\u5230\u516B\u5366\u5F88\u53D7\u50B7\uFF0C\u73FE\u5834\u5206\u4EAB\uFF1A\u4F60\u6703\u627E\u54EA\u4E00\u4F4D\u300C\u4E0D\u540C\u670B\u53CB\u5708\u300D\u7684\u670B\u53CB\u804A\u5929\uFF0C\u4F86\u5E6B\u81EA\u5DF1\u8F49\u79FB\u6CE8\u610F\u529B\uFF1F"
+      },
+      {
+        title: "\u60C5\u5883 12\uFF1A\u544A\u767D\u5931\u6557\u5F8C\u7684\u8D70\u5ECA\u76F8\u9047",
+        description: "\u88AB\u62D2\u7D55\u5F8C\u5728\u8D70\u5ECA\u76F8\u9047\uFF0C\u89BA\u5F97\u4E16\u754C\u672B\u65E5\u5230\u4E86\uFF0C\u60F3\u6316\u6D1E\u947D\u9032\u53BB...",
+        strategies: {
+          cooldown: "\u4E0D\u5FC5\u523B\u610F\u9583\u8EB2\u3002\u6234\u4E0A\u8033\u6A5F\u807D\u97F3\u6A02\uFF0C\u5275\u9020\u4E00\u500B\u60C5\u7DD2\u4FDD\u8B77\u5C64\u3002",
+          self: "\u7D66\u81EA\u5DF1\u5B9A\u4E00\u500B\u65B0\u7684\u5B78\u7FD2\u76EE\u6A19\u3002\u628A\u300C\u60F3\u4ED6\u300D\u7684\u6642\u9593\u63DB\u6210\u300C\u6295\u8CC7\u81EA\u5DF1\u300D\u3002",
+          peace: "\u4FDD\u6301\u81EA\u7136\u3002\u4E0D\u9700\u8981\u88DD\u719F\uFF0C\u4E5F\u4E0D\u9700\u8981\u60E1\u8A00\u5411\u5411\u3002\u9EDE\u500B\u982D\uFF0C\u5C55\u73FE\u5927\u65B9\u7684\u614B\u5EA6\u3002"
+        },
+        challenge: "\u8868\u60C5\u7DF4\u7FD2\uFF1A\u7DF4\u7FD2\u4E00\u500B\u300C\u5927\u65B9\u4E14\u4E0D\u5C37\u5C2C\u300D\u7684\u5FAE\u7B11\u9EDE\u982D\u52D5\u4F5C\u3002"
+      },
+      {
+        title: "\u60C5\u5883 13\uFF1A\u88AB\u6372\u5165\u73ED\u4E0A\u7684\u6D3E\u7CFB\u9B25\u722D",
+        description: "\u88AB\u8981\u6C42\u9078\u908A\u7AD9\uFF0C\u5982\u679C\u4E0D\u52A0\u5165\u67D0\u4E00\u6D3E\u5C31\u6703\u88AB\u5B64\u7ACB...",
+        strategies: {
+          cooldown: "\u9000\u51FA\u722D\u8AD6\u7684\u804A\u5929\u7FA4\u7D44\u3002\u544A\u8A34\u5927\u5BB6\u300C\u6211\u6700\u8FD1\u6BD4\u8F03\u5FD9\uFF0C\u6C92\u6CE8\u610F\u5230\u9019\u4E9B\u4E8B\u300D\u3002",
+          self: "\u5C08\u6CE8\u65BC\u6821\u5916\u8208\u8DA3\u3002\u73ED\u7D1A\u6D3E\u7CFB\u53EA\u662F\u4EBA\u751F\u7684\u4E00\u500B\u5C0F\u7AD9\uFF0C\u4E0D\u503C\u5F97\u8017\u795E\u3002",
+          peace: "\u5C0D\u5169\u908A\u90FD\u4FDD\u6301\u53CB\u5584\u4F46\u4E0D\u89AA\u66B1\u3002\u7DF4\u7FD2\u6210\u70BA\u4E00\u500B\u6EAB\u548C\u7684\u300C\u4E2D\u7ACB\u570B\u300D\u3002"
+        },
+        challenge: "\u4E2D\u7ACB\u53F0\u8A5E\uFF1A\u6709\u4EBA\u903C\u4F60\u9078\u908A\u7AD9\u6642\uFF0C\u4F60\u6703\u8AAA\u54EA\u53E5\u8A71\u4F86\u300C\u512A\u96C5\u9000\u5834\u300D\uFF1F"
+      },
+      {
+        title: "\u60C5\u5883 14\uFF1A\u9001\u51FA\u7684\u5FC3\u610F\u88AB\u9000\u56DE\u6216\u51B7\u8655\u7406",
+        description: "\u7CBE\u5FC3\u6E96\u5099\u7684\u79AE\u7269\u6216\u5FC3\u610F\u88AB\u51B7\u843D\uFF0C\u8B93\u4F60\u89BA\u5F97\u53D7\u50B7\u4E14\u6C92\u9762\u5B50...",
+        strategies: {
+          cooldown: "\u4E0D\u8981\u8A62\u554F\u300C\u70BA\u4EC0\u9EBC\u4E0D\u559C\u6B61\uFF1F\u300D\u3002\u628A\u591A\u9918\u7684\u5FC3\u610F\u6536\u8D77\u4F86\uFF0C\u505C\u6B62\u6295\u5165\u3002",
+          self: "\u628A\u79AE\u7269\u62FF\u56DE\u4F86\u7292\u8CDE\u81EA\u5DF1\uFF0C\u6216\u9001\u7D66\u66F4\u73CD\u60DC\u4F60\u7684\u4EBA\u3002\u544A\u8A34\u81EA\u5DF1\uFF1A\u6211\u7684\u5FC3\u610F\u5F88\u73CD\u8CB4\u3002",
+          peace: "\u63A5\u53D7\u300C\u6BCF\u500B\u4EBA\u54C1\u5473\u4E0D\u540C\u300D\u3002\u672A\u4F86\u7DAD\u6301\u666E\u901A\u79AE\u6578\uFF0C\u4E0D\u518D\u63D0\u4F9B\u984D\u5916\u7684\u7279\u6B8A\u7167\u9867\u3002"
+        },
+        challenge: "\u8F49\u5411\u601D\u8003\uFF1A\u5982\u679C\u9019\u4EFD\u5FC3\u610F\u5C0D\u65B9\u6C92\u9818\u60C5\uFF0C\u4F60\u6703\u628A\u5B83\u8F49\u9001\u7D66\u54EA\u4F4D\u652F\u6301\u4F60\u7684\u670B\u53CB\uFF1F"
+      },
+      {
+        title: "\u60C5\u5883 15\uFF1A\u5206\u7D44\u5831\u544A\u610F\u898B\u4E0D\u5408\u3001\u7522\u751F\u885D\u7A81",
+        description: "\u7D44\u54E1\u4E0D\u914D\u5408\u9032\u5EA6\u9084\u5728\u80CC\u5F8C\u8AAA\u4F60\u58DE\u8A71\uFF0C\u8B93\u4F60\u89BA\u5F97\u5FC3\u5F88\u7D2F...",
+        strategies: {
+          cooldown: "\u9664\u4E86\u8A0E\u8AD6\u5831\u544A\uFF0C\u4E0D\u79C1\u4E0B\u806F\u7E6B\u3002\u8A0E\u8AD6\u4E2D\u65B7\u6642\uFF0C\u5148\u6DF1\u547C\u5438\u4E0D\u99AC\u4E0A\u53CD\u64CA\u3002",
+          self: "\u5C08\u5FC3\u628A\u81EA\u5DF1\u7684\u90E8\u5206\u505A\u5230\u6700\u597D\uFF0C\u4F60\u7684\u512A\u79C0\u5C31\u662F\u5C0D\u6D41\u8A00\u871A\u8A9E\u6700\u5F37\u7684\u61C9\u5C0D\u3002",
+          peace: "\u4FDD\u6301\u300C\u516C\u4E8B\u516C\u8FA6\u300D\u7684\u614B\u5EA6\u3002\u5373\u4FBF\u4E0D\u559C\u6B61\u5C0D\u65B9\uFF0C\u4E5F\u8981\u70BA\u4E86\u5831\u544A\u9806\u5229\u5B8C\u6210\u800C\u5408\u4F5C\u3002"
+        },
+        challenge: "\u6E9D\u901A\u793A\u7BC4\uFF1A\u91DD\u5C0D\u5831\u544A\u9032\u5EA6\uFF0C\u8AAA\u51FA\u4E00\u53E5\u5BA2\u89C0\u4E14\u4E0D\u5E36\u653B\u64CA\u6027\u7684\u8981\u6C42\u3002"
+      }
+    ];
+    const tools = [
+      { id: "cooldown", name: "\u964D\u6EAB\u3001\u65B7\u958B\u9023\u7D50", icon: /* @__PURE__ */ import_react3.default.createElement(Shield, { className: "w-6 h-6" }), color: "bg-red-500", barColor: "bg-red-400" },
+      { id: "self", name: "\u91CD\u5FC3\u653E\u56DE\u81EA\u5DF1", icon: /* @__PURE__ */ import_react3.default.createElement(Sparkles, { className: "w-6 h-6" }), color: "bg-blue-500", barColor: "bg-blue-400" },
+      { id: "peace", name: "\u6700\u4F4E\u9650\u5EA6\u7684\u548C\u5E73", icon: /* @__PURE__ */ import_react3.default.createElement(Users, { className: "w-6 h-6" }), color: "bg-yellow-500", barColor: "bg-yellow-400" }
+    ];
+    const handleToolSelect = (toolId) => {
+      setSelectedTool(toolId);
+      if (!completedScenarios.includes(currentScenario)) {
+        setCompletedScenarios([...completedScenarios, currentScenario]);
+      }
+      const newStats = {
+        cooldown: Math.floor(Math.random() * 5),
+        self: Math.floor(Math.random() * 5),
+        peace: Math.floor(Math.random() * 5)
+      };
+      newStats[toolId] += 1;
+      setVoteStats(newStats);
+    };
+    const nextScenario = () => {
+      if (currentScenario < scenarios.length - 1) {
+        setCurrentScenario(currentScenario + 1);
+        setSelectedTool(null);
+        setVoteStats({ cooldown: 0, self: 0, peace: 0 });
+      } else {
+        setStage("conclusion");
+      }
+    };
+    const startChallenge = (index) => {
+      setCurrentScenario(index);
+      setSelectedTool(null);
+      setVoteStats({ cooldown: 0, self: 0, peace: 0 });
+      setStage("challenge");
+    };
+    const totalVotes = Object.values(voteStats).reduce((a, b) => a + b, 0);
+    const renderMenu = () => /* @__PURE__ */ import_react3.default.createElement("div", { className: "animate-in fade-in duration-500 space-y-8" }, /* @__PURE__ */ import_react3.default.createElement("div", { className: "text-center space-y-2" }, /* @__PURE__ */ import_react3.default.createElement("h2", { className: "text-3xl font-black text-slate-800" }, "\u60C5\u5883\u9078\u64C7\u4E3B\u9078\u55AE"), /* @__PURE__ */ import_react3.default.createElement("p", { className: "text-slate-500 font-bold" }, "\u4ECA\u5929\u60F3\u5148\u4FEE\u7149\u54EA\u4E00\u500B\u5FC3\u6CD5\uFF1F")), /* @__PURE__ */ import_react3.default.createElement("div", { className: "grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4" }, scenarios.map((s, i) => /* @__PURE__ */ import_react3.default.createElement(
+      "button",
+      {
+        key: i,
+        onClick: () => startChallenge(i),
+        className: `p-4 rounded-2xl border-2 transition-all text-left flex flex-col justify-between h-32 relative overflow-hidden group ${completedScenarios.includes(i) ? "bg-green-50 border-green-200" : "bg-white border-slate-100 hover:border-indigo-500 hover:shadow-lg"}`
+      },
+      /* @__PURE__ */ import_react3.default.createElement("div", { className: "z-10" }, /* @__PURE__ */ import_react3.default.createElement("span", { className: `text-xs font-black px-2 py-1 rounded-md mb-2 inline-block ${completedScenarios.includes(i) ? "bg-green-500 text-white" : "bg-slate-200 text-slate-600"}` }, "#", i + 1, " ", completedScenarios.includes(i) && "\u2713"), /* @__PURE__ */ import_react3.default.createElement("p", { className: "text-sm font-bold text-slate-700 leading-tight group-hover:text-indigo-600" }, s.title.split("\uFF1A")[1] || s.title)),
+      /* @__PURE__ */ import_react3.default.createElement("div", { className: "absolute -right-2 -bottom-2 opacity-10 group-hover:opacity-20 transition-opacity" }, /* @__PURE__ */ import_react3.default.createElement(Lightbulb, { className: "w-16 h-16" }))
+    ))), /* @__PURE__ */ import_react3.default.createElement("div", { className: "bg-indigo-50 p-6 rounded-[2rem] border-2 border-indigo-100 flex flex-col md:flex-row items-center justify-between gap-4" }, /* @__PURE__ */ import_react3.default.createElement("div", { className: "flex items-center gap-3" }, /* @__PURE__ */ import_react3.default.createElement("div", { className: "bg-indigo-600 p-2 rounded-lg text-white" }, /* @__PURE__ */ import_react3.default.createElement(CircleCheckBig, { className: "w-5 h-5" })), /* @__PURE__ */ import_react3.default.createElement("p", { className: "font-bold text-indigo-900" }, "\u76EE\u524D\u4FEE\u7149\u9032\u5EA6\uFF1A", completedScenarios.length, " / 15")), /* @__PURE__ */ import_react3.default.createElement(
+      "button",
+      {
+        onClick: () => setStage("conclusion"),
+        disabled: completedScenarios.length === 0,
+        className: `px-8 py-3 rounded-full font-black transition-all ${completedScenarios.length > 0 ? "bg-indigo-600 text-white hover:bg-indigo-700" : "bg-slate-200 text-slate-400 cursor-not-allowed"}`
+      },
+      "\u67E5\u770B\u6700\u7D42\u4FEE\u7149\u5831\u544A"
+    )));
+    return /* @__PURE__ */ import_react3.default.createElement("div", { className: "min-h-screen bg-slate-50 p-4 md:p-6 font-sans" }, /* @__PURE__ */ import_react3.default.createElement("div", { className: "max-w-6xl mx-auto" }, /* @__PURE__ */ import_react3.default.createElement("header", { className: "bg-white rounded-3xl p-6 shadow-sm mb-6 border-b-8 border-indigo-600 flex flex-col md:flex-row justify-between items-center gap-4 relative overflow-hidden" }, /* @__PURE__ */ import_react3.default.createElement("div", { className: "flex items-center gap-4 z-10" }, /* @__PURE__ */ import_react3.default.createElement("div", { className: "bg-indigo-600 p-3 rounded-2xl text-white shadow-lg cursor-pointer", onClick: () => setStage("menu") }, /* @__PURE__ */ import_react3.default.createElement(UsersRound, { className: "w-8 h-8" })), /* @__PURE__ */ import_react3.default.createElement("div", null, /* @__PURE__ */ import_react3.default.createElement("h1", { className: "text-2xl font-black text-slate-800 tracking-tight italic" }, "SOCIAL SKILLS 15 CHALLENGE"), /* @__PURE__ */ import_react3.default.createElement("div", { className: "flex items-center gap-2" }, /* @__PURE__ */ import_react3.default.createElement("span", { className: "text-xs font-bold uppercase tracking-wider text-slate-400" }, "\u6559\u5B78\u6A21\u5F0F"), /* @__PURE__ */ import_react3.default.createElement(
+      "button",
+      {
+        onClick: () => setIsClassMode(!isClassMode),
+        className: `relative w-12 h-6 rounded-full transition-colors ${isClassMode ? "bg-green-500" : "bg-slate-300"}`
+      },
+      /* @__PURE__ */ import_react3.default.createElement("div", { className: `absolute top-1 w-4 h-4 bg-white rounded-full transition-transform ${isClassMode ? "left-7" : "left-1"}` })
+    )))), /* @__PURE__ */ import_react3.default.createElement("div", { className: "flex items-center gap-4 z-10" }, stage !== "menu" && /* @__PURE__ */ import_react3.default.createElement(
+      "button",
+      {
+        onClick: () => setStage("menu"),
+        className: "flex items-center gap-2 px-5 py-2 bg-slate-100 text-slate-700 rounded-full font-black hover:bg-indigo-50 hover:text-indigo-600 transition-all border-2 border-transparent hover:border-indigo-200"
+      },
+      /* @__PURE__ */ import_react3.default.createElement(House, { className: "w-5 h-5" }),
+      " \u56DE\u5230\u4E3B\u9078\u55AE"
+    ), /* @__PURE__ */ import_react3.default.createElement("div", { className: "text-right hidden md:block" }, /* @__PURE__ */ import_react3.default.createElement("p", { className: "text-xs font-bold text-slate-400" }, "\u8907\u7FD2\u9032\u5EA6"), /* @__PURE__ */ import_react3.default.createElement("div", { className: "flex gap-1 mt-1" }, scenarios.map((_, i) => /* @__PURE__ */ import_react3.default.createElement("div", { key: i, className: `h-2 w-3 rounded-full ${i === currentScenario && stage === "challenge" ? "bg-indigo-600 w-6" : completedScenarios.includes(i) ? "bg-green-400" : "bg-slate-200"} transition-all` })))))), stage === "menu" ? renderMenu() : stage === "challenge" ? /* @__PURE__ */ import_react3.default.createElement("div", { className: "grid grid-cols-1 lg:grid-cols-12 gap-6 animate-in slide-in-from-right duration-500" }, /* @__PURE__ */ import_react3.default.createElement("div", { className: "lg:col-span-7 space-y-6" }, /* @__PURE__ */ import_react3.default.createElement("div", { className: "bg-white rounded-[3rem] p-10 shadow-md border-2 border-slate-200 relative overflow-hidden min-h-[350px] flex flex-col justify-center" }, /* @__PURE__ */ import_react3.default.createElement("div", { className: "flex items-start gap-5 mb-4 relative z-10" }, /* @__PURE__ */ import_react3.default.createElement("div", { className: "bg-yellow-100 p-4 rounded-3xl shrink-0" }, /* @__PURE__ */ import_react3.default.createElement(Lightbulb, { className: "text-yellow-600 w-10 h-10" })), /* @__PURE__ */ import_react3.default.createElement("div", { className: "w-full" }, /* @__PURE__ */ import_react3.default.createElement("div", { className: "flex justify-between items-center mb-4" }, /* @__PURE__ */ import_react3.default.createElement("h2", { className: "text-3xl font-black text-slate-800" }, scenarios[currentScenario].title), /* @__PURE__ */ import_react3.default.createElement("span", { className: "text-indigo-600 font-black bg-indigo-50 px-3 py-1 rounded-lg text-sm" }, "#", currentScenario + 1, " / 15")), /* @__PURE__ */ import_react3.default.createElement("p", { className: "text-2xl text-slate-600 italic leading-relaxed font-bold bg-slate-50 p-6 rounded-3xl border-l-8 border-indigo-200 shadow-inner" }, "\u300C", scenarios[currentScenario].description, "\u300D")))), /* @__PURE__ */ import_react3.default.createElement("div", { className: "grid grid-cols-1 md:grid-cols-3 gap-4" }, tools.map((tool) => /* @__PURE__ */ import_react3.default.createElement(
+      "button",
+      {
+        key: tool.id,
+        onClick: () => handleToolSelect(tool.id),
+        className: `p-6 rounded-[2.5rem] transition-all flex flex-col items-center gap-3 border-4 ${selectedTool === tool.id ? `${tool.color} text-white scale-105 shadow-2xl` : `bg-white border-slate-200 text-slate-700 hover:border-indigo-400 shadow-sm`}`
+      },
+      /* @__PURE__ */ import_react3.default.createElement("div", { className: `${selectedTool === tool.id ? "bg-white text-slate-800" : tool.color + " text-white"} p-4 rounded-full` }, tool.icon),
+      /* @__PURE__ */ import_react3.default.createElement("span", { className: "font-black text-lg" }, tool.name)
+    )))), /* @__PURE__ */ import_react3.default.createElement("div", { className: "lg:col-span-5 space-y-6" }, isClassMode && /* @__PURE__ */ import_react3.default.createElement("div", { className: "bg-white rounded-[2rem] p-6 shadow-md border-2 border-slate-100" }, /* @__PURE__ */ import_react3.default.createElement("div", { className: "flex items-center gap-2 mb-6" }, /* @__PURE__ */ import_react3.default.createElement(ChartColumn, { className: "text-slate-400 w-5 h-5" }), /* @__PURE__ */ import_react3.default.createElement("h3", { className: "font-bold text-slate-800" }, "\u61C9\u5C0D\u7B56\u7565\u9078\u64C7\u7D71\u8A08")), /* @__PURE__ */ import_react3.default.createElement("div", { className: "space-y-4" }, tools.map((tool) => /* @__PURE__ */ import_react3.default.createElement("div", { key: tool.id, className: "space-y-2" }, /* @__PURE__ */ import_react3.default.createElement("div", { className: "flex justify-between text-sm font-bold text-slate-600" }, /* @__PURE__ */ import_react3.default.createElement("span", null, tool.name), /* @__PURE__ */ import_react3.default.createElement("span", null, selectedTool ? voteStats[tool.id] : 0, " \u7968")), /* @__PURE__ */ import_react3.default.createElement("div", { className: "h-4 bg-slate-100 rounded-full overflow-hidden" }, /* @__PURE__ */ import_react3.default.createElement(
+      "div",
+      {
+        className: `h-full ${tool.barColor} transition-all duration-1000`,
+        style: { width: `${selectedTool && totalVotes > 0 ? voteStats[tool.id] / totalVotes * 100 : 0}%` }
+      }
+    )))))), selectedTool ? /* @__PURE__ */ import_react3.default.createElement("div", { className: "bg-slate-900 text-white rounded-[2.5rem] p-8 shadow-2xl animate-in slide-in-from-bottom duration-500 flex flex-col h-full border-t-8 border-indigo-500" }, /* @__PURE__ */ import_react3.default.createElement("div", { className: "flex-grow" }, /* @__PURE__ */ import_react3.default.createElement("div", { className: "flex items-center gap-2 mb-6" }, /* @__PURE__ */ import_react3.default.createElement("span", { className: "px-5 py-2 rounded-full text-sm font-black bg-indigo-500 text-white uppercase tracking-tighter" }, "\u5DE5\u5177\u61C9\u7528\u5EFA\u8B70")), /* @__PURE__ */ import_react3.default.createElement("div", { className: "space-y-8" }, /* @__PURE__ */ import_react3.default.createElement("p", { className: "text-2xl leading-relaxed font-bold border-l-4 border-yellow-400 pl-4" }, scenarios[currentScenario].strategies[selectedTool]), /* @__PURE__ */ import_react3.default.createElement("div", { className: "bg-slate-800 p-6 rounded-[2rem] border border-slate-700 shadow-inner" }, /* @__PURE__ */ import_react3.default.createElement("h4", { className: "text-yellow-400 font-black mb-3 flex items-center gap-2" }, /* @__PURE__ */ import_react3.default.createElement(Sparkles, { className: "w-5 h-5" }), " \u73FE\u5834\u4E92\u52D5\u4EFB\u52D9\uFF1A"), /* @__PURE__ */ import_react3.default.createElement("p", { className: "text-xl text-slate-200 leading-snug" }, scenarios[currentScenario].challenge)))), /* @__PURE__ */ import_react3.default.createElement("div", { className: "grid grid-cols-2 gap-4 mt-8" }, /* @__PURE__ */ import_react3.default.createElement(
+      "button",
+      {
+        onClick: () => setStage("menu"),
+        className: "py-4 bg-slate-800 text-white rounded-[1.5rem] font-black hover:bg-slate-700 transition-all flex items-center justify-center gap-2 border border-slate-700"
+      },
+      /* @__PURE__ */ import_react3.default.createElement(LayoutGrid, { className: "w-5 h-5" }),
+      " \u9078\u55AE"
+    ), /* @__PURE__ */ import_react3.default.createElement(
+      "button",
+      {
+        onClick: nextScenario,
+        className: "py-4 bg-white text-slate-900 rounded-[1.5rem] font-black hover:bg-yellow-400 transition-all flex items-center justify-center gap-2 shadow-lg"
+      },
+      currentScenario === scenarios.length - 1 ? "\u5B8C\u6210\u6311\u6230" : "\u4E0B\u4E00\u984C",
+      /* @__PURE__ */ import_react3.default.createElement(ChevronRight, { className: "w-6 h-6" })
+    ))) : /* @__PURE__ */ import_react3.default.createElement("div", { className: "bg-indigo-50 rounded-[2.5rem] p-10 border-4 border-dashed border-indigo-200 flex flex-col items-center justify-center text-center space-y-4 h-full" }, /* @__PURE__ */ import_react3.default.createElement("div", { className: "bg-white p-6 rounded-full shadow-xl animate-bounce" }, /* @__PURE__ */ import_react3.default.createElement(Heart, { className: "text-indigo-400 w-12 h-12 fill-current" })), /* @__PURE__ */ import_react3.default.createElement("h3", { className: "text-2xl font-black text-indigo-900" }, "\u6E96\u5099\u597D\u61C9\u5C0D\u4E86\u55CE\uFF1F"), /* @__PURE__ */ import_react3.default.createElement("p", { className: "text-indigo-600 font-bold" }, "\u8ACB\u5F9E\u5DE6\u5074\u9078\u64C7\u4E00\u500B\u4F60\u8A8D\u70BA\u6700\u9069\u5408\u7684\u5FC3\u6CD5\u5DE5\u5177\uFF01")))) : /* @__PURE__ */ import_react3.default.createElement("div", { className: "bg-white rounded-[3.5rem] p-12 shadow-2xl text-center space-y-8 animate-in zoom-in duration-700 max-w-2xl mx-auto" }, /* @__PURE__ */ import_react3.default.createElement("div", { className: "bg-green-100 w-32 h-32 rounded-full flex items-center justify-center mx-auto shadow-inner" }, /* @__PURE__ */ import_react3.default.createElement(Heart, { className: "text-green-600 w-16 h-16 fill-current" })), /* @__PURE__ */ import_react3.default.createElement("div", { className: "space-y-4" }, /* @__PURE__ */ import_react3.default.createElement("h2", { className: "text-5xl font-black text-slate-800 tracking-tighter" }, "\u793E\u4EA4\u5FC3\u6CD5\u5168\u653B\u7565\u9054\u6210\uFF01"), /* @__PURE__ */ import_react3.default.createElement("p", { className: "text-2xl text-slate-600 leading-relaxed" }, "\u606D\u559C\u5B8C\u6210\u4E86\u793E\u4EA4\u6311\u6230\uFF01", /* @__PURE__ */ import_react3.default.createElement("br", null), "\u8A18\u4F4F\uFF1A\u7576\u4F60\u611F\u5230\u300C\u51B7\u6DE1\u3001\u88AB\u9178\u3001\u88AB\u51B7\u843D\u300D\u6642\uFF0C", /* @__PURE__ */ import_react3.default.createElement("br", null), /* @__PURE__ */ import_react3.default.createElement("span", { className: "text-indigo-600 font-black" }, "\u4F60\u96A8\u6642\u53EF\u4EE5\u5F9E\u5DE5\u5177\u7BB1\u62FF\u51FA\u4E00\u62DB\u4F86\u4FDD\u8B77\u81EA\u5DF1\uFF01"))), /* @__PURE__ */ import_react3.default.createElement("div", { className: "flex flex-col md:flex-row gap-4 justify-center pt-6" }, /* @__PURE__ */ import_react3.default.createElement(
+      "button",
+      {
+        onClick: () => setStage("menu"),
+        className: "flex items-center gap-3 px-10 py-5 bg-indigo-600 text-white rounded-full text-xl font-black hover:bg-indigo-700 transition-all shadow-2xl"
+      },
+      /* @__PURE__ */ import_react3.default.createElement(LayoutGrid, { className: "w-6 h-6" }),
+      " \u56DE\u5230\u4E3B\u9078\u55AE"
+    ), /* @__PURE__ */ import_react3.default.createElement(
+      "button",
+      {
+        onClick: () => {
+          setCompletedScenarios([]);
+          setStage("menu");
+        },
+        className: "flex items-center gap-3 px-10 py-5 bg-slate-200 text-slate-700 rounded-full text-xl font-black hover:bg-slate-300 transition-all"
+      },
+      /* @__PURE__ */ import_react3.default.createElement(RefreshCcw, { className: "w-6 h-6" }),
+      " \u91CD\u7F6E\u9032\u5EA6"
+    )))), /* @__PURE__ */ import_react3.default.createElement("footer", { className: "mt-8 text-center text-slate-400 text-xs font-bold uppercase tracking-widest" }, "114-2 \u793E\u6703\u6280\u5DE7\u8AB2\u7A0B\u8907\u7FD2\u7CFB\u7D71"));
+  };
+  var stdin_default = App;
+  return __toCommonJS(stdin_exports);
+})();
+/*! Bundled license information:
+
+lucide-react/dist/esm/shared/src/utils.js:
+  (**
+   * @license lucide-react v0.511.0 - ISC
+   *
+   * This source code is licensed under the ISC license.
+   * See the LICENSE file in the root directory of this source tree.
+   *)
+
+lucide-react/dist/esm/defaultAttributes.js:
+  (**
+   * @license lucide-react v0.511.0 - ISC
+   *
+   * This source code is licensed under the ISC license.
+   * See the LICENSE file in the root directory of this source tree.
+   *)
+
+lucide-react/dist/esm/Icon.js:
+  (**
+   * @license lucide-react v0.511.0 - ISC
+   *
+   * This source code is licensed under the ISC license.
+   * See the LICENSE file in the root directory of this source tree.
+   *)
+
+lucide-react/dist/esm/createLucideIcon.js:
+  (**
+   * @license lucide-react v0.511.0 - ISC
+   *
+   * This source code is licensed under the ISC license.
+   * See the LICENSE file in the root directory of this source tree.
+   *)
+
+lucide-react/dist/esm/icons/chart-column.js:
+  (**
+   * @license lucide-react v0.511.0 - ISC
+   *
+   * This source code is licensed under the ISC license.
+   * See the LICENSE file in the root directory of this source tree.
+   *)
+
+lucide-react/dist/esm/icons/chevron-right.js:
+  (**
+   * @license lucide-react v0.511.0 - ISC
+   *
+   * This source code is licensed under the ISC license.
+   * See the LICENSE file in the root directory of this source tree.
+   *)
+
+lucide-react/dist/esm/icons/circle-check-big.js:
+  (**
+   * @license lucide-react v0.511.0 - ISC
+   *
+   * This source code is licensed under the ISC license.
+   * See the LICENSE file in the root directory of this source tree.
+   *)
+
+lucide-react/dist/esm/icons/heart.js:
+  (**
+   * @license lucide-react v0.511.0 - ISC
+   *
+   * This source code is licensed under the ISC license.
+   * See the LICENSE file in the root directory of this source tree.
+   *)
+
+lucide-react/dist/esm/icons/house.js:
+  (**
+   * @license lucide-react v0.511.0 - ISC
+   *
+   * This source code is licensed under the ISC license.
+   * See the LICENSE file in the root directory of this source tree.
+   *)
+
+lucide-react/dist/esm/icons/layout-grid.js:
+  (**
+   * @license lucide-react v0.511.0 - ISC
+   *
+   * This source code is licensed under the ISC license.
+   * See the LICENSE file in the root directory of this source tree.
+   *)
+
+lucide-react/dist/esm/icons/lightbulb.js:
+  (**
+   * @license lucide-react v0.511.0 - ISC
+   *
+   * This source code is licensed under the ISC license.
+   * See the LICENSE file in the root directory of this source tree.
+   *)
+
+lucide-react/dist/esm/icons/refresh-ccw.js:
+  (**
+   * @license lucide-react v0.511.0 - ISC
+   *
+   * This source code is licensed under the ISC license.
+   * See the LICENSE file in the root directory of this source tree.
+   *)
+
+lucide-react/dist/esm/icons/shield.js:
+  (**
+   * @license lucide-react v0.511.0 - ISC
+   *
+   * This source code is licensed under the ISC license.
+   * See the LICENSE file in the root directory of this source tree.
+   *)
+
+lucide-react/dist/esm/icons/sparkles.js:
+  (**
+   * @license lucide-react v0.511.0 - ISC
+   *
+   * This source code is licensed under the ISC license.
+   * See the LICENSE file in the root directory of this source tree.
+   *)
+
+lucide-react/dist/esm/icons/users-round.js:
+  (**
+   * @license lucide-react v0.511.0 - ISC
+   *
+   * This source code is licensed under the ISC license.
+   * See the LICENSE file in the root directory of this source tree.
+   *)
+
+lucide-react/dist/esm/icons/users.js:
+  (**
+   * @license lucide-react v0.511.0 - ISC
+   *
+   * This source code is licensed under the ISC license.
+   * See the LICENSE file in the root directory of this source tree.
+   *)
+
+lucide-react/dist/esm/lucide-react.js:
+  (**
+   * @license lucide-react v0.511.0 - ISC
+   *
+   * This source code is licensed under the ISC license.
+   * See the LICENSE file in the root directory of this source tree.
+   *)
+*/
+
+            document.addEventListener('DOMContentLoaded', function() {
+                const root = ReactDOM.createRoot(document.getElementById('root'));
+
+                // Include the compiled error boundary code
+                var ErrorBoundaryModule = (() => {
+  var __defProp = Object.defineProperty;
+  var __getOwnPropNames = Object.getOwnPropertyNames;
+  var __getOwnPropSymbols = Object.getOwnPropertySymbols;
+  var __hasOwnProp = Object.prototype.hasOwnProperty;
+  var __propIsEnum = Object.prototype.propertyIsEnumerable;
+  var __defNormalProp = (obj, key, value) => key in obj ? __defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
+  var __spreadValues = (a, b) => {
+    for (var prop in b || (b = {}))
+      if (__hasOwnProp.call(b, prop))
+        __defNormalProp(a, prop, b[prop]);
+    if (__getOwnPropSymbols)
+      for (var prop of __getOwnPropSymbols(b)) {
+        if (__propIsEnum.call(b, prop))
+          __defNormalProp(a, prop, b[prop]);
+      }
+    return a;
+  };
+  var __objRest = (source, exclude) => {
+    var target = {};
+    for (var prop in source)
+      if (__hasOwnProp.call(source, prop) && exclude.indexOf(prop) < 0)
+        target[prop] = source[prop];
+    if (source != null && __getOwnPropSymbols)
+      for (var prop of __getOwnPropSymbols(source)) {
+        if (exclude.indexOf(prop) < 0 && __propIsEnum.call(source, prop))
+          target[prop] = source[prop];
+      }
+    return target;
+  };
+  var __commonJS = (cb, mod) => function __require() {
+    return mod || (0, cb[__getOwnPropNames(cb)[0]])((mod = { exports: {} }).exports, mod), mod.exports;
+  };
+
+  // node_modules/react/cjs/react.development.js
+  var require_react_development = __commonJS({
+    "node_modules/react/cjs/react.development.js"(exports, module) {
+      "use strict";
+      (function() {
+        function defineDeprecationWarning(methodName, info) {
+          Object.defineProperty(Component.prototype, methodName, {
+            get: function() {
+              console.warn(
+                "%s(...) is deprecated in plain JavaScript React classes. %s",
+                info[0],
+                info[1]
+              );
+            }
+          });
+        }
+        function getIteratorFn(maybeIterable) {
+          if (null === maybeIterable || "object" !== typeof maybeIterable)
+            return null;
+          maybeIterable = MAYBE_ITERATOR_SYMBOL && maybeIterable[MAYBE_ITERATOR_SYMBOL] || maybeIterable["@@iterator"];
+          return "function" === typeof maybeIterable ? maybeIterable : null;
+        }
+        function warnNoop(publicInstance, callerName) {
+          publicInstance = (publicInstance = publicInstance.constructor) && (publicInstance.displayName || publicInstance.name) || "ReactClass";
+          var warningKey = publicInstance + "." + callerName;
+          didWarnStateUpdateForUnmountedComponent[warningKey] || (console.error(
+            "Can't call %s on a component that is not yet mounted. This is a no-op, but it might indicate a bug in your application. Instead, assign to `this.state` directly or define a `state = {};` class property with the desired state in the %s component.",
+            callerName,
+            publicInstance
+          ), didWarnStateUpdateForUnmountedComponent[warningKey] = true);
+        }
+        function Component(props, context, updater) {
+          this.props = props;
+          this.context = context;
+          this.refs = emptyObject;
+          this.updater = updater || ReactNoopUpdateQueue;
+        }
+        function ComponentDummy() {
+        }
+        function PureComponent(props, context, updater) {
+          this.props = props;
+          this.context = context;
+          this.refs = emptyObject;
+          this.updater = updater || ReactNoopUpdateQueue;
+        }
+        function testStringCoercion(value) {
+          return "" + value;
+        }
+        function checkKeyStringCoercion(value) {
+          try {
+            testStringCoercion(value);
+            var JSCompiler_inline_result = false;
+          } catch (e) {
+            JSCompiler_inline_result = true;
+          }
+          if (JSCompiler_inline_result) {
+            JSCompiler_inline_result = console;
+            var JSCompiler_temp_const = JSCompiler_inline_result.error;
+            var JSCompiler_inline_result$jscomp$0 = "function" === typeof Symbol && Symbol.toStringTag && value[Symbol.toStringTag] || value.constructor.name || "Object";
+            JSCompiler_temp_const.call(
+              JSCompiler_inline_result,
+              "The provided key is an unsupported type %s. This value must be coerced to a string before using it here.",
+              JSCompiler_inline_result$jscomp$0
+            );
+            return testStringCoercion(value);
+          }
+        }
+        function getComponentNameFromType(type) {
+          if (null == type)
+            return null;
+          if ("function" === typeof type)
+            return type.$$typeof === REACT_CLIENT_REFERENCE ? null : type.displayName || type.name || null;
+          if ("string" === typeof type)
+            return type;
+          switch (type) {
+            case REACT_FRAGMENT_TYPE:
+              return "Fragment";
+            case REACT_PROFILER_TYPE:
+              return "Profiler";
+            case REACT_STRICT_MODE_TYPE:
+              return "StrictMode";
+            case REACT_SUSPENSE_TYPE:
+              return "Suspense";
+            case REACT_SUSPENSE_LIST_TYPE:
+              return "SuspenseList";
+            case REACT_ACTIVITY_TYPE:
+              return "Activity";
+          }
+          if ("object" === typeof type)
+            switch ("number" === typeof type.tag && console.error(
+              "Received an unexpected object in getComponentNameFromType(). This is likely a bug in React. Please file an issue."
+            ), type.$$typeof) {
+              case REACT_PORTAL_TYPE:
+                return "Portal";
+              case REACT_CONTEXT_TYPE:
+                return (type.displayName || "Context") + ".Provider";
+              case REACT_CONSUMER_TYPE:
+                return (type._context.displayName || "Context") + ".Consumer";
+              case REACT_FORWARD_REF_TYPE:
+                var innerType = type.render;
+                type = type.displayName;
+                type || (type = innerType.displayName || innerType.name || "", type = "" !== type ? "ForwardRef(" + type + ")" : "ForwardRef");
+                return type;
+              case REACT_MEMO_TYPE:
+                return innerType = type.displayName || null, null !== innerType ? innerType : getComponentNameFromType(type.type) || "Memo";
+              case REACT_LAZY_TYPE:
+                innerType = type._payload;
+                type = type._init;
+                try {
+                  return getComponentNameFromType(type(innerType));
+                } catch (x) {
+                }
+            }
+          return null;
+        }
+        function getTaskName(type) {
+          if (type === REACT_FRAGMENT_TYPE)
+            return "<>";
+          if ("object" === typeof type && null !== type && type.$$typeof === REACT_LAZY_TYPE)
+            return "<...>";
+          try {
+            var name = getComponentNameFromType(type);
+            return name ? "<" + name + ">" : "<...>";
+          } catch (x) {
+            return "<...>";
+          }
+        }
+        function getOwner() {
+          var dispatcher = ReactSharedInternals.A;
+          return null === dispatcher ? null : dispatcher.getOwner();
+        }
+        function UnknownOwner() {
+          return Error("react-stack-top-frame");
+        }
+        function hasValidKey(config) {
+          if (hasOwnProperty.call(config, "key")) {
+            var getter = Object.getOwnPropertyDescriptor(config, "key").get;
+            if (getter && getter.isReactWarning)
+              return false;
+          }
+          return void 0 !== config.key;
+        }
+        function defineKeyPropWarningGetter(props, displayName) {
+          function warnAboutAccessingKey() {
+            specialPropKeyWarningShown || (specialPropKeyWarningShown = true, console.error(
+              "%s: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://react.dev/link/special-props)",
+              displayName
+            ));
+          }
+          warnAboutAccessingKey.isReactWarning = true;
+          Object.defineProperty(props, "key", {
+            get: warnAboutAccessingKey,
+            configurable: true
+          });
+        }
+        function elementRefGetterWithDeprecationWarning() {
+          var componentName = getComponentNameFromType(this.type);
+          didWarnAboutElementRef[componentName] || (didWarnAboutElementRef[componentName] = true, console.error(
+            "Accessing element.ref was removed in React 19. ref is now a regular prop. It will be removed from the JSX Element type in a future release."
+          ));
+          componentName = this.props.ref;
+          return void 0 !== componentName ? componentName : null;
+        }
+        function ReactElement(type, key, self, source, owner, props, debugStack, debugTask) {
+          self = props.ref;
+          type = {
+            $$typeof: REACT_ELEMENT_TYPE,
+            type,
+            key,
+            props,
+            _owner: owner
+          };
+          null !== (void 0 !== self ? self : null) ? Object.defineProperty(type, "ref", {
+            enumerable: false,
+            get: elementRefGetterWithDeprecationWarning
+          }) : Object.defineProperty(type, "ref", { enumerable: false, value: null });
+          type._store = {};
+          Object.defineProperty(type._store, "validated", {
+            configurable: false,
+            enumerable: false,
+            writable: true,
+            value: 0
+          });
+          Object.defineProperty(type, "_debugInfo", {
+            configurable: false,
+            enumerable: false,
+            writable: true,
+            value: null
+          });
+          Object.defineProperty(type, "_debugStack", {
+            configurable: false,
+            enumerable: false,
+            writable: true,
+            value: debugStack
+          });
+          Object.defineProperty(type, "_debugTask", {
+            configurable: false,
+            enumerable: false,
+            writable: true,
+            value: debugTask
+          });
+          Object.freeze && (Object.freeze(type.props), Object.freeze(type));
+          return type;
+        }
+        function cloneAndReplaceKey(oldElement, newKey) {
+          newKey = ReactElement(
+            oldElement.type,
+            newKey,
+            void 0,
+            void 0,
+            oldElement._owner,
+            oldElement.props,
+            oldElement._debugStack,
+            oldElement._debugTask
+          );
+          oldElement._store && (newKey._store.validated = oldElement._store.validated);
+          return newKey;
+        }
+        function isValidElement(object) {
+          return "object" === typeof object && null !== object && object.$$typeof === REACT_ELEMENT_TYPE;
+        }
+        function escape(key) {
+          var escaperLookup = { "=": "=0", ":": "=2" };
+          return "$" + key.replace(/[=:]/g, function(match) {
+            return escaperLookup[match];
+          });
+        }
+        function getElementKey(element, index) {
+          return "object" === typeof element && null !== element && null != element.key ? (checkKeyStringCoercion(element.key), escape("" + element.key)) : index.toString(36);
+        }
+        function noop$1() {
+        }
+        function resolveThenable(thenable) {
+          switch (thenable.status) {
+            case "fulfilled":
+              return thenable.value;
+            case "rejected":
+              throw thenable.reason;
+            default:
+              switch ("string" === typeof thenable.status ? thenable.then(noop$1, noop$1) : (thenable.status = "pending", thenable.then(
+                function(fulfilledValue) {
+                  "pending" === thenable.status && (thenable.status = "fulfilled", thenable.value = fulfilledValue);
+                },
+                function(error) {
+                  "pending" === thenable.status && (thenable.status = "rejected", thenable.reason = error);
+                }
+              )), thenable.status) {
+                case "fulfilled":
+                  return thenable.value;
+                case "rejected":
+                  throw thenable.reason;
+              }
+          }
+          throw thenable;
+        }
+        function mapIntoArray(children, array, escapedPrefix, nameSoFar, callback) {
+          var type = typeof children;
+          if ("undefined" === type || "boolean" === type)
+            children = null;
+          var invokeCallback = false;
+          if (null === children)
+            invokeCallback = true;
+          else
+            switch (type) {
+              case "bigint":
+              case "string":
+              case "number":
+                invokeCallback = true;
+                break;
+              case "object":
+                switch (children.$$typeof) {
+                  case REACT_ELEMENT_TYPE:
+                  case REACT_PORTAL_TYPE:
+                    invokeCallback = true;
+                    break;
+                  case REACT_LAZY_TYPE:
+                    return invokeCallback = children._init, mapIntoArray(
+                      invokeCallback(children._payload),
+                      array,
+                      escapedPrefix,
+                      nameSoFar,
+                      callback
+                    );
+                }
+            }
+          if (invokeCallback) {
+            invokeCallback = children;
+            callback = callback(invokeCallback);
+            var childKey = "" === nameSoFar ? "." + getElementKey(invokeCallback, 0) : nameSoFar;
+            isArrayImpl(callback) ? (escapedPrefix = "", null != childKey && (escapedPrefix = childKey.replace(userProvidedKeyEscapeRegex, "$&/") + "/"), mapIntoArray(callback, array, escapedPrefix, "", function(c) {
+              return c;
+            })) : null != callback && (isValidElement(callback) && (null != callback.key && (invokeCallback && invokeCallback.key === callback.key || checkKeyStringCoercion(callback.key)), escapedPrefix = cloneAndReplaceKey(
+              callback,
+              escapedPrefix + (null == callback.key || invokeCallback && invokeCallback.key === callback.key ? "" : ("" + callback.key).replace(
+                userProvidedKeyEscapeRegex,
+                "$&/"
+              ) + "/") + childKey
+            ), "" !== nameSoFar && null != invokeCallback && isValidElement(invokeCallback) && null == invokeCallback.key && invokeCallback._store && !invokeCallback._store.validated && (escapedPrefix._store.validated = 2), callback = escapedPrefix), array.push(callback));
+            return 1;
+          }
+          invokeCallback = 0;
+          childKey = "" === nameSoFar ? "." : nameSoFar + ":";
+          if (isArrayImpl(children))
+            for (var i = 0; i < children.length; i++)
+              nameSoFar = children[i], type = childKey + getElementKey(nameSoFar, i), invokeCallback += mapIntoArray(
+                nameSoFar,
+                array,
+                escapedPrefix,
+                type,
+                callback
+              );
+          else if (i = getIteratorFn(children), "function" === typeof i)
+            for (i === children.entries && (didWarnAboutMaps || console.warn(
+              "Using Maps as children is not supported. Use an array of keyed ReactElements instead."
+            ), didWarnAboutMaps = true), children = i.call(children), i = 0; !(nameSoFar = children.next()).done; )
+              nameSoFar = nameSoFar.value, type = childKey + getElementKey(nameSoFar, i++), invokeCallback += mapIntoArray(
+                nameSoFar,
+                array,
+                escapedPrefix,
+                type,
+                callback
+              );
+          else if ("object" === type) {
+            if ("function" === typeof children.then)
+              return mapIntoArray(
+                resolveThenable(children),
+                array,
+                escapedPrefix,
+                nameSoFar,
+                callback
+              );
+            array = String(children);
+            throw Error(
+              "Objects are not valid as a React child (found: " + ("[object Object]" === array ? "object with keys {" + Object.keys(children).join(", ") + "}" : array) + "). If you meant to render a collection of children, use an array instead."
+            );
+          }
+          return invokeCallback;
+        }
+        function mapChildren(children, func, context) {
+          if (null == children)
+            return children;
+          var result = [], count = 0;
+          mapIntoArray(children, result, "", "", function(child) {
+            return func.call(context, child, count++);
+          });
+          return result;
+        }
+        function lazyInitializer(payload) {
+          if (-1 === payload._status) {
+            var ctor = payload._result;
+            ctor = ctor();
+            ctor.then(
+              function(moduleObject) {
+                if (0 === payload._status || -1 === payload._status)
+                  payload._status = 1, payload._result = moduleObject;
+              },
+              function(error) {
+                if (0 === payload._status || -1 === payload._status)
+                  payload._status = 2, payload._result = error;
+              }
+            );
+            -1 === payload._status && (payload._status = 0, payload._result = ctor);
+          }
+          if (1 === payload._status)
+            return ctor = payload._result, void 0 === ctor && console.error(
+              "lazy: Expected the result of a dynamic import() call. Instead received: %s\n\nYour code should look like: \n  const MyComponent = lazy(() => import('./MyComponent'))\n\nDid you accidentally put curly braces around the import?",
+              ctor
+            ), "default" in ctor || console.error(
+              "lazy: Expected the result of a dynamic import() call. Instead received: %s\n\nYour code should look like: \n  const MyComponent = lazy(() => import('./MyComponent'))",
+              ctor
+            ), ctor.default;
+          throw payload._result;
+        }
+        function resolveDispatcher() {
+          var dispatcher = ReactSharedInternals.H;
+          null === dispatcher && console.error(
+            "Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons:\n1. You might have mismatching versions of React and the renderer (such as React DOM)\n2. You might be breaking the Rules of Hooks\n3. You might have more than one copy of React in the same app\nSee https://react.dev/link/invalid-hook-call for tips about how to debug and fix this problem."
+          );
+          return dispatcher;
+        }
+        function noop() {
+        }
+        function enqueueTask(task) {
+          if (null === enqueueTaskImpl)
+            try {
+              var requireString = ("require" + Math.random()).slice(0, 7);
+              enqueueTaskImpl = (module && module[requireString]).call(
+                module,
+                "timers"
+              ).setImmediate;
+            } catch (_err) {
+              enqueueTaskImpl = function(callback) {
+                false === didWarnAboutMessageChannel && (didWarnAboutMessageChannel = true, "undefined" === typeof MessageChannel && console.error(
+                  "This browser does not have a MessageChannel implementation, so enqueuing tasks via await act(async () => ...) will fail. Please file an issue at https://github.com/facebook/react/issues if you encounter this warning."
+                ));
+                var channel = new MessageChannel();
+                channel.port1.onmessage = callback;
+                channel.port2.postMessage(void 0);
+              };
+            }
+          return enqueueTaskImpl(task);
+        }
+        function aggregateErrors(errors) {
+          return 1 < errors.length && "function" === typeof AggregateError ? new AggregateError(errors) : errors[0];
+        }
+        function popActScope(prevActQueue, prevActScopeDepth) {
+          prevActScopeDepth !== actScopeDepth - 1 && console.error(
+            "You seem to have overlapping act() calls, this is not supported. Be sure to await previous act() calls before making a new one. "
+          );
+          actScopeDepth = prevActScopeDepth;
+        }
+        function recursivelyFlushAsyncActWork(returnValue, resolve, reject) {
+          var queue = ReactSharedInternals.actQueue;
+          if (null !== queue)
+            if (0 !== queue.length)
+              try {
+                flushActQueue(queue);
+                enqueueTask(function() {
+                  return recursivelyFlushAsyncActWork(returnValue, resolve, reject);
+                });
+                return;
+              } catch (error) {
+                ReactSharedInternals.thrownErrors.push(error);
+              }
+            else
+              ReactSharedInternals.actQueue = null;
+          0 < ReactSharedInternals.thrownErrors.length ? (queue = aggregateErrors(ReactSharedInternals.thrownErrors), ReactSharedInternals.thrownErrors.length = 0, reject(queue)) : resolve(returnValue);
+        }
+        function flushActQueue(queue) {
+          if (!isFlushing) {
+            isFlushing = true;
+            var i = 0;
+            try {
+              for (; i < queue.length; i++) {
+                var callback = queue[i];
+                do {
+                  ReactSharedInternals.didUsePromise = false;
+                  var continuation = callback(false);
+                  if (null !== continuation) {
+                    if (ReactSharedInternals.didUsePromise) {
+                      queue[i] = callback;
+                      queue.splice(0, i);
+                      return;
+                    }
+                    callback = continuation;
+                  } else
+                    break;
+                } while (1);
+              }
+              queue.length = 0;
+            } catch (error) {
+              queue.splice(0, i + 1), ReactSharedInternals.thrownErrors.push(error);
+            } finally {
+              isFlushing = false;
+            }
+          }
+        }
+        "undefined" !== typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ && "function" === typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart && __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart(Error());
+        var REACT_ELEMENT_TYPE = Symbol.for("react.transitional.element"), REACT_PORTAL_TYPE = Symbol.for("react.portal"), REACT_FRAGMENT_TYPE = Symbol.for("react.fragment"), REACT_STRICT_MODE_TYPE = Symbol.for("react.strict_mode"), REACT_PROFILER_TYPE = Symbol.for("react.profiler");
+        Symbol.for("react.provider");
+        var REACT_CONSUMER_TYPE = Symbol.for("react.consumer"), REACT_CONTEXT_TYPE = Symbol.for("react.context"), REACT_FORWARD_REF_TYPE = Symbol.for("react.forward_ref"), REACT_SUSPENSE_TYPE = Symbol.for("react.suspense"), REACT_SUSPENSE_LIST_TYPE = Symbol.for("react.suspense_list"), REACT_MEMO_TYPE = Symbol.for("react.memo"), REACT_LAZY_TYPE = Symbol.for("react.lazy"), REACT_ACTIVITY_TYPE = Symbol.for("react.activity"), MAYBE_ITERATOR_SYMBOL = Symbol.iterator, didWarnStateUpdateForUnmountedComponent = {}, ReactNoopUpdateQueue = {
+          isMounted: function() {
+            return false;
+          },
+          enqueueForceUpdate: function(publicInstance) {
+            warnNoop(publicInstance, "forceUpdate");
+          },
+          enqueueReplaceState: function(publicInstance) {
+            warnNoop(publicInstance, "replaceState");
+          },
+          enqueueSetState: function(publicInstance) {
+            warnNoop(publicInstance, "setState");
+          }
+        }, assign = Object.assign, emptyObject = {};
+        Object.freeze(emptyObject);
+        Component.prototype.isReactComponent = {};
+        Component.prototype.setState = function(partialState, callback) {
+          if ("object" !== typeof partialState && "function" !== typeof partialState && null != partialState)
+            throw Error(
+              "takes an object of state variables to update or a function which returns an object of state variables."
+            );
+          this.updater.enqueueSetState(this, partialState, callback, "setState");
+        };
+        Component.prototype.forceUpdate = function(callback) {
+          this.updater.enqueueForceUpdate(this, callback, "forceUpdate");
+        };
+        var deprecatedAPIs = {
+          isMounted: [
+            "isMounted",
+            "Instead, make sure to clean up subscriptions and pending requests in componentWillUnmount to prevent memory leaks."
+          ],
+          replaceState: [
+            "replaceState",
+            "Refactor your code to use setState instead (see https://github.com/facebook/react/issues/3236)."
+          ]
+        }, fnName;
+        for (fnName in deprecatedAPIs)
+          deprecatedAPIs.hasOwnProperty(fnName) && defineDeprecationWarning(fnName, deprecatedAPIs[fnName]);
+        ComponentDummy.prototype = Component.prototype;
+        deprecatedAPIs = PureComponent.prototype = new ComponentDummy();
+        deprecatedAPIs.constructor = PureComponent;
+        assign(deprecatedAPIs, Component.prototype);
+        deprecatedAPIs.isPureReactComponent = true;
+        var isArrayImpl = Array.isArray, REACT_CLIENT_REFERENCE = Symbol.for("react.client.reference"), ReactSharedInternals = {
+          H: null,
+          A: null,
+          T: null,
+          S: null,
+          V: null,
+          actQueue: null,
+          isBatchingLegacy: false,
+          didScheduleLegacyUpdate: false,
+          didUsePromise: false,
+          thrownErrors: [],
+          getCurrentStack: null,
+          recentlyCreatedOwnerStacks: 0
+        }, hasOwnProperty = Object.prototype.hasOwnProperty, createTask = console.createTask ? console.createTask : function() {
+          return null;
+        };
+        deprecatedAPIs = {
+          "react-stack-bottom-frame": function(callStackForError) {
+            return callStackForError();
+          }
+        };
+        var specialPropKeyWarningShown, didWarnAboutOldJSXRuntime;
+        var didWarnAboutElementRef = {};
+        var unknownOwnerDebugStack = deprecatedAPIs["react-stack-bottom-frame"].bind(deprecatedAPIs, UnknownOwner)();
+        var unknownOwnerDebugTask = createTask(getTaskName(UnknownOwner));
+        var didWarnAboutMaps = false, userProvidedKeyEscapeRegex = /\/+/g, reportGlobalError = "function" === typeof reportError ? reportError : function(error) {
+          if ("object" === typeof window && "function" === typeof window.ErrorEvent) {
+            var event = new window.ErrorEvent("error", {
+              bubbles: true,
+              cancelable: true,
+              message: "object" === typeof error && null !== error && "string" === typeof error.message ? String(error.message) : String(error),
+              error
+            });
+            if (!window.dispatchEvent(event))
+              return;
+          } else if ("object" === typeof process && "function" === typeof process.emit) {
+            process.emit("uncaughtException", error);
+            return;
+          }
+          console.error(error);
+        }, didWarnAboutMessageChannel = false, enqueueTaskImpl = null, actScopeDepth = 0, didWarnNoAwaitAct = false, isFlushing = false, queueSeveralMicrotasks = "function" === typeof queueMicrotask ? function(callback) {
+          queueMicrotask(function() {
+            return queueMicrotask(callback);
+          });
+        } : enqueueTask;
+        deprecatedAPIs = Object.freeze({
+          __proto__: null,
+          c: function(size) {
+            return resolveDispatcher().useMemoCache(size);
+          }
+        });
+        exports.Children = {
+          map: mapChildren,
+          forEach: function(children, forEachFunc, forEachContext) {
+            mapChildren(
+              children,
+              function() {
+                forEachFunc.apply(this, arguments);
+              },
+              forEachContext
+            );
+          },
+          count: function(children) {
+            var n = 0;
+            mapChildren(children, function() {
+              n++;
+            });
+            return n;
+          },
+          toArray: function(children) {
+            return mapChildren(children, function(child) {
+              return child;
+            }) || [];
+          },
+          only: function(children) {
+            if (!isValidElement(children))
+              throw Error(
+                "React.Children.only expected to receive a single React element child."
+              );
+            return children;
+          }
+        };
+        exports.Component = Component;
+        exports.Fragment = REACT_FRAGMENT_TYPE;
+        exports.Profiler = REACT_PROFILER_TYPE;
+        exports.PureComponent = PureComponent;
+        exports.StrictMode = REACT_STRICT_MODE_TYPE;
+        exports.Suspense = REACT_SUSPENSE_TYPE;
+        exports.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE = ReactSharedInternals;
+        exports.__COMPILER_RUNTIME = deprecatedAPIs;
+        exports.act = function(callback) {
+          var prevActQueue = ReactSharedInternals.actQueue, prevActScopeDepth = actScopeDepth;
+          actScopeDepth++;
+          var queue = ReactSharedInternals.actQueue = null !== prevActQueue ? prevActQueue : [], didAwaitActCall = false;
+          try {
+            var result = callback();
+          } catch (error) {
+            ReactSharedInternals.thrownErrors.push(error);
+          }
+          if (0 < ReactSharedInternals.thrownErrors.length)
+            throw popActScope(prevActQueue, prevActScopeDepth), callback = aggregateErrors(ReactSharedInternals.thrownErrors), ReactSharedInternals.thrownErrors.length = 0, callback;
+          if (null !== result && "object" === typeof result && "function" === typeof result.then) {
+            var thenable = result;
+            queueSeveralMicrotasks(function() {
+              didAwaitActCall || didWarnNoAwaitAct || (didWarnNoAwaitAct = true, console.error(
+                "You called act(async () => ...) without await. This could lead to unexpected testing behaviour, interleaving multiple act calls and mixing their scopes. You should - await act(async () => ...);"
+              ));
+            });
+            return {
+              then: function(resolve, reject) {
+                didAwaitActCall = true;
+                thenable.then(
+                  function(returnValue) {
+                    popActScope(prevActQueue, prevActScopeDepth);
+                    if (0 === prevActScopeDepth) {
+                      try {
+                        flushActQueue(queue), enqueueTask(function() {
+                          return recursivelyFlushAsyncActWork(
+                            returnValue,
+                            resolve,
+                            reject
+                          );
+                        });
+                      } catch (error$0) {
+                        ReactSharedInternals.thrownErrors.push(error$0);
+                      }
+                      if (0 < ReactSharedInternals.thrownErrors.length) {
+                        var _thrownError = aggregateErrors(
+                          ReactSharedInternals.thrownErrors
+                        );
+                        ReactSharedInternals.thrownErrors.length = 0;
+                        reject(_thrownError);
+                      }
+                    } else
+                      resolve(returnValue);
+                  },
+                  function(error) {
+                    popActScope(prevActQueue, prevActScopeDepth);
+                    0 < ReactSharedInternals.thrownErrors.length ? (error = aggregateErrors(
+                      ReactSharedInternals.thrownErrors
+                    ), ReactSharedInternals.thrownErrors.length = 0, reject(error)) : reject(error);
+                  }
+                );
+              }
+            };
+          }
+          var returnValue$jscomp$0 = result;
+          popActScope(prevActQueue, prevActScopeDepth);
+          0 === prevActScopeDepth && (flushActQueue(queue), 0 !== queue.length && queueSeveralMicrotasks(function() {
+            didAwaitActCall || didWarnNoAwaitAct || (didWarnNoAwaitAct = true, console.error(
+              "A component suspended inside an `act` scope, but the `act` call was not awaited. When testing React components that depend on asynchronous data, you must await the result:\n\nawait act(() => ...)"
+            ));
+          }), ReactSharedInternals.actQueue = null);
+          if (0 < ReactSharedInternals.thrownErrors.length)
+            throw callback = aggregateErrors(ReactSharedInternals.thrownErrors), ReactSharedInternals.thrownErrors.length = 0, callback;
+          return {
+            then: function(resolve, reject) {
+              didAwaitActCall = true;
+              0 === prevActScopeDepth ? (ReactSharedInternals.actQueue = queue, enqueueTask(function() {
+                return recursivelyFlushAsyncActWork(
+                  returnValue$jscomp$0,
+                  resolve,
+                  reject
+                );
+              })) : resolve(returnValue$jscomp$0);
+            }
+          };
+        };
+        exports.cache = function(fn) {
+          return function() {
+            return fn.apply(null, arguments);
+          };
+        };
+        exports.captureOwnerStack = function() {
+          var getCurrentStack = ReactSharedInternals.getCurrentStack;
+          return null === getCurrentStack ? null : getCurrentStack();
+        };
+        exports.cloneElement = function(element, config, children) {
+          if (null === element || void 0 === element)
+            throw Error(
+              "The argument must be a React element, but you passed " + element + "."
+            );
+          var props = assign({}, element.props), key = element.key, owner = element._owner;
+          if (null != config) {
+            var JSCompiler_inline_result;
+            a: {
+              if (hasOwnProperty.call(config, "ref") && (JSCompiler_inline_result = Object.getOwnPropertyDescriptor(
+                config,
+                "ref"
+              ).get) && JSCompiler_inline_result.isReactWarning) {
+                JSCompiler_inline_result = false;
+                break a;
+              }
+              JSCompiler_inline_result = void 0 !== config.ref;
+            }
+            JSCompiler_inline_result && (owner = getOwner());
+            hasValidKey(config) && (checkKeyStringCoercion(config.key), key = "" + config.key);
+            for (propName in config)
+              !hasOwnProperty.call(config, propName) || "key" === propName || "__self" === propName || "__source" === propName || "ref" === propName && void 0 === config.ref || (props[propName] = config[propName]);
+          }
+          var propName = arguments.length - 2;
+          if (1 === propName)
+            props.children = children;
+          else if (1 < propName) {
+            JSCompiler_inline_result = Array(propName);
+            for (var i = 0; i < propName; i++)
+              JSCompiler_inline_result[i] = arguments[i + 2];
+            props.children = JSCompiler_inline_result;
+          }
+          props = ReactElement(
+            element.type,
+            key,
+            void 0,
+            void 0,
+            owner,
+            props,
+            element._debugStack,
+            element._debugTask
+          );
+          for (key = 2; key < arguments.length; key++)
+            owner = arguments[key], isValidElement(owner) && owner._store && (owner._store.validated = 1);
+          return props;
+        };
+        exports.createContext = function(defaultValue) {
+          defaultValue = {
+            $$typeof: REACT_CONTEXT_TYPE,
+            _currentValue: defaultValue,
+            _currentValue2: defaultValue,
+            _threadCount: 0,
+            Provider: null,
+            Consumer: null
+          };
+          defaultValue.Provider = defaultValue;
+          defaultValue.Consumer = {
+            $$typeof: REACT_CONSUMER_TYPE,
+            _context: defaultValue
+          };
+          defaultValue._currentRenderer = null;
+          defaultValue._currentRenderer2 = null;
+          return defaultValue;
+        };
+        exports.createElement = function(type, config, children) {
+          for (var i = 2; i < arguments.length; i++) {
+            var node = arguments[i];
+            isValidElement(node) && node._store && (node._store.validated = 1);
+          }
+          i = {};
+          node = null;
+          if (null != config)
+            for (propName in didWarnAboutOldJSXRuntime || !("__self" in config) || "key" in config || (didWarnAboutOldJSXRuntime = true, console.warn(
+              "Your app (or one of its dependencies) is using an outdated JSX transform. Update to the modern JSX transform for faster performance: https://react.dev/link/new-jsx-transform"
+            )), hasValidKey(config) && (checkKeyStringCoercion(config.key), node = "" + config.key), config)
+              hasOwnProperty.call(config, propName) && "key" !== propName && "__self" !== propName && "__source" !== propName && (i[propName] = config[propName]);
+          var childrenLength = arguments.length - 2;
+          if (1 === childrenLength)
+            i.children = children;
+          else if (1 < childrenLength) {
+            for (var childArray = Array(childrenLength), _i = 0; _i < childrenLength; _i++)
+              childArray[_i] = arguments[_i + 2];
+            Object.freeze && Object.freeze(childArray);
+            i.children = childArray;
+          }
+          if (type && type.defaultProps)
+            for (propName in childrenLength = type.defaultProps, childrenLength)
+              void 0 === i[propName] && (i[propName] = childrenLength[propName]);
+          node && defineKeyPropWarningGetter(
+            i,
+            "function" === typeof type ? type.displayName || type.name || "Unknown" : type
+          );
+          var propName = 1e4 > ReactSharedInternals.recentlyCreatedOwnerStacks++;
+          return ReactElement(
+            type,
+            node,
+            void 0,
+            void 0,
+            getOwner(),
+            i,
+            propName ? Error("react-stack-top-frame") : unknownOwnerDebugStack,
+            propName ? createTask(getTaskName(type)) : unknownOwnerDebugTask
+          );
+        };
+        exports.createRef = function() {
+          var refObject = { current: null };
+          Object.seal(refObject);
+          return refObject;
+        };
+        exports.forwardRef = function(render) {
+          null != render && render.$$typeof === REACT_MEMO_TYPE ? console.error(
+            "forwardRef requires a render function but received a `memo` component. Instead of forwardRef(memo(...)), use memo(forwardRef(...))."
+          ) : "function" !== typeof render ? console.error(
+            "forwardRef requires a render function but was given %s.",
+            null === render ? "null" : typeof render
+          ) : 0 !== render.length && 2 !== render.length && console.error(
+            "forwardRef render functions accept exactly two parameters: props and ref. %s",
+            1 === render.length ? "Did you forget to use the ref parameter?" : "Any additional parameter will be undefined."
+          );
+          null != render && null != render.defaultProps && console.error(
+            "forwardRef render functions do not support defaultProps. Did you accidentally pass a React component?"
+          );
+          var elementType = { $$typeof: REACT_FORWARD_REF_TYPE, render }, ownName;
+          Object.defineProperty(elementType, "displayName", {
+            enumerable: false,
+            configurable: true,
+            get: function() {
+              return ownName;
+            },
+            set: function(name) {
+              ownName = name;
+              render.name || render.displayName || (Object.defineProperty(render, "name", { value: name }), render.displayName = name);
+            }
+          });
+          return elementType;
+        };
+        exports.isValidElement = isValidElement;
+        exports.lazy = function(ctor) {
+          return {
+            $$typeof: REACT_LAZY_TYPE,
+            _payload: { _status: -1, _result: ctor },
+            _init: lazyInitializer
+          };
+        };
+        exports.memo = function(type, compare) {
+          null == type && console.error(
+            "memo: The first argument must be a component. Instead received: %s",
+            null === type ? "null" : typeof type
+          );
+          compare = {
+            $$typeof: REACT_MEMO_TYPE,
+            type,
+            compare: void 0 === compare ? null : compare
+          };
+          var ownName;
+          Object.defineProperty(compare, "displayName", {
+            enumerable: false,
+            configurable: true,
+            get: function() {
+              return ownName;
+            },
+            set: function(name) {
+              ownName = name;
+              type.name || type.displayName || (Object.defineProperty(type, "name", { value: name }), type.displayName = name);
+            }
+          });
+          return compare;
+        };
+        exports.startTransition = function(scope) {
+          var prevTransition = ReactSharedInternals.T, currentTransition = {};
+          ReactSharedInternals.T = currentTransition;
+          currentTransition._updatedFibers = /* @__PURE__ */ new Set();
+          try {
+            var returnValue = scope(), onStartTransitionFinish = ReactSharedInternals.S;
+            null !== onStartTransitionFinish && onStartTransitionFinish(currentTransition, returnValue);
+            "object" === typeof returnValue && null !== returnValue && "function" === typeof returnValue.then && returnValue.then(noop, reportGlobalError);
+          } catch (error) {
+            reportGlobalError(error);
+          } finally {
+            null === prevTransition && currentTransition._updatedFibers && (scope = currentTransition._updatedFibers.size, currentTransition._updatedFibers.clear(), 10 < scope && console.warn(
+              "Detected a large number of updates inside startTransition. If this is due to a subscription please re-write it to use React provided hooks. Otherwise concurrent mode guarantees are off the table."
+            )), ReactSharedInternals.T = prevTransition;
+          }
+        };
+        exports.unstable_useCacheRefresh = function() {
+          return resolveDispatcher().useCacheRefresh();
+        };
+        exports.use = function(usable) {
+          return resolveDispatcher().use(usable);
+        };
+        exports.useActionState = function(action, initialState, permalink) {
+          return resolveDispatcher().useActionState(
+            action,
+            initialState,
+            permalink
+          );
+        };
+        exports.useCallback = function(callback, deps) {
+          return resolveDispatcher().useCallback(callback, deps);
+        };
+        exports.useContext = function(Context) {
+          var dispatcher = resolveDispatcher();
+          Context.$$typeof === REACT_CONSUMER_TYPE && console.error(
+            "Calling useContext(Context.Consumer) is not supported and will cause bugs. Did you mean to call useContext(Context) instead?"
+          );
+          return dispatcher.useContext(Context);
+        };
+        exports.useDebugValue = function(value, formatterFn) {
+          return resolveDispatcher().useDebugValue(value, formatterFn);
+        };
+        exports.useDeferredValue = function(value, initialValue) {
+          return resolveDispatcher().useDeferredValue(value, initialValue);
+        };
+        exports.useEffect = function(create, createDeps, update) {
+          null == create && console.warn(
+            "React Hook useEffect requires an effect callback. Did you forget to pass a callback to the hook?"
+          );
+          var dispatcher = resolveDispatcher();
+          if ("function" === typeof update)
+            throw Error(
+              "useEffect CRUD overload is not enabled in this build of React."
+            );
+          return dispatcher.useEffect(create, createDeps);
+        };
+        exports.useId = function() {
+          return resolveDispatcher().useId();
+        };
+        exports.useImperativeHandle = function(ref, create, deps) {
+          return resolveDispatcher().useImperativeHandle(ref, create, deps);
+        };
+        exports.useInsertionEffect = function(create, deps) {
+          null == create && console.warn(
+            "React Hook useInsertionEffect requires an effect callback. Did you forget to pass a callback to the hook?"
+          );
+          return resolveDispatcher().useInsertionEffect(create, deps);
+        };
+        exports.useLayoutEffect = function(create, deps) {
+          null == create && console.warn(
+            "React Hook useLayoutEffect requires an effect callback. Did you forget to pass a callback to the hook?"
+          );
+          return resolveDispatcher().useLayoutEffect(create, deps);
+        };
+        exports.useMemo = function(create, deps) {
+          return resolveDispatcher().useMemo(create, deps);
+        };
+        exports.useOptimistic = function(passthrough, reducer) {
+          return resolveDispatcher().useOptimistic(passthrough, reducer);
+        };
+        exports.useReducer = function(reducer, initialArg, init) {
+          return resolveDispatcher().useReducer(reducer, initialArg, init);
+        };
+        exports.useRef = function(initialValue) {
+          return resolveDispatcher().useRef(initialValue);
+        };
+        exports.useState = function(initialState) {
+          return resolveDispatcher().useState(initialState);
+        };
+        exports.useSyncExternalStore = function(subscribe, getSnapshot, getServerSnapshot) {
+          return resolveDispatcher().useSyncExternalStore(
+            subscribe,
+            getSnapshot,
+            getServerSnapshot
+          );
+        };
+        exports.useTransition = function() {
+          return resolveDispatcher().useTransition();
+        };
+        exports.version = "19.1.0";
+        "undefined" !== typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ && "function" === typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop && __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(Error());
+      })();
+    }
+  });
+
+  // node_modules/react/index.js
+  var require_react = __commonJS({
+    "node_modules/react/index.js"(exports, module) {
+      "use strict";
+      if (false) {
+        module.exports = null;
+      } else {
+        module.exports = require_react_development();
+      }
+    }
+  });
+
+  // <stdin>
+  var require_stdin = __commonJS({
+    "<stdin>"(exports, module) {
+      var React = require_react();
+      function createErrorBoundary() {
+        return class ErrorBoundary extends React.Component {
+          constructor(props) {
+            super(props);
+            this.state = {
+              hasError: false,
+              error: null,
+              errorInfo: null,
+              isCopied: false,
+              isMinimized: false,
+              isFullWidth: true,
+              copyButtonState: "default"
+            };
+            this.copyErrorToClipboard = this.copyErrorToClipboard.bind(this);
+            this.toggleMinimize = this.toggleMinimize.bind(this);
+            this.toggleFullWidth = this.toggleFullWidth.bind(this);
+          }
+          static getDerivedStateFromError(error) {
+            return {
+              hasError: true,
+              error,
+              errorInfo: null,
+              isCopied: false,
+              isMinimized: false,
+              // Start expanded when error occurs
+              isFullWidth: false,
+              copyButtonState: "default"
+            };
+          }
+          componentDidCatch(error, errorInfo) {
+            this.setState({
+              error,
+              errorInfo
+            });
+            console.error("Error caught by ErrorBoundary:", error, errorInfo);
+          }
+          copyErrorToClipboard() {
+            if (this.state.error) {
+              const errorText = `Error: ${this.state.error.toString()}
+
+Component Stack:
+${this.state.errorInfo ? this.state.errorInfo.componentStack : "Not available"}`;
+              const fallbackCopyTextToClipboard = (text) => {
+                const textArea = document.createElement("textarea");
+                textArea.value = text;
+                textArea.style.top = "0";
+                textArea.style.left = "0";
+                textArea.style.position = "fixed";
+                document.body.appendChild(textArea);
+                textArea.focus();
+                textArea.select();
+                try {
+                  const successful = document.execCommand("copy");
+                  const msg = successful ? "Text copied to clipboard" : "Failed to copy text";
+                  console.log(msg);
+                  this.setState({
+                    isCopied: successful,
+                    copyButtonState: successful ? "copied" : "default"
+                  });
+                  if (successful) {
+                    setTimeout(() => {
+                      this.setState({
+                        isCopied: false,
+                        copyButtonState: "default"
+                      });
+                    }, 2e3);
+                  }
+                } catch (err) {
+                  console.error("Fallback: Failed to copy text: ", err);
+                } finally {
+                  document.body.removeChild(textArea);
+                }
+              };
+              if (!navigator.clipboard) {
+                fallbackCopyTextToClipboard(errorText);
+                return;
+              }
+              navigator.clipboard.writeText(errorText).then(() => {
+                this.setState({
+                  isCopied: true,
+                  copyButtonState: "copied"
+                });
+                setTimeout(() => {
+                  this.setState({
+                    isCopied: false,
+                    copyButtonState: "default"
+                  });
+                }, 2e3);
+              }).catch((err) => {
+                console.error("Failed to copy error details:", err);
+                fallbackCopyTextToClipboard(errorText);
+              });
+            }
+          }
+          toggleMinimize() {
+            this.setState((prevState) => ({
+              isMinimized: !prevState.isMinimized,
+              // If minimizing, ensure it's not full width
+              isFullWidth: prevState.isMinimized ? prevState.isFullWidth : false
+            }));
+          }
+          toggleFullWidth() {
+            if (!this.state.isMinimized) {
+              this.setState((prevState) => ({
+                isFullWidth: !prevState.isFullWidth
+              }));
+            }
+          }
+          render() {
+            if (this.state.hasError) {
+              const { isMinimized, isFullWidth, isCopied, error, errorInfo } = this.state;
+              const AlertTriangleIcon = (_a) => {
+                var _b = _a, { className } = _b, otherProps = __objRest(_b, ["className"]);
+                return /* @__PURE__ */ React.createElement(
+                  "svg",
+                  __spreadValues({
+                    xmlns: "http://www.w3.org/2000/svg",
+                    width: isMinimized ? "16" : "20",
+                    height: isMinimized ? "16" : "20",
+                    viewBox: "0 0 24 24",
+                    fill: "none",
+                    stroke: "currentColor",
+                    strokeWidth: "2",
+                    strokeLinecap: "round",
+                    strokeLinejoin: "round",
+                    className: className || "text-red-500 dark:text-red-400"
+                  }, otherProps),
+                  /* @__PURE__ */ React.createElement("path", { d: "M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" }),
+                  /* @__PURE__ */ React.createElement("line", { x1: "12", y1: "9", x2: "12", y2: "13" }),
+                  /* @__PURE__ */ React.createElement("line", { x1: "12", y1: "17", x2: "12.01", y2: "17" })
+                );
+              };
+              const CopyIcon = () => /* @__PURE__ */ React.createElement(
+                "svg",
+                {
+                  xmlns: "http://www.w3.org/2000/svg",
+                  width: "16",
+                  height: "16",
+                  viewBox: "0 0 24 24",
+                  fill: "none",
+                  stroke: "currentColor",
+                  strokeWidth: "2",
+                  strokeLinecap: "round",
+                  strokeLinejoin: "round"
+                },
+                /* @__PURE__ */ React.createElement("rect", { x: "9", y: "9", width: "13", height: "13", rx: "2", ry: "2" }),
+                /* @__PURE__ */ React.createElement("path", { d: "M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" })
+              );
+              const MinimizeIcon = () => /* @__PURE__ */ React.createElement(
+                "svg",
+                {
+                  xmlns: "http://www.w3.org/2000/svg",
+                  width: "16",
+                  height: "16",
+                  viewBox: "0 0 24 24",
+                  fill: "none",
+                  stroke: "currentColor",
+                  strokeWidth: "2",
+                  strokeLinecap: "round",
+                  strokeLinejoin: "round"
+                },
+                /* @__PURE__ */ React.createElement("line", { x1: "5", y1: "12", x2: "19", y2: "12" })
+              );
+              const ExpandIcon = () => /* @__PURE__ */ React.createElement(
+                "svg",
+                {
+                  xmlns: "http://www.w3.org/2000/svg",
+                  width: "16",
+                  height: "16",
+                  viewBox: "0 0 24 24",
+                  fill: "none",
+                  stroke: "currentColor",
+                  strokeWidth: "2",
+                  strokeLinecap: "round",
+                  strokeLinejoin: "round"
+                },
+                /* @__PURE__ */ React.createElement("polyline", { points: "15 3 21 3 21 9" }),
+                /* @__PURE__ */ React.createElement("polyline", { points: "9 21 3 21 3 15" }),
+                /* @__PURE__ */ React.createElement("line", { x1: "21", y1: "3", x2: "14", y2: "10" }),
+                /* @__PURE__ */ React.createElement("line", { x1: "3", y1: "21", x2: "10", y2: "14" })
+              );
+              const CompressIcon = () => /* @__PURE__ */ React.createElement(
+                "svg",
+                {
+                  xmlns: "http://www.w3.org/2000/svg",
+                  width: "16",
+                  height: "16",
+                  viewBox: "0 0 24 24",
+                  fill: "none",
+                  stroke: "currentColor",
+                  strokeWidth: "2",
+                  strokeLinecap: "round",
+                  strokeLinejoin: "round"
+                },
+                /* @__PURE__ */ React.createElement("polyline", { points: "4 14 10 14 10 20" }),
+                /* @__PURE__ */ React.createElement("polyline", { points: "20 10 14 10 14 4" }),
+                /* @__PURE__ */ React.createElement("line", { x1: "14", y1: "10", x2: "21", y2: "3" }),
+                /* @__PURE__ */ React.createElement("line", { x1: "3", y1: "21", x2: "10", y2: "14" })
+              );
+              const RefreshIcon = () => /* @__PURE__ */ React.createElement(
+                "svg",
+                {
+                  xmlns: "http://www.w3.org/2000/svg",
+                  width: "16",
+                  height: "16",
+                  viewBox: "0 0 24 24",
+                  fill: "none",
+                  stroke: "currentColor",
+                  strokeWidth: "2",
+                  strokeLinecap: "round",
+                  strokeLinejoin: "round"
+                },
+                /* @__PURE__ */ React.createElement("path", { d: "M23 4v6h-6" }),
+                /* @__PURE__ */ React.createElement("path", { d: "M1 20v-6h6" }),
+                /* @__PURE__ */ React.createElement("path", { d: "M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15" })
+              );
+              const CheckIcon = () => /* @__PURE__ */ React.createElement(
+                "svg",
+                {
+                  xmlns: "http://www.w3.org/2000/svg",
+                  width: "14",
+                  height: "14",
+                  viewBox: "0 0 24 24",
+                  fill: "none",
+                  stroke: "currentColor",
+                  strokeWidth: "2",
+                  strokeLinecap: "round",
+                  strokeLinejoin: "round"
+                },
+                /* @__PURE__ */ React.createElement("path", { d: "M20 6L9 17l-5-5" })
+              );
+              if (isMinimized) {
+                return /* @__PURE__ */ React.createElement(React.Fragment, null, this.props.children, /* @__PURE__ */ React.createElement(
+                  "div",
+                  {
+                    className: "fixed bottom-4 right-4 z-[9999]",
+                    onClick: this.toggleMinimize
+                  },
+                  /* @__PURE__ */ React.createElement("div", { className: "group flex items-center justify-center w-10 h-10 rounded-full bg-red-500 shadow-lg cursor-pointer hover:bg-red-600 transition-colors dark:bg-red-700 dark:hover:bg-red-600" }, /* @__PURE__ */ React.createElement(AlertTriangleIcon, { className: "text-white dark:text-gray-100" }), /* @__PURE__ */ React.createElement("div", { className: "absolute right-12 bottom-1 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 bg-gray-800 text-white text-xs rounded py-1 px-2 whitespace-nowrap dark:bg-gray-900 shadow-md" }, "Error - Click to expand"))
+                ));
+              }
+              const baseContainerClasses = "fixed bottom-0 z-[9999] transition-all duration-300 ease-in-out mb-8";
+              const innerBoxBaseClasses = "relative overflow-hidden rounded-lg border border-red-300 bg-white shadow-xl dark:border-red-700 dark:bg-gray-950";
+              const positionAndWidthClass = isFullWidth ? "inset-x-0 w-full" : "right-4 w-[32rem] max-w-[90vw]";
+              const paddingClass = isFullWidth ? "p-4" : "";
+              return /* @__PURE__ */ React.createElement(React.Fragment, null, this.props.children, /* @__PURE__ */ React.createElement("div", { className: `${baseContainerClasses} ${positionAndWidthClass} ${paddingClass}` }, /* @__PURE__ */ React.createElement(
+                "div",
+                {
+                  className: `${innerBoxBaseClasses} ${isFullWidth ? "mx-auto" : ""}`,
+                  style: isFullWidth ? { maxWidth: "100%" } : {}
+                },
+                /* @__PURE__ */ React.createElement("div", { className: "flex items-center justify-between bg-gradient-to-r from-red-100 to-red-200 px-3 py-2 dark:from-red-950/50 dark:to-red-900/50" }, /* @__PURE__ */ React.createElement("div", { className: "flex items-center gap-2" }, /* @__PURE__ */ React.createElement(AlertTriangleIcon, { className: "text-red-500 dark:text-red-400" }), /* @__PURE__ */ React.createElement("h3", { className: "text-sm font-semibold text-red-800 dark:text-red-300" }, "Sorry, something went wrong")), /* @__PURE__ */ React.createElement("div", { className: "flex items-center gap-1" }, /* @__PURE__ */ React.createElement(
+                  "button",
+                  {
+                    onClick: () => window.location.reload(),
+                    className: "rounded p-1 text-gray-600 hover:bg-red-200/50 hover:text-gray-800 dark:text-gray-400 dark:hover:bg-red-800/50 dark:hover:text-gray-200 transition-colors",
+                    title: "Refresh page"
+                  },
+                  /* @__PURE__ */ React.createElement(RefreshIcon, null)
+                ), /* @__PURE__ */ React.createElement(
+                  "button",
+                  {
+                    onClick: this.toggleFullWidth,
+                    className: "rounded p-1 text-gray-600 hover:bg-red-200/50 hover:text-gray-800 dark:text-gray-400 dark:hover:bg-red-800/50 dark:hover:text-gray-200 transition-colors",
+                    title: isFullWidth ? "Reduce width" : "Expand to full width"
+                  },
+                  isFullWidth ? /* @__PURE__ */ React.createElement(CompressIcon, null) : /* @__PURE__ */ React.createElement(ExpandIcon, null)
+                ), /* @__PURE__ */ React.createElement(
+                  "button",
+                  {
+                    onClick: this.toggleMinimize,
+                    className: "rounded p-1 text-gray-600 hover:bg-red-200/50 hover:text-gray-800 dark:text-gray-400 dark:hover:bg-red-800/50 dark:hover:text-gray-200 transition-colors",
+                    title: "Minimize"
+                  },
+                  /* @__PURE__ */ React.createElement(MinimizeIcon, null)
+                ))),
+                /* @__PURE__ */ React.createElement("div", { className: "p-4" }, /* @__PURE__ */ React.createElement("div", { className: "mb-3" }, /* @__PURE__ */ React.createElement("p", { className: "text-sm text-gray-700 dark:text-gray-300" }, "You can copy the error details and ask Gemini to fix the error.")), /* @__PURE__ */ React.createElement(
+                  "div",
+                  {
+                    className: `overflow-auto rounded bg-gray-50 p-3 dark:bg-gray-800/60 border border-gray-200 dark:border-gray-700 scrollbar-none ${isFullWidth ? "max-h-[40vh]" : "max-h-60"}`
+                  },
+                  /* @__PURE__ */ React.createElement("div", { className: "space-y-3" }, /* @__PURE__ */ React.createElement("div", { className: "space-y-1" }, /* @__PURE__ */ React.createElement("h4", { className: "text-xs uppercase font-semibold text-gray-500 dark:text-gray-400" }, "Error Message:"), /* @__PURE__ */ React.createElement("p", { className: "font-mono text-xs text-red-700 dark:text-red-400 break-words px-2 py-1.5 bg-red-50 dark:bg-red-900/30 rounded border border-red-100 dark:border-red-900/50" }, error ? error.toString() : "No error message available.")), errorInfo && /* @__PURE__ */ React.createElement("div", { className: "space-y-1" }, /* @__PURE__ */ React.createElement("h4", { className: "text-xs uppercase font-semibold text-gray-500 dark:text-gray-400" }, "Component Stack:"), /* @__PURE__ */ React.createElement("pre", { className: "whitespace-pre-wrap font-mono text-xs text-gray-700 dark:text-gray-300 px-2 py-1.5 bg-gray-100 dark:bg-gray-800 rounded border border-gray-200 dark:border-gray-700" }, errorInfo.componentStack)))
+                ), /* @__PURE__ */ React.createElement("div", { className: "mt-4" }, /* @__PURE__ */ React.createElement(
+                  "button",
+                  {
+                    onClick: this.copyErrorToClipboard,
+                    className: `flex items-center justify-center gap-2 px-4 py-2 text-white rounded-md transition-colors w-full ${this.state.copyButtonState === "copied" ? "bg-blue-600 hover:bg-blue-700" : "bg-indigo-600 hover:bg-indigo-700"}`
+                  },
+                  this.state.copyButtonState === "copied" ? /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement(CheckIcon, null), "Copied to Clipboard!") : /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement(CopyIcon, null), "Copy Error Details")
+                )))
+              )));
+            }
+            return this.props.children;
+          }
+        };
+      }
+      module.exports = { createErrorBoundary };
+    }
+  });
+  return require_stdin();
+})();
+/*! Bundled license information:
+
+react/cjs/react.development.js:
+  (**
+   * @license React
+   * react.development.js
+   *
+   * Copyright (c) Meta Platforms, Inc. and affiliates.
+   *
+   * This source code is licensed under the MIT license found in the
+   * LICENSE file in the root directory of this source tree.
+   *)
+*/
+
+
+                // Use the exported createErrorBoundary function
+                const ErrorBoundary = ErrorBoundaryModule.createErrorBoundary();
+
+                const AppComponent = React.createElement(
+                    ErrorBoundary,
+                    null,
+                    React.createElement(App.default, null)
+                );
+                root.render(AppComponent);
+            });
+        </script>
+    
+
+</body></html>
