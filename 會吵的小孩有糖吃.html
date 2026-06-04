@@ -1,0 +1,1697 @@
+<!DOCTYPE html>
+<!-- saved from url=(0132)blob:https://572mb4cdjv2aqlwsz2x4g3vw1s836yaup5chw7qdzzub2hxlw1-h925321024.scf.usercontent.goog/436e24bf-b326-4310-9c16-96c85430735a -->
+<html lang="zh-TW"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script>(function(firebaseConfig, initialAuthToken, appId) {
+        window.__firebase_config = firebaseConfig;
+        window.__initial_auth_token = initialAuthToken;
+        window.__app_id = appId;
+            })("\n{\n  \"apiKey\": \"AIzaSyCqyCcs2R2e7AegGjvFAwG98wlamtbHvZY\",\n  \"authDomain\": \"bard-frontend.firebaseapp.com\",\n  \"projectId\": \"bard-frontend\",\n  \"storageBucket\": \"bard-frontend.firebasestorage.app\",\n  \"messagingSenderId\": \"175205271074\",\n  \"appId\": \"1:175205271074:web:2b7bd4d34d33bf38e6ec7b\"\n}\n","eyJhbGciOiJSUzI1NiIsImtpZCI6IjcxNmI5NDI0NGEwYzk3YjE5ZTA1YzM3NTU4ZTA2Y2ZhNTBlNDg2NTEiLCJ0eXAiOiJKV1QifQ.eyJzdWIiOiJmaXJlYmFzZS1hZG1pbnNkay1mYnN2Y0BiYXJkLWZyb250ZW5kLmlhbS5nc2VydmljZWFjY291bnQuY29tIiwiYXVkIjoiaHR0cHM6Ly9pZGVudGl0eXRvb2xraXQuZ29vZ2xlYXBpcy5jb20vZ29vZ2xlLmlkZW50aXR5LmlkZW50aXR5dG9vbGtpdC52MS5JZGVudGl0eVRvb2xraXQiLCJ1aWQiOiIxMTYzMTgxMTg3MjUyMDgxNjI4MyIsImlzcyI6ImZpcmViYXNlLWFkbWluc2RrLWZic3ZjQGJhcmQtZnJvbnRlbmQuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJjbGFpbXMiOnsiYXBwSWQiOiI5NjdiOGQ1ZjFmZTYtaW50ZXJhY3RpdmVfcHJlc2VudGF0aW9uLmh0bWwtNDUifSwiZXhwIjoxNzgwNTQwNDI4LCJpYXQiOjE3ODA1MzY4MjgsImFsZyI6IlJTMjU2In0.mGAt8SbFu6eOisLv84cPXG0nmYlb3DcV8KrgWZGU5O1IhwCSBP09B8AnsftT0M6nd51HuZUvgbz2ganWnIUYRLN6ZhxEG7T--QcLKQ8CfFfFaaTt3iMI2V8yTBN2cENfrwoI7F8UM-M6u23ehfTF0o6dH3J8Kupdp4Dqk2rdWzpPKxIviGYPvjzBSdy-FyTr3maMLAo8Q8IbOHo5ipmWFbdcA6JPXW3HnVj-317h98mpvSPox3pX6MgP5t_XE-rn3ZtG1kY6xGcWyafqiijvpZXosqQ4cTbp0B9-JxtYcOrCXtKhtWgSbr-5wLHVYUB9uWrGJTt_B1AADNoeM2BJug","967b8d5f1fe6-interactive_presentation.html-45")</script><script>(function(){'use strict';var h=typeof Object.defineProperties=="function"?Object.defineProperty:function(a,b,d){if(a==Array.prototype||a==Object.prototype)return a;a[b]=d.value;return a};function l(a){a=["object"==typeof globalThis&&globalThis,a,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var b=0;b<a.length;++b){var d=a[b];if(d&&d.Math==Math)return d}throw Error("Cannot find global object");}var n=l(this);
+function p(a,b){if(b)a:{var d=n;a=a.split(".");for(var c=0;c<a.length-1;c++){var e=a[c];if(!(e in d))break a;d=d[e]}a=a[a.length-1];c=d[a];b=b(c);b!=c&&b!=null&&h(d,a,{configurable:!0,writable:!0,value:b})}}function r(a){function b(c){return a.next(c)}function d(c){return a.throw(c)}return new Promise(function(c,e){function f(g){g.done?c(g.value):Promise.resolve(g.value).then(b,d).then(f,e)}f(a.next())})}function t(a){return r(a())}
+p("Object.values",function(a){return a?a:function(b){var d=[],c;for(c in b)Object.prototype.hasOwnProperty.call(b,c)&&d.push(b[c]);return d}});p("Array.prototype.includes",function(a){return a?a:function(b,d){var c=this;c instanceof String&&(c=String(c));var e=c.length;d=d||0;for(d<0&&(d=Math.max(d+e,0));d<e;d++){var f=c[d];if(f===b||Object.is(f,b))return!0}return!1}});/*
+
+ MIT License
+
+ Copyright (c) 2017-2023 W.Y.
+
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to deal
+ in the Software without restriction, including without limitation the rights
+ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+
+ The above copyright notice and this permission notice shall be included in
+ all copies or substantial portions of the Software.
+
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ SOFTWARE.
+
+*/
+function u(a,b){var d=a.style;b.backgroundColor&&(d.backgroundColor=b.backgroundColor);b.width&&(d.width=`${b.width}px`);b.height&&(d.height=`${b.height}px`);var c=b.style;c!=null&&Object.keys(c).forEach(e=>{d[e]=c[e]})};var v=(()=>{var a=0;return()=>{a+=1;return`u${`0000${(Math.random()*1679616<<0).toString(36)}`.slice(-4)}${a}`}})();function w(a){var b=[];for(let d=0,c=a.length;d<c;d++)b.push(a[d]);return b}let x=null;function y(a={}){return x?x:a.l?x=a.l:x=w(window.getComputedStyle(document.documentElement))}function z(a,b){return(a=(a.ownerDocument.defaultView||window).getComputedStyle(a).getPropertyValue(b))?parseFloat(a.replace("px","")):0}
+function A(a,b={}){var d;if(!(d=b.width)){d=z(a,"border-left-width");var c=z(a,"border-right-width");d=a.clientWidth+d+c}(b=b.height)||(b=z(a,"border-top-width"),c=z(a,"border-bottom-width"),b=a.clientHeight+b+c);return{width:d,height:b}}function B(a){return new Promise((b,d)=>{var c=new Image;c.onload=()=>{c.decode().then(()=>{requestAnimationFrame(()=>b(c))})};c.onerror=d;c.crossOrigin="anonymous";c.decoding="async";c.src=a})}
+function C(a){return t(function*(){return Promise.resolve().then(()=>(new XMLSerializer).serializeToString(a)).then(encodeURIComponent).then(b=>`data:image/svg+xml;charset=utf-8,${b}`)})}
+function D(a,b,d){return t(function*(){var c=document.createElementNS("http://www.w3.org/2000/svg","svg"),e=document.createElementNS("http://www.w3.org/2000/svg","foreignObject");c.setAttribute("width",`${b}`);c.setAttribute("height",`${d}`);c.setAttribute("viewBox",`0 0 ${b} ${d}`);e.setAttribute("width","100%");e.setAttribute("height","100%");e.setAttribute("x","0");e.setAttribute("y","0");e.setAttribute("externalResourcesRequired","true");c.appendChild(e);e.appendChild(a);return C(c)})}
+var E=(a,b)=>{if(a instanceof b)return!0;a=Object.getPrototypeOf(a);return a===null?!1:a.constructor.name===b.name||E(a,b)};function F(a,b){return y(b).map(d=>{var c=a.getPropertyValue(d),e=a.getPropertyPriority(d);return`${d}: ${c}${e?" !important":""};`}).join(" ")}
+function G(a,b,d,c){a=window.getComputedStyle(a,d);var e=a.getPropertyValue("content");if(e!==""&&e!=="none"){var f=v();try{b.className=`${b.className} ${f}`}catch(k){return}e=document.createElement("style");var g=e.appendChild;d=`.${f}:${d}`;a.cssText?(c=a.getPropertyValue("content"),c=`${a.cssText} content: '${c.replace(/'|"/g,"")}';`):c=F(a,c);g.call(e,document.createTextNode(`${d}{${c}}`));b.appendChild(e)}};function H(a){return a.search(/^(data:)/)!==-1}function I(a,b,d){return t(function*(){var c=yield fetch(a,b);if(c.status===404)throw Error(`Resource "${c.url}" not found`);var e=yield c.blob();return new Promise((f,g)=>{var k=new FileReader;k.onerror=g;k.onloadend=()=>{try{f(d({o:c,result:k.result}))}catch(m){g(m)}};k.readAsDataURL(e)})})}const J={};function K(a,b,d){var c=a.replace(/\?.*/,"");d&&(c=a);/ttf|otf|eot|woff2?/i.test(c)&&(c=c.replace(/.*\//,""));return b?`[${b}]${c}`:c}
+function L(a,b,d){return t(function*(){var c=K(a,b,d.C);if(J[c]!=null)return J[c];d.u&&(a+=(/\?/.test(a)?"&":"?")+(new Date).getTime());try{let f=yield I(a,d.i,({o:g,result:k})=>{b||(b=g.headers.get("Content-Type")||"");return k.split(/,/)[1]});var e=`data:${b};base64,${f}`}catch(f){e=d.B||""}return J[c]=e})};const M={P:"application/font-woff",R:"application/font-woff",N:"application/font-truetype",v:"application/vnd.ms-fontobject",H:"image/png",F:"image/jpeg",D:"image/jpeg",A:"image/gif",M:"image/tiff",L:"image/svg+xml",O:"image/webp"};function N(a){return(a=/\.([^./]*?)$/g.exec(a))?a[1]:""};function O(a){return t(function*(){var b=a.toDataURL();return b==="data:,"?a.cloneNode(!1):B(b)})}function aa(a,b){return t(function*(){if(a.currentSrc){var d=document.createElement("canvas");let c=d.getContext("2d");d.width=a.clientWidth;d.height=a.clientHeight;c==null||c.drawImage(a,0,0,d.width,d.height);d=d.toDataURL();return B(d)}d=a.poster;d=yield L(d,M[N(d).toLowerCase()]||"",b);return B(d)})}
+function ba(a,b){return t(function*(){try{let d;if(a==null?0:(d=a.contentDocument)==null?0:d.body)return yield P(a.contentDocument.body,b,!0)}catch(d){}return a.cloneNode(!1)})}function ca(a,b){return t(function*(){return E(a,HTMLCanvasElement)?O(a):E(a,HTMLVideoElement)?aa(a,b):E(a,HTMLIFrameElement)?ba(a,b):a.cloneNode(a.tagName!=null&&a.tagName.toUpperCase()==="SVG")})}
+function da(a,b,d){return t(function*(){if(b.tagName!=null&&b.tagName.toUpperCase()==="SVG")return b;var c=[];if(a.tagName!=null&&a.tagName.toUpperCase()==="SLOT"&&a.assignedNodes)c=w(a.assignedNodes());else{let e;if(E(a,HTMLIFrameElement)&&((e=a.contentDocument)==null?0:e.body))c=w(a.contentDocument.body.childNodes);else{let f;c=w(((f=a.shadowRoot)!=null?f:a).childNodes)}}if(c.length===0||E(a,HTMLVideoElement))return b;yield c.reduce((e,f)=>e.then(()=>P(f,d)).then(g=>{g&&b.appendChild(g)}),Promise.resolve());
+return b})}function ea(a,b,d){var c=b.style;if(c){var e=window.getComputedStyle(a);e.cssText?(c.cssText=e.cssText,c.transformOrigin=e.transformOrigin):y(d).forEach(f=>{var g=e.getPropertyValue(f);f==="font-size"&&g.endsWith("px")&&(g=`${Math.floor(parseFloat(g.substring(0,g.length-2)))-.1}px`);E(a,HTMLIFrameElement)&&f==="display"&&g==="inline"&&(g="block");f==="d"&&b.getAttribute("d")&&(g=`path(${b.getAttribute("d")})`);c.setProperty(f,g,e.getPropertyPriority(f))})}}
+function fa(a,b){E(a,HTMLSelectElement)&&(b=Array.from(b.children).find(d=>a.value===d.getAttribute("value")))&&b.setAttribute("selected","")}
+function ha(a,b){return t(function*(){var d=a.querySelectorAll?a.querySelectorAll("use"):[];if(d.length===0)return a;var c={};for(var e=0;e<d.length;e++){var f=d[e].getAttribute("xlink:href");if(f){let g=document.querySelector(f);a.querySelector(f)||!g||c[f]||(c[f]=yield P(g,b,!0))}}d=Object.values(c);if(d.length){c=document.createElementNS("http://www.w3.org/1999/xhtml","svg");c.setAttribute("xmlns","http://www.w3.org/1999/xhtml");c.style.position="absolute";c.style.width="0";c.style.height="0";
+c.style.overflow="hidden";c.style.display="none";e=document.createElementNS("http://www.w3.org/1999/xhtml","defs");c.appendChild(e);for(f=0;f<d.length;f++)e.appendChild(d[f]);a.appendChild(c)}return a})}
+function P(a,b,d){return t(function*(){return d||!b.filter||b.filter(a)?Promise.resolve(a).then(c=>ca(c,b)).then(c=>da(a,c,b)).then(c=>{E(c,Element)&&(ea(a,c,b),G(a,c,":before",b),G(a,c,":after",b),E(a,HTMLTextAreaElement)&&(c.textContent=a.value),E(a,HTMLInputElement)&&c.setAttribute("value",a.value),fa(a,c));return c}).then(c=>ha(c,b)):null})};const Q=/url\((['"]?)([^'"]+?)\1\)/g,ia=/url\([^)]+\)\s*format\((["']?)([^"']+)\1\)/g,ja=/src:\s*(?:url\([^)]+\)\s*format\([^)]+\)[,;]\s*)+/g;function ka(a){var b=[];a.replace(Q,(d,c,e)=>{b.push(e);return d});return b.filter(d=>!H(d))}
+function la(a,b,d,c){return t(function*(){try{let e=d?(new URL(b,d||void 0)).toString():b,f;f=yield L(e,M[N(b).toLowerCase()]||"",c);return a.replace(new RegExp(`(url\\(['"]?)(${b.replace(/([.*+?^${}()|\[\]\/\\])/g,"\\$1")})(['"]?\\))`,"g"),`$1${f}$3`)}catch(e){}return a})}function ma(a,{I:b}){return b?a.replace(ja,d=>{for(;;){let [c,,e]=ia.exec(d)||[];if(!e)return"";if(e===b)return`src: ${c};`}}):a}
+function R(a,b,d){return t(function*(){if(a.search(Q)===-1)return a;var c=ma(a,d);return ka(c).reduce((e,f)=>e.then(g=>la(g,f,b,d)),Promise.resolve(c))})};function S(a,b,d){return t(function*(){var c,e=(c=b.style)==null?void 0:c.getPropertyValue(a);return e?(c=yield R(e,null,d),b.style.setProperty(a,c,b.style.getPropertyPriority(a)),!0):!1})}function na(a,b){return t(function*(){(yield S("background",a,b))||(yield S("background-image",a,b));(yield S("mask",a,b))||(yield S("-webkit-mask",a,b))||(yield S("mask-image",a,b))||(yield S("-webkit-mask-image",a,b))})}
+function oa(a,b){return t(function*(){var d=E(a,HTMLImageElement);if(d&&!H(a.src)||E(a,SVGImageElement)&&!H(a.href.baseVal)){var c=d?a.src:a.href.baseVal,e=yield L(c,M[N(c).toLowerCase()]||"",b);yield new Promise((f,g)=>{a.onload=f;a.onerror=b.m?(...k)=>{try{f(b.m(...k))}catch(m){g(m)}}:g;a.decode&&(a.decode=f);a.loading==="lazy"&&(a.loading="eager");d?(a.srcset="",a.src=e):a.href.baseVal=e})}})}
+function pa(a,b){return t(function*(){var d=w(a.childNodes).map(c=>T(c,b));yield Promise.all(d).then(()=>a)})}function T(a,b){return t(function*(){E(a,Element)&&(yield na(a,b),yield oa(a,b),yield pa(a,b))})};const U={};function V(a){return t(function*(){var b=U[a];if(b!=null)return b;b=yield(yield fetch(a)).text();b={url:a,cssText:b};return U[a]=b})}function W(a,b){return t(function*(){var d=a.cssText,c=/url\(["']?([^"')]+)["']?\)/g,e=(d.match(/url\([^)]+\)/g)||[]).map(f=>t(function*(){var g=f.replace(c,"$1");g.startsWith("https://")||(g=(new URL(g,a.url)).href);return I(g,b.i,({result:k})=>{d=d.replace(f,`url(${k})`);return[f,k]})}));return Promise.all(e).then(()=>d)})}
+function X(a){if(a==null)return[];var b=[];a=a.replace(/(\/\*[\s\S]*?\*\/)/gi,"");for(var d=RegExp("((@.*?keyframes [\\s\\S]*?){([\\s\\S]*?}\\s*?)})","gi");;){var c=d.exec(a);if(c===null)break;b.push(c[0])}a=a.replace(d,"");d=/@import[\s\S]*?url\([^)]*\)[\s\S]*?;/gi;for(c=RegExp("((\\s*?(?:\\/\\*[\\s\\S]*?\\*\\/)?\\s*?@media[\\s\\S]*?){([\\s\\S]*?)}\\s*?})|(([\\s\\S]*?){([\\s\\S]*?)})","gi");;){let e=d.exec(a);if(e===null)if(e=c.exec(a),e===null)break;else d.lastIndex=c.lastIndex;else c.lastIndex=
+d.lastIndex;b.push(e[0])}return b}
+function qa(a,b){return t(function*(){var d=[],c=[];a.forEach(e=>{if("cssRules"in e)try{w(e.cssRules||[]).forEach((f,g)=>{if(f.type===CSSRule.IMPORT_RULE){let k=g+1;f=V(f.href).then(m=>W(m,b)).then(m=>X(m).forEach(q=>{try{e.insertRule(q,q.startsWith("@import")?k+=1:e.cssRules.length)}catch(Da){}})).catch(()=>{});c.push(f)}})}catch(f){let g=a.find(k=>k.href==null)||document.styleSheets[0];e.href!=null&&c.push(V(e.href).then(k=>W(k,b)).then(k=>X(k).forEach(m=>{g.insertRule(m,g.cssRules.length)})).catch(()=>
+{}))}});return Promise.all(c).then(()=>{a.forEach(e=>{if("cssRules"in e)try{w(e.cssRules||[]).forEach(f=>{d.push(f)})}catch(f){}});return d})})}function ra(a){return a.filter(b=>b.type===CSSRule.FONT_FACE_RULE).filter(b=>b.style.getPropertyValue("src").search(Q)!==-1)}function sa(a,b){return t(function*(){if(a.ownerDocument==null)throw Error("Provided element is not within a Document");var d=w(a.ownerDocument.styleSheets);d=yield qa(d,b);return ra(d)})}
+function ta(a){function b(c){(c.style.fontFamily||getComputedStyle(c).fontFamily).split(",").forEach(e=>{d.add(e.trim().replace(/["']/g,""))});Array.from(c.children).forEach(e=>{e instanceof HTMLElement&&b(e)})}var d=new Set;b(a);return d}function ua(a,b){return t(function*(){var d=yield sa(a,b),c=ta(a);return(yield Promise.all(d.filter(e=>c.has(e.style.fontFamily.trim().replace(/["']/g,""))).map(e=>R(e.cssText,e.parentStyleSheet?e.parentStyleSheet.href:null,b)))).join("\n")})}
+function va(a,b){return t(function*(){var d=b.j!=null?b.j:b.K?null:yield ua(a,b);if(d){let c=document.createElement("style");c.appendChild(document.createTextNode(d));a.firstChild?a.insertBefore(c,a.firstChild):a.appendChild(c)}})};function wa(a,b={}){return t(function*(){var {width:d,height:c}=A(a,b),e=yield P(a,b,!0);yield va(e,b);yield T(e,b);u(e,b);return yield D(e,d,c)})}
+function xa(a,b={}){return t(function*(){var {width:d,height:c}=A(a,b),e=yield wa(a,b);e=yield B(e);var f=document.createElement("canvas"),g=f.getContext("2d"),k=b.G||window.devicePixelRatio||1,m=b.h||d,q=b.g||c;f.width=m*k;f.height=q*k;!b.J&&(f.width>16384||f.height>16384)&&(f.width>16384&&f.height>16384?f.width>f.height?(f.height*=16384/f.width,f.width=16384):(f.width*=16384/f.height,f.height=16384):f.width>16384?(f.height*=16384/f.width,f.width=16384):(f.width*=16384/f.height,f.height=16384));
+f.style.width=`${m}`;f.style.height=`${q}`;b.backgroundColor&&(g.fillStyle=b.backgroundColor,g.fillRect(0,0,f.width,f.height));g.drawImage(e,0,0,f.width,f.height);return f})}function ya(a,b={}){return t(function*(){return(yield xa(a,b)).toDataURL()})};const za=["gemini.google.com","corp.google.com","proxy.googlers.com"];function Y(){return document.body.querySelectorAll('[class*="animate"]').length>0}function Z(a){return t(function*(){try{return yield ya(a,{h:a.offsetWidth,g:a.offsetHeight})}catch(d){var b=a.offsetHeight;let c=document.createElement("canvas");c.width=a.offsetWidth;c.height=b;return c.toDataURL("image/png")}})}
+function Aa(){return t(function*(){var a=document.body.offsetWidth,b=document.body.offsetHeight,d=document.body.cloneNode(!0);d.querySelectorAll('[class*="animate"]').forEach(c=>{c.classList.remove(...Array.from(c.classList).filter(e=>e.startsWith("animate")))});d.style.width=`${a}px`;d.style.height=`${b}px`;return d})}
+function Ba(a){return t(function*(){var b=document.body;if(Y()){var d=yield Aa();b=d;document.body.appendChild(d)}d=yield Z(b);Y()&&document.body.removeChild(b);window.parent.postMessage({type:"SEND_SCREENSHOT",image:d,topOffset:document.documentElement.scrollTop},a.origin)})}function Ca(a){return t(function*(){var b={type:"SEND_SCREENSHOT_FOR_DATA_VISUALIZATION",image:yield Z(document.body),topOffset:0};window.parent.postMessage(b,a.origin)})}
+window.addEventListener("message",a=>t(function*(){if(za.some(d=>a.origin.includes(d))){var b=a.data;b&&(b.type==="MAKE_SCREENSHOT"&&(yield Ba(a)),b.type==="MAKE_SCREENSHOT_FOR_DATA_VISUALIZATION"&&(yield Ca(a)))}}));
+})();</script><script>(function() {
+  // Ensure this script is executed only once
+  if (window.firebaseAuthBridgeScriptLoaded) {
+    return;
+  }
+  window.firebaseAuthBridgeScriptLoaded = true;
+
+  let nextTokenPromiseId = 0;
+
+  // Stores { resolve, reject } for ongoing token requests
+  const pendingTokenPromises = {};
+
+  // Listen for messages from the Host Application
+  window.addEventListener('message', function(event) {
+
+    const messageData = event.data;
+
+  if (messageData && messageData.type === 'RESOLVE_NEW_FIREBASE_TOKEN') {
+      const { success, token, error, promiseId } = messageData ?? {};
+      if (pendingTokenPromises[promiseId]) {
+        if (success) {
+          pendingTokenPromises[promiseId].resolve(token);
+        } else {
+          pendingTokenPromises[promiseId].reject(new Error(error || 'Token refresh failed from host.'));
+        }
+        delete pendingTokenPromises[promiseId];
+      }
+    }
+  });
+
+  // Expose a function for the Generated App to request a new Firebase token
+  window.requestNewFirebaseToken = function() {
+    const currentPromiseId = nextTokenPromiseId++;
+    const promise = new Promise((resolve, reject) => {
+      pendingTokenPromises[currentPromiseId] = { resolve, reject };
+    });
+    if (window.parent && window.parent !== window) {
+      window.parent.postMessage({
+        type: 'REQUEST_NEW_FIREBASE_TOKEN',
+        promiseId: currentPromiseId
+      }, '*');
+    } else {
+      pendingTokenPromises[currentPromiseId].reject(new Error('No parent window to request token from.'));
+      delete pendingTokenPromises[currentPromiseId];
+    }
+    return promise;
+  };
+})();</script><script>
+let realOriginalGetUserMedia = null;
+if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+  realOriginalGetUserMedia = navigator.mediaDevices.getUserMedia.bind(navigator.mediaDevices);
+}
+
+(function() {
+  if (navigator.mediaDevices && navigator.mediaDevices.__proto__) {
+    try {
+      Object.defineProperty(navigator.mediaDevices.__proto__, 'getUserMedia', {
+        get: function() {
+          return undefined; // Or throw an error
+        },
+        configurable: false
+      });
+    } catch (error) {
+      console.error("Error defining prototype getter:", error);
+    }
+  }
+})();
+
+(function() {
+  const pendingMediaResolvers = {};
+  let nextMediaPromiseId = 0;
+
+  function requestMediaPermissions(constraints) {
+    const mediaPromiseId = nextMediaPromiseId++;
+    const promise = new Promise((resolve, reject) => {
+      pendingMediaResolvers[mediaPromiseId] = (granted) => {
+        delete pendingMediaResolvers[mediaPromiseId];
+        resolve(granted);
+      };
+    });
+
+    window.parent.postMessage({
+      type: 'requestMediaPermission',
+      constraints: constraints,
+      promiseId: mediaPromiseId,
+    }, '*');
+
+    return promise;
+  }
+
+  let originalGetUserMedia = realOriginalGetUserMedia;
+
+  function interceptGetUserMedia() {
+    if (navigator.mediaDevices) {
+      Object.defineProperty(navigator.mediaDevices, 'getUserMedia', {
+        value: function(constraints) {
+          return requestMediaPermissions(constraints).then((granted) => {
+            if (granted) {
+              if (originalGetUserMedia) {
+                return originalGetUserMedia(constraints);
+              } else {
+                throw new Error("Original getUserMedia not available.");
+              }
+            } else {
+              throw new DOMException('Permission denied', 'NotAllowedError');
+            }
+          });
+        },
+        writable: false,
+        configurable: false
+      });
+    }
+  }
+
+  interceptGetUserMedia();
+
+  const observer = new MutationObserver(function(mutationsList, observer) {
+    for (const mutation of mutationsList) {
+      if (mutation.type === 'reconfigured' && mutation.name === 'getUserMedia' && mutation.object === navigator.mediaDevices) {
+        interceptGetUserMedia();
+      } else if (mutation.type === 'attributes' && mutation.attributeName === 'getUserMedia' && mutation.target === navigator.mediaDevices) {
+        interceptGetUserMedia();
+      } else if (mutation.type === 'childList' && mutation.addedNodes) {
+        mutation.addedNodes.forEach(node => {
+          if (node === navigator.mediaDevices) {
+            interceptGetUserMedia();
+          }
+        });
+      }
+    }
+  });
+
+  function interceptSpeechRecognition() {
+    if (!window.SpeechRecognition && !window.webkitSpeechRecognition) {
+      return;
+    }
+
+    const OriginalSpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+
+    const SpeechRecognitionWrapper = function(...args) {
+      const recognizer = new OriginalSpeechRecognition(...args);
+      const originalStart = recognizer.start.bind(recognizer);
+
+      recognizer.start = function() {
+        requestMediaPermissions({ audio: true }).then(granted => {
+          if (granted) {
+            originalStart();
+          } else {
+            const errorEvent = new SpeechRecognitionErrorEvent('error');
+            errorEvent.error = 'not-allowed'; // This is the standard error for permission denial.
+            recognizer.dispatchEvent(errorEvent);
+          }
+        });
+      };
+
+      return recognizer;
+    };
+
+    SpeechRecognitionWrapper.prototype = OriginalSpeechRecognition.prototype;
+    SpeechRecognitionWrapper.prototype.constructor = SpeechRecognitionWrapper;
+
+    if (window.SpeechRecognition) {
+      window.SpeechRecognition = SpeechRecognitionWrapper;
+    }
+    if (window.webkitSpeechRecognition) {
+      window.webkitSpeechRecognition = SpeechRecognitionWrapper;
+    }
+  }
+
+  interceptSpeechRecognition();
+
+  window.addEventListener('message', function(event) {
+    if (event.data) {
+      if (event.data.type === 'resolveMediaPermission') {
+        const { promiseId, granted } = event.data;
+        if (pendingMediaResolvers[promiseId]) {
+          pendingMediaResolvers[promiseId](granted);
+        }
+      }
+    }
+  });
+
+})();</script><script ws-interception-config="{&quot;parentOrigin&quot;:&quot;https://gemini.google.com&quot;,&quot;proxiedDomains&quot;:[]}">(function(){'use strict';var u=typeof Object.defineProperties=="function"?Object.defineProperty:function(b,d,e){if(b==Array.prototype||b==Object.prototype)return b;b[d]=e.value;return b};function v(b){b=["object"==typeof globalThis&&globalThis,b,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var d=0;d<b.length;++d){var e=b[d];if(e&&e.Math==Math)return e}throw Error("Cannot find global object");}var w=v(this);
+function y(b,d){if(d)a:{var e=w;b=b.split(".");for(var h=0;h<b.length-1;h++){var k=b[h];if(!(k in e))break a;e=e[k]}b=b[b.length-1];h=e[b];d=d(h);d!=h&&d!=null&&u(e,b,{configurable:!0,writable:!0,value:d})}}function z(b){function d(h){return b.next(h)}function e(h){return b.throw(h)}return new Promise(function(h,k){function m(n){n.done?h(n.value):Promise.resolve(n.value).then(d,e).then(m,k)}m(b.next())})}y("globalThis",function(b){return b||w});/*
+
+ Copyright The Closure Library Authors.
+ SPDX-License-Identifier: Apache-2.0
+*/
+function A(b,d){function e(){}e.prototype=d.prototype;b.i=d.prototype;b.prototype=new e;b.prototype.constructor=b;b.g=function(h,k,m){for(var n=Array(arguments.length-2),p=2;p<arguments.length;p++)n[p-2]=arguments[p];return d.prototype[k].apply(h,n)}};function B(b,d,e="*"){function h(a){if(typeof a==="string")return F.encode(a).buffer;if(a instanceof ArrayBuffer)return a.slice(0);if(ArrayBuffer.isView(a))return a.buffer.slice(a.byteOffset,a.byteOffset+a.byteLength);throw Error("Invalid data type");}function k(a){a=h(a);var f={type:"send",data:new Uint8Array(a)},g;(g=r)==null||g.postMessage(f,[a])}function m(){if(!r)throw Error("Data port not captured yet.");r.onmessage=a=>{if(a.data.type==="message"){a=new MessageEvent("message",{data:G.decode(a.data.data)});
+let f;(f=c.onmessage)==null||f.call(c,a);c.dispatchEvent(a)}}}function n(){if(!t)throw Error("Control port not captured yet.");t.onmessage=a=>{switch(a.data.type){case "open":l=1;var f=new Event("open"),g;(g=c.onopen)==null||g.call(c,f);c.dispatchEvent(f);q.forEach(H=>{k(H)});q=[];break;case "close":g=a.data;l=3;g=new CloseEvent("close",{code:g.code,reason:g.reason,wasClean:g.wasClean});(f=c.onclose)==null||f.call(c,g);c.dispatchEvent(g);break;case "error":l=3;f=new Event("error");let x;(x=c.onerror)==
+null||x.call(c,f);c.dispatchEvent(f)}}}function p(a){return z(function*(){var f=new MessageChannel;t=f.port1;var g=new MessageChannel;r=g.port1;n();m();window.parent.postMessage({type:"websocket_open",portOrdering:["control","data"],url:b,protocols:a||[],connectionId:I},e,[f.port2,g.port2])}())}var c=Reflect.construct(EventTarget,[],new.target);c.CONNECTING=0;c.OPEN=1;c.CLOSING=2;c.CLOSED=3;c.url=b;c.binaryType="arraybuffer";c.protocol="";c.h="";var l=0,t=null,r=null,q=[],F=new TextEncoder,G=new TextDecoder;
+c.onopen=null;c.onmessage=null;c.onclose=null;c.onerror=null;Object.defineProperty(c,"readyState",{get:()=>l,enumerable:!0,configurable:!0});Object.defineProperty(c,"bufferedAmount",{get:()=>{var a=0;q.forEach(f=>{a+=typeof f==="string"?f.length:f.byteLength});return a},enumerable:!0,configurable:!0});var I=function(){var a;return((a=globalThis.crypto)==null?0:a.randomUUID)?globalThis.crypto.randomUUID():"xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g,f=>{var g=Math.random()*16|0;return(f===
+"x"?g:g&3|8).toString(16)})}();c.send=a=>{if(l===1)a instanceof Blob?a.arrayBuffer().then(f=>{k(f)}):k(a);else if(l===0)if(typeof a==="string")q.push(a);else if(a instanceof ArrayBuffer||ArrayBuffer.isView(a))q.push(h(a));else throw Error("Sending Blob is not supported before the connection is open.");else console.debug("WebSocket send called in CLOSING or CLOSED state; ignored.")};c.close=(a=1E3,f="")=>{if(l!==2&&l!==3){l=2;a={type:"close",code:a,reason:f,wasClean:a===1E3};var g;(g=t)==null||g.postMessage(a)}};
+Promise.resolve().then(()=>p(d));return c}A(B,EventTarget);var C=document.currentScript,D=C==null?void 0:C.getAttribute("ws-interception-config");if(!D)throw Error("WebSocket Interceptor: Missing ws-interception-config attribute in the script tag.");var E=JSON.parse(D);if(!E.parentOrigin||typeof E.parentOrigin!=="string")throw Error("WebSocket Interceptor: Invalid parentOrigin in ws-interception-config");
+(function(b){var d=Object.getOwnPropertyDescriptor(window,"WebSocket");if(!d||d.writable||d.configurable)d=Object.assign(function(e,h){try{let k=(new URL(e)).hostname;if(b.proxiedDomains.some(m=>k===m||k.endsWith(`.${m}`)))return new B(e,h,b.parentOrigin)}catch(k){throw window.parent.postMessage({type:"websocket_blocked",url:e,reason:"blocked_invalid_url"},b.parentOrigin),new DOMException(`WebSocket connection to '${e}' is not allowed in Canvas.`,"SecurityError");}window.parent.postMessage({type:"websocket_blocked",
+url:e,reason:"blocked_domain_not_allowlisted"},b.parentOrigin);throw new DOMException(`WebSocket connection to '${e}' is not allowed in Canvas.`,"SecurityError");},{CONNECTING:0,OPEN:1,CLOSING:2,CLOSED:3}),Object.defineProperty(window,"WebSocket",{value:d,writable:!1,configurable:!1})})({proxiedDomains:E.proxiedDomains||[],parentOrigin:E.parentOrigin});}).call(this);
+</script><script>((function(modelInformation) {
+  const originalFetch = window.fetch;
+  // TODO: b/421908508 - Move these out of the script and match all generative AI model calls.
+  let googleLlmBaseApiUrls = [
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.textModelName + ':streamGenerateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.textModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageModelName + ':predict',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageModelName + ':predictLongRunning',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageEditModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageTransformModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.videoModelName + ':predict',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.videoModelName + ':predictLongRunning',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.ttsModelName + ':generateContent',
+  ];
+  modelInformation.deprecatedTextModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+    );
+  });
+  modelInformation.deprecatedImageModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':predict',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':predictLongRunning',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+  modelInformation.deprecatedGenerateImageModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+
+  const pendingFetchResolvers = {};
+  let nextPromiseId = 0;
+
+  function handleStringInput(input, optionsArgument) {
+    const actualUrl = input;
+    const fetchCallArgs = [actualUrl, optionsArgument];
+    const effectiveOptions = optionsArgument || {};
+    const bodyForApiKeyCheck = effectiveOptions.body;
+    const bodyForPostMessage = effectiveOptions.body;
+    return { actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage };
+  }
+
+  function handleRequestInput(input, optionsArgument) {
+    const actualUrl = input.url;
+    const fetchCallArgs = [input, optionsArgument];
+    const effectiveOptions = { method: input.method, headers: new Headers(input.headers) };
+    let bodyForApiKeyCheck;
+    let bodyForPostMessage;
+
+    if (optionsArgument) {
+      if (optionsArgument.method) effectiveOptions.method = optionsArgument.method;
+      if (optionsArgument.headers) effectiveOptions.headers = new Headers(optionsArgument.headers);
+      if ('body' in optionsArgument) {
+        bodyForApiKeyCheck = optionsArgument.body;
+        bodyForPostMessage = optionsArgument.body;
+      } else {
+        bodyForApiKeyCheck = undefined;
+        bodyForPostMessage = input.body;
+      }
+    } else {
+      bodyForApiKeyCheck = undefined;
+      bodyForPostMessage = input.body;
+    }
+    return { actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage };
+  }
+
+  window.fetch = function(input, optionsArgument) {
+    let actualUrl;
+    let fetchCallArgs;
+    let effectiveOptions = {};
+    let bodyForApiKeyCheck;
+    let bodyForPostMessage;
+
+    if (typeof input === 'string') {
+      ({actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage} = handleStringInput(input, optionsArgument));
+    } else if (input instanceof Request) {
+      ({actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage} = handleRequestInput(input, optionsArgument));
+    } else {
+      return originalFetch.apply(window, [input, optionsArgument]);
+    }
+
+    effectiveOptions.method = effectiveOptions.method || 'GET';
+    if (!effectiveOptions.headers) {
+      effectiveOptions.headers = new Headers();
+    }
+
+
+    if (typeof actualUrl === 'string' && googleLlmBaseApiUrls.some((url) => actualUrl.startsWith(url))) {
+      let apiKeyIsNull = true;
+
+      const regex = new RegExp("models/([^:]+)");
+      const modelNameMatch = actualUrl.match(regex);
+      const modelName = modelNameMatch ? modelNameMatch[1] : 'unspecified';
+
+
+      try {
+        const urlObject = new URL(actualUrl);  // Use URL object for robust parsing
+        const apiKeyParam = urlObject.searchParams.get('key');
+        if (apiKeyParam) {
+          apiKeyIsNull = false;
+        }
+      } catch (e) {
+        // Continue checks even if URL parsing fails
+      }
+
+      if (apiKeyIsNull && effectiveOptions.headers) {
+        const h = new Headers(effectiveOptions.headers);
+        const apiKeyHeaderValue = h.get('X-API-Key') || h.get('x-api-key');
+        if (apiKeyHeaderValue) {
+          apiKeyIsNull = false;
+          return originalFetch.apply(window, fetchCallArgs);
+        }
+      }
+
+      if (apiKeyIsNull && effectiveOptions.method && ['POST', 'PUT', 'PATCH'].includes(effectiveOptions.method.toUpperCase()) && typeof bodyForApiKeyCheck === 'string') {
+        try {
+          const bodyData = JSON.parse(bodyForApiKeyCheck);
+          if (bodyData && bodyData.apiKey) {
+            apiKeyIsNull = false;
+            return originalFetch.apply(window, fetchCallArgs);
+          }
+        } catch (e) {
+          // Ignore JSON parsing errors
+        }
+      }
+
+      if(apiKeyIsNull) {
+        const promiseId = nextPromiseId++;
+        const promise = new Promise((resolve) => {
+          pendingFetchResolvers[promiseId] = (resolvedResponse) => {
+            delete pendingFetchResolvers[promiseId];
+            resolve(resolvedResponse);
+          };
+        });
+
+        let serializedBodyForPostMessage;
+        if (typeof bodyForPostMessage === 'string' || bodyForPostMessage == null) {
+            serializedBodyForPostMessage = bodyForPostMessage;
+        } else if (bodyForPostMessage instanceof ReadableStream) {
+            serializedBodyForPostMessage = null;
+        } else {
+            try {
+                serializedBodyForPostMessage = JSON.stringify(bodyForPostMessage);
+            } catch (e) {
+                serializedBodyForPostMessage = null;
+            }
+        }
+
+        const messageOptions = {
+            method: effectiveOptions.method,
+            headers: Object.fromEntries(new Headers(effectiveOptions.headers).entries()),
+            body: serializedBodyForPostMessage
+        };
+
+        window.parent.postMessage({
+          type: 'requestFetch',
+          url: actualUrl,
+          modelName: modelName,
+          options: messageOptions,
+          promiseId: promiseId,
+        }, '*');
+
+        return promise;
+      }
+      return originalFetch.apply(window, fetchCallArgs);
+    }
+    return originalFetch.apply(window, fetchCallArgs);
+  };
+
+  window.addEventListener('message', function(event) {
+    if (event.data && event.data.type === 'resolveFetch') {
+      const { promiseId, response } = event.data;
+      if (pendingFetchResolvers[promiseId]) {
+        try {
+          const reconstructedResponse = new Response(response.body, {
+            status: response.status,
+            statusText: response.statusText,
+            headers: new Headers(response.headers),
+          });
+          pendingFetchResolvers[promiseId](reconstructedResponse);
+        } catch (error) {
+          pendingFetchResolvers[promiseId](new Response(null, { status: 500, statusText: "Interceptor Response Reconstruction Error" }));
+        }
+      }
+    }
+  });
+
+}))({"textModelName":"gemini-3-flash-preview","imageModelName":"imagen-4.0-generate-001","imageEditModelName":"gemini-3.1-flash-image-preview","imageTransformModelName":"gemini-3-pro-image-preview-11-2025","videoModelName":"veo-2.0-generate-001","ttsModelName":"gemini-2.5-flash-preview-tts","deprecatedTextModelNames":["gemini-2.0-flash","gemini-2.5-flash","gemini-2.5-flash-preview-04-17","gemini-2.5-flash-preview-05-20","gemini-2.5-flash-preview-09-2025"],"deprecatedImageModelNames":["imagen-3.0-generate-001","imagen-3.0-generate-002"],"deprecatedGenerateImageModelNames":["gemini-2.5-flash-image-preview","gemini-2.5-flash-image"]})</script><script>(function(){'use strict';function a(){window.parent.postMessage({type:"interaction"},"*")}window.addEventListener("click",a,{capture:!0,passive:!0});window.addEventListener("touchstart",a,{capture:!0,passive:!0});window.addEventListener("keydown",a,{capture:!0,passive:!0});}).call(this);
+</script><script>(function() {
+  const originalConsoleLog = console.log;
+  const originalConsoleError = console.error;
+
+    /**
+   * Normalizes an error event or a promise rejection reason into a structured error object.
+   * @param {*} errorEventOrReason The error object or reason.
+   * @return {object} Structured error data { message, name, stack }.
+   */
+  function getErrorObject(errorEventOrReason) {
+    if (errorEventOrReason instanceof Error) {
+      return {
+        message: errorEventOrReason.message,
+        name: errorEventOrReason.name,
+        stack: errorEventOrReason.stack,
+      };
+    }
+    // Fallback for non-Error objects.
+    try {
+      return {
+        message: JSON.stringify(errorEventOrReason),
+        name: 'UnknownErrorType',
+        stack: null,
+      };
+    } catch (e) {
+      return {
+        message: String(errorEventOrReason),
+        name: 'UnknownErrorTypeNonStringifiable',
+        stack: null,
+      };
+    }
+  }
+
+  /**
+   * Converts an array of arguments (from log/error) into a single string.
+   * Handles Error objects specially to include their message and stack.
+   * @param {Array<*>} args - Arguments passed to console methods.
+   * @return {string} A string representation of the arguments.
+   */
+  function stringifyArgs(args) {
+    return args
+      .map((arg) => {
+        if (arg instanceof Error) {
+          const {message, stack} = arg;
+          return `Error: ${message}${stack ? ('\nStack: ' + stack) : ''}`;
+        }
+        if (typeof arg === 'object' && arg !== null) {
+          try {
+            return JSON.stringify(arg);
+          } catch (error) {
+            return '[Circular Object]';
+          }
+        } else {
+          return String(arg);
+        }
+      })
+      .join(' ');
+  }
+
+  console.log = function(...args) {
+    const logString = stringifyArgs(args);
+    window.parent.postMessage({ type: 'log', message: logString }, '*');
+    originalConsoleLog.apply(console, args);
+  };
+
+  console.error = function(...args) {
+    let errorData;
+    if (args.length > 0 && args[0] instanceof Error) {
+      const err = args[0];
+      // If the first arg is an Error, capture its details.
+      errorData = {
+        type: 'error',
+        source: 'CONSOLE_ERROR',
+        ...getErrorObject(err),
+        rawArgsString: stringifyArgs(args.slice(1)),
+        timestamp: new Date().toISOString(),
+      };
+    } else {
+      // If not an Error object, treat all args as a general error message.
+      errorData = {
+        type: 'error',
+        source: 'CONSOLE_ERROR',
+        message: stringifyArgs(args),
+        name: 'ConsoleLoggedError',
+        stack: null,
+        timestamp: new Date().toISOString(),
+      };
+    }
+    window.parent.postMessage(errorData, '*');
+    originalConsoleError.apply(console, args);
+  };
+
+  // Listen for global unhandled synchronous errors.
+  window.addEventListener('error', function(event) {
+    const errorDetails = event.error ? getErrorObject(event.error) : {
+      message: event.message,
+      name: 'GlobalError',
+      stack: null,
+      filename: event.filename,
+      lineno: event.lineno,
+      colno: event.colno,
+    };
+
+    window.parent.postMessage({
+      type: 'error',
+      source: 'global',
+      ...errorDetails,
+      message: errorDetails.message || event.message,
+      timestamp: new Date().toISOString(),
+    }, '*');
+  });
+
+  // Listen for unhandled promise rejections (asynchronous errors).
+  window.addEventListener('unhandledrejection', function(event) {
+    const errorDetails = getErrorObject(event.reason);
+
+    window.parent.postMessage({
+      type: 'error',
+      source: 'unhandledrejection',
+      ...errorDetails,
+      message: errorDetails.message || 'Unhandled Promise Rejection',
+      timestamp: new Date().toISOString(),
+    }, '*');
+  });
+
+})();</script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我也要一樣</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com/"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&amp;family=Noto+Sans+TC:wght@300;500;700;900&amp;display=swap" rel="stylesheet">
+    <!-- Tone.js for Procedural Music Synthesis -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.49/Tone.js" crossorigin="anonymous"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'Noto Sans TC', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            lightBg: '#F8FAFC', // Crisp Slate 50
+                            card: '#FFFFFF',    // Pure White
+                            accent: '#2563EB',  // Indigo/Blue 600
+                            candy: '#E11D48',   // Emotion Rose 600
+                            tree: '#059669',    // Wisdom Emerald 600
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body {
+            background-color: #F8FAFC;
+            color: #1E293B;
+            overflow-x: hidden;
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #F1F5F9;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #CBD5E1;
+            border-radius: 3px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94A3B8;
+        }
+        /* Smooth transitions */
+        .slide-element {
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .pulse-soft {
+            animation: softPulse 2.5s infinite ease-in-out;
+        }
+        @keyframes softPulse {
+            0%, 100% { opacity: 0.95; transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.01); }
+        }
+        @keyframes float-up {
+            0% { transform: translateY(15px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+        .animate-float-up {
+            animation: float-up 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+    </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:Inter, Noto Sans TC, sans-serif;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.pointer-events-none{pointer-events:none}.absolute{position:absolute}.relative{position:relative}.sticky{position:sticky}.-bottom-40{bottom:-10rem}.-left-40{left:-10rem}.-right-40{right:-10rem}.-top-40{top:-10rem}.top-0{top:0px}.z-40{z-index:40}.z-50{z-index:50}.z-10{z-index:10}.mx-auto{margin-left:auto;margin-right:auto}.my-4{margin-top:1rem;margin-bottom:1rem}.mb-3{margin-bottom:0.75rem}.ml-1{margin-left:0.25rem}.ml-2{margin-left:0.5rem}.mr-1{margin-right:0.25rem}.mt-1{margin-top:0.25rem}.mt-1\.5{margin-top:0.375rem}.mt-2{margin-top:0.5rem}.mt-3{margin-top:0.75rem}.mt-4{margin-top:1rem}.mt-8{margin-top:2rem}.mr-1\.5{margin-right:0.375rem}.mt-2\.5{margin-top:0.625rem}.block{display:block}.flex{display:flex}.grid{display:grid}.hidden{display:none}.h-96{height:24rem}.h-7{height:1.75rem}.max-h-48{max-height:12rem}.max-h-\[400px\]{max-height:400px}.min-h-screen{min-height:100vh}.min-h-\[620px\]{min-height:620px}.w-96{width:24rem}.w-full{width:100%}.w-7{width:1.75rem}.min-w-\[280px\]{min-width:280px}.max-w-2xl{max-width:42rem}.max-w-4xl{max-width:56rem}.max-w-\[1600px\]{max-width:1600px}.max-w-xl{max-width:36rem}.flex-grow{flex-grow:1}.-translate-y-2{--tw-translate-y:-0.5rem;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.scale-105{--tw-scale-x:1.05;--tw-scale-y:1.05;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.transform{transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@keyframes bounce{0%, 100%{transform:translateY(-25%);animation-timing-function:cubic-bezier(0.8,0,1,1)}50%{transform:none;animation-timing-function:cubic-bezier(0,0,0.2,1)}}.animate-bounce{animation:bounce 1s infinite}.cursor-pointer{cursor:pointer}.cursor-not-allowed{cursor:not-allowed}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-center{align-items:center}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1{gap:0.25rem}.gap-1\.5{gap:0.375rem}.gap-2{gap:0.5rem}.gap-4{gap:1rem}.gap-6{gap:1.5rem}.space-x-2 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.5rem * var(--tw-space-x-reverse));margin-left:calc(0.5rem * calc(1 - var(--tw-space-x-reverse)))}.space-x-3 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.75rem * var(--tw-space-x-reverse));margin-left:calc(0.75rem * calc(1 - var(--tw-space-x-reverse)))}.space-x-4 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(1rem * var(--tw-space-x-reverse));margin-left:calc(1rem * calc(1 - var(--tw-space-x-reverse)))}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.space-y-3 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.75rem * var(--tw-space-y-reverse))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.space-y-6 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.5rem * var(--tw-space-y-reverse))}.space-x-1\.5 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.375rem * var(--tw-space-x-reverse));margin-left:calc(0.375rem * calc(1 - var(--tw-space-x-reverse)))}.overflow-hidden{overflow:hidden}.overflow-y-auto{overflow-y:auto}.rounded{border-radius:0.25rem}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-xl{border-radius:0.75rem}.rounded-r-xl{border-top-right-radius:0.75rem;border-bottom-right-radius:0.75rem}.border{border-width:1px}.border-b{border-bottom-width:1px}.border-l-4{border-left-width:4px}.border-t{border-top-width:1px}.border-amber-200{--tw-border-opacity:1;border-color:rgb(253 230 138 / var(--tw-border-opacity, 1))}.border-amber-300{--tw-border-opacity:1;border-color:rgb(252 211 77 / var(--tw-border-opacity, 1))}.border-emerald-200{--tw-border-opacity:1;border-color:rgb(167 243 208 / var(--tw-border-opacity, 1))}.border-emerald-600{--tw-border-opacity:1;border-color:rgb(5 150 105 / var(--tw-border-opacity, 1))}.border-indigo-200{--tw-border-opacity:1;border-color:rgb(199 210 254 / var(--tw-border-opacity, 1))}.border-rose-200{--tw-border-opacity:1;border-color:rgb(254 205 211 / var(--tw-border-opacity, 1))}.border-slate-200{--tw-border-opacity:1;border-color:rgb(226 232 240 / var(--tw-border-opacity, 1))}.border-slate-300{--tw-border-opacity:1;border-color:rgb(203 213 225 / var(--tw-border-opacity, 1))}.border-slate-600{--tw-border-opacity:1;border-color:rgb(71 85 105 / var(--tw-border-opacity, 1))}.border-emerald-300{--tw-border-opacity:1;border-color:rgb(110 231 183 / var(--tw-border-opacity, 1))}.border-amber-400{--tw-border-opacity:1;border-color:rgb(251 191 36 / var(--tw-border-opacity, 1))}.border-amber-600\/30{border-color:rgb(217 119 6 / 0.3)}.bg-amber-100{--tw-bg-opacity:1;background-color:rgb(254 243 199 / var(--tw-bg-opacity, 1))}.bg-amber-50{--tw-bg-opacity:1;background-color:rgb(255 251 235 / var(--tw-bg-opacity, 1))}.bg-blue-50\/85{background-color:rgb(239 246 255 / 0.85)}.bg-blue-500\/5{background-color:rgb(59 130 246 / 0.05)}.bg-emerald-100{--tw-bg-opacity:1;background-color:rgb(209 250 229 / var(--tw-bg-opacity, 1))}.bg-emerald-50{--tw-bg-opacity:1;background-color:rgb(236 253 245 / var(--tw-bg-opacity, 1))}.bg-emerald-500\/5{background-color:rgb(16 185 129 / 0.05)}.bg-indigo-100{--tw-bg-opacity:1;background-color:rgb(224 231 255 / var(--tw-bg-opacity, 1))}.bg-indigo-50{--tw-bg-opacity:1;background-color:rgb(238 242 255 / var(--tw-bg-opacity, 1))}.bg-indigo-600{--tw-bg-opacity:1;background-color:rgb(79 70 229 / var(--tw-bg-opacity, 1))}.bg-rose-50{--tw-bg-opacity:1;background-color:rgb(255 241 242 / var(--tw-bg-opacity, 1))}.bg-slate-100{--tw-bg-opacity:1;background-color:rgb(241 245 249 / var(--tw-bg-opacity, 1))}.bg-slate-50{--tw-bg-opacity:1;background-color:rgb(248 250 252 / var(--tw-bg-opacity, 1))}.bg-slate-800{--tw-bg-opacity:1;background-color:rgb(30 41 59 / var(--tw-bg-opacity, 1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-slate-50\/50{background-color:rgb(248 250 252 / 0.5)}.bg-amber-50\/20{background-color:rgb(255 251 235 / 0.2)}.bg-gradient-to-r{background-image:linear-gradient(to right, var(--tw-gradient-stops))}.bg-gradient-to-tr{background-image:linear-gradient(to top right, var(--tw-gradient-stops))}.from-blue-600{--tw-gradient-from:#2563eb var(--tw-gradient-from-position);--tw-gradient-to:rgb(37 99 235 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-brand-accent{--tw-gradient-from:#2563EB var(--tw-gradient-from-position);--tw-gradient-to:rgb(37 99 235 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-emerald-600{--tw-gradient-from:#059669 var(--tw-gradient-from-position);--tw-gradient-to:rgb(5 150 105 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-indigo-600{--tw-gradient-from:#4f46e5 var(--tw-gradient-from-position);--tw-gradient-to:rgb(79 70 229 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.via-indigo-500{--tw-gradient-to:rgb(99 102 241 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #6366f1 var(--tw-gradient-via-position), var(--tw-gradient-to)}.to-emerald-500{--tw-gradient-to:#10b981 var(--tw-gradient-to-position)}.to-emerald-600{--tw-gradient-to:#059669 var(--tw-gradient-to-position)}.to-indigo-600{--tw-gradient-to:#4f46e5 var(--tw-gradient-to-position)}.to-teal-600{--tw-gradient-to:#0d9488 var(--tw-gradient-to-position)}.bg-clip-text{-webkit-background-clip:text;background-clip:text}.p-2{padding:0.5rem}.p-2\.5{padding:0.625rem}.p-4{padding:1rem}.p-5{padding:1.25rem}.p-6{padding:1.5rem}.p-1{padding:0.25rem}.p-3\.5{padding:0.875rem}.px-2\.5{padding-left:0.625rem;padding-right:0.625rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-3\.5{padding-left:0.875rem;padding-right:0.875rem}.px-4{padding-left:1rem;padding-right:1rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.px-8{padding-left:2rem;padding-right:2rem}.py-0\.5{padding-top:0.125rem;padding-bottom:0.125rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-1\.5{padding-top:0.375rem;padding-bottom:0.375rem}.py-10{padding-top:2.5rem;padding-bottom:2.5rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-2\.5{padding-top:0.625rem;padding-bottom:0.625rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-3\.5{padding-top:0.875rem;padding-bottom:0.875rem}.py-4{padding-top:1rem;padding-bottom:1rem}.py-8{padding-top:2rem;padding-bottom:2rem}.py-6{padding-top:1.5rem;padding-bottom:1.5rem}.pb-2{padding-bottom:0.5rem}.pr-1{padding-right:0.25rem}.pt-2{padding-top:0.5rem}.pt-4{padding-top:1rem}.pt-6{padding-top:1.5rem}.pb-3{padding-bottom:0.75rem}.text-center{text-align:center}.font-sans{font-family:Inter, Noto Sans TC, sans-serif}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-\[10px\]{font-size:10px}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.font-black{font-weight:900}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.font-medium{font-weight:500}.font-normal{font-weight:400}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.italic{font-style:italic}.leading-relaxed{line-height:1.625}.leading-tight{line-height:1.25}.tracking-wider{letter-spacing:0.05em}.text-amber-500{--tw-text-opacity:1;color:rgb(245 158 11 / var(--tw-text-opacity, 1))}.text-amber-800{--tw-text-opacity:1;color:rgb(146 64 14 / var(--tw-text-opacity, 1))}.text-blue-700{--tw-text-opacity:1;color:rgb(29 78 216 / var(--tw-text-opacity, 1))}.text-blue-900{--tw-text-opacity:1;color:rgb(30 58 138 / var(--tw-text-opacity, 1))}.text-brand-accent{--tw-text-opacity:1;color:rgb(37 99 235 / var(--tw-text-opacity, 1))}.text-brand-candy{--tw-text-opacity:1;color:rgb(225 29 72 / var(--tw-text-opacity, 1))}.text-emerald-700{--tw-text-opacity:1;color:rgb(4 120 87 / var(--tw-text-opacity, 1))}.text-emerald-800{--tw-text-opacity:1;color:rgb(6 95 70 / var(--tw-text-opacity, 1))}.text-emerald-900{--tw-text-opacity:1;color:rgb(6 78 59 / var(--tw-text-opacity, 1))}.text-indigo-700{--tw-text-opacity:1;color:rgb(67 56 202 / var(--tw-text-opacity, 1))}.text-indigo-800{--tw-text-opacity:1;color:rgb(55 48 163 / var(--tw-text-opacity, 1))}.text-rose-700{--tw-text-opacity:1;color:rgb(190 18 60 / var(--tw-text-opacity, 1))}.text-slate-300{--tw-text-opacity:1;color:rgb(203 213 225 / var(--tw-text-opacity, 1))}.text-slate-400{--tw-text-opacity:1;color:rgb(148 163 184 / var(--tw-text-opacity, 1))}.text-slate-500{--tw-text-opacity:1;color:rgb(100 116 139 / var(--tw-text-opacity, 1))}.text-slate-600{--tw-text-opacity:1;color:rgb(71 85 105 / var(--tw-text-opacity, 1))}.text-slate-700{--tw-text-opacity:1;color:rgb(51 65 85 / var(--tw-text-opacity, 1))}.text-slate-800{--tw-text-opacity:1;color:rgb(30 41 59 / var(--tw-text-opacity, 1))}.text-slate-950{--tw-text-opacity:1;color:rgb(2 6 23 / var(--tw-text-opacity, 1))}.text-transparent{color:transparent}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-amber-600{--tw-text-opacity:1;color:rgb(217 119 6 / var(--tw-text-opacity, 1))}.text-indigo-500{--tw-text-opacity:1;color:rgb(99 102 241 / var(--tw-text-opacity, 1))}.text-rose-500{--tw-text-opacity:1;color:rgb(244 63 94 / var(--tw-text-opacity, 1))}.text-slate-900{--tw-text-opacity:1;color:rgb(15 23 42 / var(--tw-text-opacity, 1))}.text-rose-600{--tw-text-opacity:1;color:rgb(225 29 72 / var(--tw-text-opacity, 1))}.text-emerald-600{--tw-text-opacity:1;color:rgb(5 150 105 / var(--tw-text-opacity, 1))}.text-amber-700{--tw-text-opacity:1;color:rgb(180 83 9 / var(--tw-text-opacity, 1))}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.opacity-50{opacity:0.5}.opacity-60{opacity:0.6}.opacity-75{opacity:0.75}.shadow-inner{--tw-shadow:inset 0 2px 4px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:inset 0 2px 4px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-amber-100{--tw-shadow-color:#fef3c7;--tw-shadow:var(--tw-shadow-colored)}.ring-2{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}.ring-brand-accent{--tw-ring-opacity:1;--tw-ring-color:rgb(37 99 235 / var(--tw-ring-opacity, 1))}.blur-3xl{--tw-blur:blur(64px);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.transition{transition-property:color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-200{transition-duration:200ms}.duration-300{transition-duration:300ms}.duration-1000{transition-duration:1000ms}.hover\:-translate-y-0\.5:hover{--tw-translate-y:-0.125rem;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:border-brand-accent:hover{--tw-border-opacity:1;border-color:rgb(37 99 235 / var(--tw-border-opacity, 1))}.hover\:border-slate-300:hover{--tw-border-opacity:1;border-color:rgb(203 213 225 / var(--tw-border-opacity, 1))}.hover\:border-emerald-200:hover{--tw-border-opacity:1;border-color:rgb(167 243 208 / var(--tw-border-opacity, 1))}.hover\:border-rose-200:hover{--tw-border-opacity:1;border-color:rgb(254 205 211 / var(--tw-border-opacity, 1))}.hover\:border-slate-500:hover{--tw-border-opacity:1;border-color:rgb(100 116 139 / var(--tw-border-opacity, 1))}.hover\:bg-amber-100:hover{--tw-bg-opacity:1;background-color:rgb(254 243 199 / var(--tw-bg-opacity, 1))}.hover\:bg-amber-200:hover{--tw-bg-opacity:1;background-color:rgb(253 230 138 / var(--tw-bg-opacity, 1))}.hover\:bg-emerald-100:hover{--tw-bg-opacity:1;background-color:rgb(209 250 229 / var(--tw-bg-opacity, 1))}.hover\:bg-rose-100:hover{--tw-bg-opacity:1;background-color:rgb(255 228 230 / var(--tw-bg-opacity, 1))}.hover\:bg-slate-200:hover{--tw-bg-opacity:1;background-color:rgb(226 232 240 / var(--tw-bg-opacity, 1))}.hover\:bg-slate-50:hover{--tw-bg-opacity:1;background-color:rgb(248 250 252 / var(--tw-bg-opacity, 1))}.hover\:bg-slate-700:hover{--tw-bg-opacity:1;background-color:rgb(51 65 85 / var(--tw-bg-opacity, 1))}.hover\:bg-emerald-50:hover{--tw-bg-opacity:1;background-color:rgb(236 253 245 / var(--tw-bg-opacity, 1))}.hover\:bg-rose-50:hover{--tw-bg-opacity:1;background-color:rgb(255 241 242 / var(--tw-bg-opacity, 1))}.hover\:from-blue-700:hover{--tw-gradient-from:#1d4ed8 var(--tw-gradient-from-position);--tw-gradient-to:rgb(29 78 216 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.hover\:from-emerald-700:hover{--tw-gradient-from:#047857 var(--tw-gradient-from-position);--tw-gradient-to:rgb(4 120 87 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.hover\:from-indigo-700:hover{--tw-gradient-from:#4338ca var(--tw-gradient-from-position);--tw-gradient-to:rgb(67 56 202 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.hover\:to-emerald-700:hover{--tw-gradient-to:#047857 var(--tw-gradient-to-position)}.hover\:to-indigo-700:hover{--tw-gradient-to:#4338ca var(--tw-gradient-to-position)}.hover\:text-slate-800:hover{--tw-text-opacity:1;color:rgb(30 41 59 / var(--tw-text-opacity, 1))}.hover\:text-emerald-600:hover{--tw-text-opacity:1;color:rgb(5 150 105 / var(--tw-text-opacity, 1))}.hover\:text-rose-600:hover{--tw-text-opacity:1;color:rgb(225 29 72 / var(--tw-text-opacity, 1))}.hover\:shadow-md:hover{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.focus\:ring-2:focus{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}.focus\:ring-brand-accent:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(37 99 235 / var(--tw-ring-opacity, 1))}@media (min-width: 640px){.sm\:inline{display:inline}.sm\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}}@media (min-width: 768px){.md\:flex{display:flex}.md\:w-auto{width:auto}.md\:scale-105{--tw-scale-x:1.05;--tw-scale-y:1.05;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.md\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.md\:flex-row{flex-direction:row}.md\:items-center{align-items:center}.md\:space-x-3 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.75rem * var(--tw-space-x-reverse));margin-left:calc(0.75rem * calc(1 - var(--tw-space-x-reverse)))}.md\:p-6{padding:1.5rem}.md\:p-8{padding:2rem}.md\:text-3xl{font-size:1.875rem;line-height:2.25rem}.md\:text-4xl{font-size:2.25rem;line-height:2.5rem}.md\:text-5xl{font-size:3rem;line-height:1}.md\:text-base{font-size:1rem;line-height:1.5rem}.md\:text-lg{font-size:1.125rem;line-height:1.75rem}}@media (min-width: 1024px){.lg\:w-1\/4{width:25%}.lg\:w-3\/4{width:75%}.lg\:flex-row{flex-direction:row}.lg\:p-6{padding:1.5rem}.lg\:text-6xl{font-size:3.75rem;line-height:1}}</style></head>
+<body class="font-sans antialiased min-h-screen flex flex-col justify-between">
+
+    <!-- Top Navigation Header (Always Light Clean) -->
+    <header class="bg-white border-b border-slate-200 px-6 py-4 flex items-center justify-between sticky top-0 z-40 shadow-sm">
+        <div class="flex items-center space-x-3">
+            <div class="bg-gradient-to-tr from-brand-accent to-emerald-500 p-2 rounded-lg shadow-md">
+                <i class="fa-solid fa-graduation-cap text-white text-xl"></i>
+            </div>
+            <div>
+                <h1 class="text-base md:text-lg font-extrabold tracking-wider text-slate-800">社會技巧情意體驗</h1>
+                <p class="text-xs text-slate-500 font-medium">我也要一樣</p>
+            </div>
+        </div>
+        
+        <!-- Action Control Group -->
+        <div class="flex items-center space-x-2 md:space-x-3">
+            <!-- Premature Settle Button (Always visible for teacher) -->
+            <button id="header-settle-btn" onclick="quickSettle()" class="bg-amber-100 hover:bg-amber-200 border border-amber-300 px-3.5 py-2 rounded-lg text-amber-800 text-xs font-bold transition flex items-center gap-1.5 shadow-sm">
+                <i class="fa-solid fa-calculator"></i>
+                <span class="hidden sm:inline">中途結算</span>
+            </button>
+
+            <!-- Active Slide Progress Indicator -->
+            <div class="hidden md:flex items-center space-x-2 bg-slate-100 px-4 py-2 rounded-full border border-slate-200">
+                <span class="text-xs text-slate-500">目前進度：</span>
+                <span id="current-phase-badge" class="text-xs font-bold text-brand-accent">準備開始</span>
+            </div>
+
+            <!-- Audio Sound Toggle -->
+            <button id="music-btn" onclick="toggleHealingMusic()" class="flex items-center space-x-2 bg-emerald-50 hover:bg-emerald-100 border border-emerald-200 px-4 py-2 rounded-lg text-emerald-700 transition duration-300 shadow-sm">
+                <i id="music-icon" class="fa-solid fa-music text-emerald-700"></i>
+                <span id="music-text" class="text-xs font-bold text-emerald-700">播放療癒配樂</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content Area: Split View (Interactive Screen Left / Active Scoreboard Right) -->
+    <main class="flex-grow flex flex-col lg:flex-row p-4 lg:p-6 gap-6 max-w-[1600px] w-full mx-auto">
+        
+        <!-- Left Side: Interactive Slide Board -->
+        <section class="flex-grow lg:w-3/4 bg-white border border-slate-200 rounded-2xl p-5 md:p-8 flex flex-col justify-between shadow-lg relative overflow-hidden min-h-[620px]">
+            <!-- Decorative light effects background -->
+            <div class="absolute -top-40 -left-40 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl pointer-events-none"></div>
+            <div class="absolute -bottom-40 -right-40 w-96 h-96 bg-emerald-500/5 rounded-full blur-3xl pointer-events-none"></div>
+
+            <!-- Slides Content -->
+            <div id="slides-viewport" class="flex-grow flex flex-col justify-center">
+                
+                <!-- SLIDE 0: Welcome Cover -->
+                <div id="slide-0" class="slide-element animate-float-up space-y-6 text-center py-8">
+                    <span class="bg-indigo-50 text-indigo-700 border border-indigo-200 px-4 py-1.5 rounded-full text-xs font-bold tracking-wider uppercase shadow-sm">情意思辨與自我投資</span>
+                    <h2 class="text-3xl md:text-5xl lg:text-6xl font-black text-slate-800 leading-tight">
+                        我也要一樣<br>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-500 to-emerald-600 text-2xl md:text-4xl mt-3 block font-bold">糖果與大樹的終極抉擇</span>
+                    </h2>
+                    <p class="text-slate-600 text-sm md:text-lg max-w-2xl mx-auto font-normal leading-relaxed">
+                        「會吵的小孩有糖吃，我也去吵不就好了？」<br>
+                        為什麼是我要學會理智溝通，而不是那些討厭的人？讓我們透過今天的人際生存戰，看看誰才是能在未來大風大浪中保護好自己的真正贏家。
+                    </p>
+                    <div class="pt-6 flex justify-center space-x-4">
+                        <button onclick="goToSlide(1)" class="bg-gradient-to-r from-brand-accent to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-extrabold px-8 py-4 rounded-xl shadow-md transition transform hover:-translate-y-0.5 text-lg">
+                            組建小組、立刻開戰 <i class="fa-solid fa-gamepad ml-2"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- SLIDE 1: Setup Teams -->
+                <div id="slide-1" class="slide-element animate-float-up space-y-6 hidden">
+                    <div class="text-center">
+                        <h3 class="text-2xl md:text-3xl font-black text-slate-800">建立班級投資小組</h3>
+                        <p class="text-slate-500 text-sm mt-1">請設定參與的人際組別。預設已為您建立 3 個代表小組（初始皆有 10 枚心靈金幣）</p>
+                    </div>
+                    
+                    <div class="bg-slate-50 border border-slate-200 rounded-xl p-6 max-w-xl mx-auto space-y-4 shadow-inner">
+                        <div class="flex space-x-2">
+                            <input id="new-team-name" type="text" placeholder="輸入自訂小組名稱" class="bg-white border border-slate-300 text-slate-800 px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-accent flex-grow shadow-sm">
+                            <button onclick="addNewTeam()" class="bg-slate-800 hover:bg-slate-700 text-white px-5 py-3 rounded-lg font-bold transition shadow-sm">
+                                <i class="fa-solid fa-plus mr-1"></i> 新增
+                            </button>
+                        </div>
+                        
+                        <div id="setup-teams-list" class="grid grid-cols-1 sm:grid-cols-2 gap-2 max-h-48 overflow-y-auto pr-1">
+                <div class="bg-white border border-slate-250 p-2.5 rounded-lg flex justify-between items-center text-xs shadow-sm">
+                    <span class="font-bold text-slate-700"><i class="fa-solid fa-users text-indigo-500 mr-1.5"></i>第一組</span>
+                    <button onclick="deleteTeam(1)" class="text-rose-500 hover:text-rose-600 p-1 font-bold"><i class="fa-solid fa-times"></i></button>
+                </div>
+            
+                <div class="bg-white border border-slate-250 p-2.5 rounded-lg flex justify-between items-center text-xs shadow-sm">
+                    <span class="font-bold text-slate-700"><i class="fa-solid fa-users text-indigo-500 mr-1.5"></i>第二組</span>
+                    <button onclick="deleteTeam(2)" class="text-rose-500 hover:text-rose-600 p-1 font-bold"><i class="fa-solid fa-times"></i></button>
+                </div>
+            
+                <div class="bg-white border border-slate-250 p-2.5 rounded-lg flex justify-between items-center text-xs shadow-sm">
+                    <span class="font-bold text-slate-700"><i class="fa-solid fa-users text-indigo-500 mr-1.5"></i>第三組</span>
+                    <button onclick="deleteTeam(3)" class="text-rose-500 hover:text-rose-600 p-1 font-bold"><i class="fa-solid fa-times"></i></button>
+                </div>
+            </div>
+                    </div>
+
+                    <div class="flex justify-center pt-4">
+                        <button onclick="goToSlide(2)" class="bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-750 text-white px-8 py-3.5 rounded-xl font-extrabold transition shadow-md text-lg">
+                            進入：人際生存戰關卡 <i class="fa-solid fa-arrow-right ml-1"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- SLIDE 2: Dynamic Scenario Engine -->
+                <div id="slide-2" class="slide-element animate-float-up space-y-6 hidden">
+                    <div class="text-center">
+                        <div class="flex items-center justify-center space-x-2">
+                            <span class="bg-indigo-100 text-indigo-800 border border-indigo-200 px-3 py-1 rounded-full text-xs font-bold shadow-sm">【人際生存戰】</span>
+                            <span id="scenario-counter" class="bg-emerald-100 text-emerald-800 border border-emerald-200 px-3 py-1 rounded-full text-xs font-bold shadow-sm">情境 12 / 12</span>
+                        </div>
+                        <h3 id="scenario-title" class="text-2xl md:text-3xl font-black text-slate-800 mt-2">欠了 50 元拖了三個月不還</h3>
+                        <p class="text-slate-500 text-sm">當你遇見這些人際暴風圈，你的回應會讓你付出什麼代價？</p>
+                    </div>
+
+                    <!-- Scenario Card Box -->
+                    <div class="bg-slate-100 border border-slate-200 rounded-2xl p-5 md:p-6 max-w-4xl mx-auto shadow-sm">
+                        <div class="flex items-start space-x-3">
+                            <div class="bg-indigo-600 text-white p-2.5 rounded-xl text-lg mt-1"><i class="fa-solid fa-comment-dots"></i></div>
+                            <div>
+                                <h4 class="text-xs font-bold text-slate-500 tracking-wider uppercase">對話或事件現場：</h4>
+                                <p id="scenario-desc" class="text-slate-800 text-base md:text-lg leading-relaxed mt-1 font-semibold italic">「借給對方的飲料錢過了三個月他提都不提，天天吃炸雞。你無法忍受：」</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Dynamic Options Grid (ENLARGED TEXT & RANDOMIZED) -->
+                    <div class="grid md:grid-cols-3 gap-4 max-w-4xl mx-auto">
+                        <!-- Option A Card -->
+                        <div onclick="selectScenarioOption(&#39;A&#39;)" id="card-opt-a" class="bg-white border border-slate-200 rounded-xl p-5 cursor-pointer transition-all duration-200 shadow-sm flex flex-col justify-between opacity-60">
+                            <div>
+                                <span class="bg-slate-100 text-slate-700 px-2.5 py-1 rounded text-xs font-black">選項 A</span>
+                            </div>
+                            <p id="scenario-opt-a" class="text-slate-850 text-base md:text-lg mt-4 leading-relaxed font-semibold">覺得50元太少催了丟臉，憋在心裡，但只要看到他一次，心裡就暗罵他一次。</p>
+                        </div>
+                        <!-- Option B Card -->
+                        <div onclick="selectScenarioOption(&#39;B&#39;)" id="card-opt-b" class="bg-white border border-slate-200 rounded-xl p-5 cursor-pointer transition-all duration-200 shadow-sm flex flex-col justify-between opacity-60">
+                            <div>
+                                <span class="bg-slate-100 text-slate-700 px-2.5 py-1 rounded text-xs font-black">選項 B</span>
+                            </div>
+                            <p id="scenario-opt-b" class="text-slate-850 text-base md:text-lg mt-4 leading-relaxed font-semibold">理性要求遵守承諾：「不管是多小的錢，都是我的心意。希望你能準時還錢。」</p>
+                        </div>
+                        <!-- Option C Card -->
+                        <div onclick="selectScenarioOption(&#39;C&#39;)" id="card-opt-c" class="bg-white border border-slate-200 rounded-xl p-5 cursor-pointer transition-all duration-200 shadow-sm flex flex-col justify-between ring-2 ring-brand-accent bg-slate-50/50">
+                            <div>
+                                <span class="bg-slate-100 text-slate-700 px-2.5 py-1 rounded text-xs font-black">選項 C</span>
+                            </div>
+                            <p id="scenario-opt-c" class="text-slate-850 text-base md:text-lg mt-4 leading-relaxed font-semibold">當眾大喊：「你是要賴帳喔？才五十塊也要拖三個月，真的愛佔人便宜，欠錢不還的小偷！」</p>
+                        </div>
+                    </div>
+
+                    <!-- Decision Apply Panel -->
+                    <div id="option-apply-panel" class="bg-slate-50 border border-slate-200 rounded-xl p-5 max-w-4xl mx-auto animate-float-up shadow-inner">
+                        <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                            <div class="flex-grow">
+                                <h5 class="font-bold text-slate-700 text-sm" id="apply-option-title">選擇 <span class="text-slate-800 font-black">選項 C</span> 的決策結算：</h5>
+                                <p class="text-slate-950 text-base md:text-lg font-bold mt-1.5 leading-relaxed" id="apply-option-desc"><span class="text-slate-900 text-base md:text-lg font-extrabold block leading-relaxed">對方丟了一張皺巴巴的50元大吼：「還你就還你，小氣鬼！」，關係破裂。心靈能量扣除 3 枚。</span></p>
+                            </div>
+                            <div class="flex flex-col gap-2 w-full md:w-auto">
+                                <span class="text-xs text-slate-500 font-bold"><i class="fa-solid fa-hand-pointer text-amber-500 mr-1"></i> 點擊選取此牌的組別扣/加分：</span>
+                                <div id="team-apply-container" class="flex flex-wrap gap-2">
+                    <button onclick="applyOptionToTeam(1, this)" class="bg-emerald-50 border border-emerald-300 text-emerald-700 px-3.5 py-2 rounded-lg text-xs font-black flex items-center gap-1 cursor-not-allowed opacity-75 shadow-sm" disabled=""><i class="fa-solid fa-circle-check"></i> 第一組 已套用</button>
+                
+                    <button onclick="applyOptionToTeam(2, this)" class="bg-white border border-slate-300 hover:border-slate-500 px-3.5 py-2 rounded-lg text-xs text-slate-700 font-extrabold transition flex items-center gap-1 shadow-sm">
+                        <i class="fa-solid fa-user-group text-indigo-500 mr-1"></i> 第二組
+                    </button>
+                
+                    <button onclick="applyOptionToTeam(3, this)" class="bg-white border border-slate-300 hover:border-slate-500 px-3.5 py-2 rounded-lg text-xs text-slate-700 font-extrabold transition flex items-center gap-1 shadow-sm">
+                        <i class="fa-solid fa-user-group text-indigo-500 mr-1"></i> 第三組
+                    </button>
+                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Scenario Control Footer -->
+                    <div class="flex justify-between pt-4 max-w-4xl mx-auto">
+                        <button onclick="goToPrevScenario()" class="text-slate-500 hover:text-slate-800 font-bold px-4 py-2"><i class="fa-solid fa-chevron-left mr-1"></i> 上一關情境</button>
+                        <button onclick="goToNextScenario()" class="bg-slate-800 hover:bg-slate-700 text-white font-extrabold px-6 py-2.5 rounded-xl border border-slate-600 transition shadow-sm">
+                            下一關情境 <i class="fa-solid fa-chevron-right ml-1"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- SLIDE 3: Leaderboard -->
+                <div id="slide-3" class="slide-element animate-float-up space-y-6 hidden">
+                    <div class="text-center">
+                        <span class="bg-amber-100 text-amber-800 border border-amber-200 px-3 py-1 rounded-full text-xs font-bold shadow-sm">【終場資產大清點】</span>
+                        <h3 class="text-3xl font-black text-slate-800 mt-2">人際投資市場：最終賽果</h3>
+                        <p class="text-slate-500 text-sm mt-1">誰才是真正擁有穩健防護罩、活得最舒服的人？</p>
+                    </div>
+
+                    <div id="leaderboard-display" class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto pt-2">
+                    <div class="bg-amber-50/20 border border-amber-400 shadow-lg shadow-amber-100 rounded-2xl p-6 scale-105 md:scale-105 relative z-10 pulse-soft flex flex-col justify-between transition-all duration-300 shadow-md">
+                        <div class="flex justify-between items-center pb-3 border-b border-slate-200">
+                            <span class="text-slate-400 font-bold text-xs uppercase tracking-wider">PODIUM</span>
+                            <span class="bg-amber-100 text-amber-800 border border-amber-300 text-xs px-2.5 py-0.5 rounded-full font-black shadow-sm"><i class="fa-solid fa-crown mr-1"></i> 第一名</span>
+                        </div>
+                        <div class="py-6 text-center space-y-2">
+                            <h4 class="text-2xl font-black text-slate-800">第三組</h4>
+                            <div class="flex items-center justify-center space-x-1.5">
+                                <i class="fa-solid fa-coins text-amber-500 text-xl animate-bounce"></i>
+                                <span class="text-4xl font-extrabold text-amber-600">8</span>
+                                <span class="text-slate-500 text-sm font-bold">金幣</span>
+                            </div>
+                        </div>
+                        <div class="text-xs text-center text-slate-500 bg-slate-50 p-2.5 rounded-xl border border-slate-200">
+                            已盡全力完成了人際生存戰！
+                        </div>
+                    </div>
+                
+                    <div class="bg-white border border-slate-300 rounded-2xl p-6  flex flex-col justify-between transition-all duration-300 shadow-md">
+                        <div class="flex justify-between items-center pb-3 border-b border-slate-200">
+                            <span class="text-slate-400 font-bold text-xs uppercase tracking-wider">PODIUM</span>
+                            <span class="bg-slate-100 text-slate-800 border border-slate-300 text-xs px-2.5 py-0.5 rounded-full font-extrabold shadow-sm">第二名</span>
+                        </div>
+                        <div class="py-6 text-center space-y-2">
+                            <h4 class="text-2xl font-black text-slate-800">第一組</h4>
+                            <div class="flex items-center justify-center space-x-1.5">
+                                <i class="fa-solid fa-coins text-amber-500 text-xl animate-bounce"></i>
+                                <span class="text-4xl font-extrabold text-amber-600">0</span>
+                                <span class="text-slate-500 text-sm font-bold">金幣</span>
+                            </div>
+                        </div>
+                        <div class="text-xs text-center text-slate-500 bg-slate-50 p-2.5 rounded-xl border border-slate-200">
+                            已盡全力完成了人際生存戰！
+                        </div>
+                    </div>
+                
+                    <div class="bg-white border border-amber-600/30 rounded-2xl p-6  flex flex-col justify-between transition-all duration-300 shadow-md">
+                        <div class="flex justify-between items-center pb-3 border-b border-slate-200">
+                            <span class="text-slate-400 font-bold text-xs uppercase tracking-wider">PODIUM</span>
+                            <span class="bg-amber-50 text-amber-700 border border-amber-200 text-xs px-2.5 py-0.5 rounded-full font-extrabold shadow-sm">第三名</span>
+                        </div>
+                        <div class="py-6 text-center space-y-2">
+                            <h4 class="text-2xl font-black text-slate-800">第二組</h4>
+                            <div class="flex items-center justify-center space-x-1.5">
+                                <i class="fa-solid fa-coins text-amber-500 text-xl animate-bounce"></i>
+                                <span class="text-4xl font-extrabold text-amber-600">0</span>
+                                <span class="text-slate-500 text-sm font-bold">金幣</span>
+                            </div>
+                        </div>
+                        <div class="text-xs text-center text-slate-500 bg-slate-50 p-2.5 rounded-xl border border-slate-200">
+                            已盡全力完成了人際生存戰！
+                        </div>
+                    </div>
+                </div>
+
+                    <!-- Teacher Guidance Reminder -->
+                    <div class="bg-blue-50/85 p-5 rounded-xl max-w-4xl mx-auto text-sm text-blue-900 border border-blue-250 shadow-sm leading-relaxed">
+                        <span class="font-extrabold text-blue-700"><i class="fa-solid fa-lightbulb mr-1"></i> 老師情意帶領提示：</span> 
+                        引導學生思考：「那些遇到衝突總是學不會冷靜，每次都用吵鬧索要『糖果』的選擇，為什麼到了現實情境，金幣反而全部漏光了？好好說話真的是為了討好別人，還是保護自己？」
+                    </div>
+
+                    <div class="flex justify-between pt-4 max-w-4xl mx-auto">
+                        <button onclick="goToSlide(2)" class="text-slate-500 hover:text-slate-800 font-bold px-4 py-2"><i class="fa-solid fa-chevron-left mr-1"></i> 返回生存戰</button>
+                        <button onclick="goToSlide(4); startHealingScene();" class="bg-gradient-to-r from-indigo-600 to-emerald-600 hover:from-indigo-700 hover:to-emerald-700 text-white font-extrabold px-8 py-3 rounded-xl shadow-md transition">
+                            進入：心靈對話與療癒 <i class="fa-solid fa-heart ml-1"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- SLIDE 4: Group Healing & Outro -->
+                <div id="slide-4" class="slide-element animate-float-up space-y-6 max-w-4xl mx-auto py-4 hidden">
+                    <div class="text-center space-y-2">
+                        <span class="bg-emerald-50 text-emerald-800 border border-emerald-200 px-3 py-1 rounded-full text-xs font-bold shadow-sm">心靈沉澱與情意對話</span>
+                        <h3 class="text-3xl font-black text-slate-800">為我們自己穿上心靈防彈衣</h3>
+                    </div>
+
+                    <div class="bg-white border border-slate-200 rounded-2xl p-6 md:p-8 space-y-6 leading-relaxed text-slate-700 font-normal shadow-md">
+                        <div class="space-y-4">
+                            <p class="text-base md:text-lg text-slate-800">
+                                剛剛在遊戲中，大家都在幫自己的隊伍拼命做抉擇。但這些情境，其實在我們未來長大的人生、工作或戀愛裡，都是會實實在在遇到的暴風。
+                            </p>
+                            <p class="text-base md:text-lg text-slate-800">
+                                我們難免會覺得很委屈：<span class="text-brand-candy font-extrabold">「明明是別人先說話難聽的，為什麼是我要改？為什麼是我要練習好好說話，而不是他們？」</span>
+                            </p>
+                            <p class="text-base md:text-lg text-emerald-700 font-semibold">
+                                可是大家剛剛都看到了，那些只會靠大吼大叫「索要糖果」或消極內耗的人，一旦遇到關鍵的人生商戰或關係危機，身上的金幣一下子就漏光了。
+                            </p>
+                            <div class="bg-emerald-50 border-l-4 border-emerald-600 p-4 rounded-r-xl my-4 shadow-sm">
+                                <p class="text-emerald-900 italic font-medium text-base md:text-lg">
+                                    「我們練習拆解事實（Fact）與情緒（Emotion），從來不是為了去向別人妥協，更不是為了討好別人。<br>
+                                    我們是在幫自己穿上一件【心靈防彈衣】，幫自己的心裡種下一顆【會茁壯的大樹】。」
+                                </p>
+                            </div>
+                            <p class="text-base md:text-lg text-slate-800">
+                                當你擁有了這棵大樹，別人的情緒子彈就再也打不穿你。你改變不是為了迎合這個不公平的世界，而是為了讓未來的自己能安穩、強大、不被任何人干擾地守護好最珍貴的心靈。
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Interactive reflective note board prompt -->
+                    <div class="text-center pt-2 space-y-3">
+                        <p class="text-slate-500 font-medium text-sm md:text-base">現在，請每人在學習單上寫下：<strong class="text-brand-accent">「今天的課程，讓我發現『練習理智溝通』對我未來真正的幫助是...」</strong></p>
+                    </div>
+
+                    <div class="flex justify-center space-x-4">
+                        <button onclick="goToSlide(3)" class="text-slate-500 hover:text-slate-800 font-bold px-4 py-2"><i class="fa-solid fa-chevron-left mr-1"></i> 返回賽果</button>
+                        <button onclick="resetGame()" class="bg-slate-100 hover:bg-slate-200 border border-slate-300 text-slate-700 px-6 py-2.5 rounded-xl text-sm font-bold transition shadow-sm"><i class="fa-solid fa-rotate-left mr-1"></i> 重新開始</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Slide Navigation Bar Footer -->
+            <footer class="mt-8 border-t border-slate-200 pt-4 flex items-center justify-between text-xs text-slate-500 font-semibold">
+                <div class="flex space-x-2">
+                    <button id="footer-prev-btn" onclick="prevSlide()" class="hover:text-slate-800 bg-slate-100 border border-slate-200 hover:border-slate-300 px-3 py-1.5 rounded-lg transition opacity-50 cursor-not-allowed"><i class="fa-solid fa-chevron-left mr-1"></i> 上一頁</button>
+                    <button id="footer-next-btn" onclick="nextSlide()" class="hover:text-slate-800 bg-slate-100 border border-slate-200 hover:border-slate-300 px-3 py-1.5 rounded-lg transition">下一頁 <i class="fa-solid fa-chevron-right ml-1"></i></button>
+                </div>
+                <div>
+                    目前流程：<span id="slide-num-indicator" class="font-bold text-slate-800">階段 1 / 5</span>
+                </div>
+            </footer>
+        </section>
+
+        <!-- Right Side: Scoreboard & Team Status Panel (Always Visible/Highly Interactive for Teacher) -->
+        <section class="lg:w-1/4 bg-white border border-slate-200 rounded-2xl p-5 flex flex-col justify-between shadow-lg min-w-[280px]">
+            <div class="space-y-4">
+                <div class="flex justify-between items-center pb-2 border-b border-slate-200">
+                    <h3 class="font-extrabold text-slate-800 flex items-center gap-2">
+                        <i class="fa-solid fa-ranking-star text-amber-500"></i>
+                        <span>組別與心靈金幣</span>
+                    </h3>
+                    <span id="team-count" class="bg-slate-100 text-slate-600 text-xs px-2.5 py-0.5 rounded-full font-bold border border-slate-200">3 組</span>
+                </div>
+
+                <!-- Teams Coin Control Container -->
+                <div id="sidebar-teams-container" class="space-y-3 max-h-[400px] overflow-y-auto pr-1">
+                    <div class="bg-slate-50 border border-slate-250 rounded-xl p-3.5 flex flex-col justify-between hover:border-slate-300 transition shadow-sm">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <span class="text-sm font-black text-slate-800">第一組</span>
+                            </div>
+                            <div class="flex items-center space-x-1.5 bg-white border border-slate-200 px-2.5 py-1 rounded-lg shadow-inner">
+                                <i class="fa-solid fa-coins text-amber-500 text-xs animate-bounce"></i>
+                                <span class="font-bold text-amber-600 text-sm" id="coins-team-1">10</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-end space-x-1.5 mt-2.5 pt-2 border-t border-slate-200">
+                            <button onclick="modifyCoins(1, -1)" class="w-7 h-7 bg-white hover:bg-rose-50 hover:text-rose-600 text-slate-400 rounded-lg flex items-center justify-center border border-slate-200 hover:border-rose-200 transition">
+                                <i class="fa-solid fa-minus text-xs"></i>
+                            </button>
+                            <button onclick="modifyCoins(1, 1)" class="w-7 h-7 bg-white hover:bg-emerald-50 hover:text-emerald-600 text-slate-400 rounded-lg flex items-center justify-center border border-slate-200 hover:border-emerald-200 transition">
+                                <i class="fa-solid fa-plus text-xs"></i>
+                            </button>
+                            <button onclick="deleteTeam(1)" class="w-7 h-7 bg-white hover:bg-slate-150 text-slate-400 hover:text-rose-600 rounded-lg flex items-center justify-center border border-slate-200 transition" title="刪除">
+                                <i class="fa-solid fa-trash-can text-[10px]"></i>
+                            </button>
+                        </div>
+                    </div>
+                
+                    <div class="bg-slate-50 border border-slate-250 rounded-xl p-3.5 flex flex-col justify-between hover:border-slate-300 transition shadow-sm">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <span class="text-sm font-black text-slate-800">第二組</span>
+                            </div>
+                            <div class="flex items-center space-x-1.5 bg-white border border-slate-200 px-2.5 py-1 rounded-lg shadow-inner">
+                                <i class="fa-solid fa-coins text-amber-500 text-xs animate-bounce"></i>
+                                <span class="font-bold text-amber-600 text-sm" id="coins-team-2">10</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-end space-x-1.5 mt-2.5 pt-2 border-t border-slate-200">
+                            <button onclick="modifyCoins(2, -1)" class="w-7 h-7 bg-white hover:bg-rose-50 hover:text-rose-600 text-slate-400 rounded-lg flex items-center justify-center border border-slate-200 hover:border-rose-200 transition">
+                                <i class="fa-solid fa-minus text-xs"></i>
+                            </button>
+                            <button onclick="modifyCoins(2, 1)" class="w-7 h-7 bg-white hover:bg-emerald-50 hover:text-emerald-600 text-slate-400 rounded-lg flex items-center justify-center border border-slate-200 hover:border-emerald-200 transition">
+                                <i class="fa-solid fa-plus text-xs"></i>
+                            </button>
+                            <button onclick="deleteTeam(2)" class="w-7 h-7 bg-white hover:bg-slate-150 text-slate-400 hover:text-rose-600 rounded-lg flex items-center justify-center border border-slate-200 transition" title="刪除">
+                                <i class="fa-solid fa-trash-can text-[10px]"></i>
+                            </button>
+                        </div>
+                    </div>
+                
+                    <div class="bg-slate-50 border border-slate-250 rounded-xl p-3.5 flex flex-col justify-between hover:border-slate-300 transition shadow-sm">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <span class="text-sm font-black text-slate-800">第三組</span>
+                            </div>
+                            <div class="flex items-center space-x-1.5 bg-white border border-slate-200 px-2.5 py-1 rounded-lg shadow-inner">
+                                <i class="fa-solid fa-coins text-amber-500 text-xs animate-bounce"></i>
+                                <span class="font-bold text-amber-600 text-sm" id="coins-team-3">10</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-end space-x-1.5 mt-2.5 pt-2 border-t border-slate-200">
+                            <button onclick="modifyCoins(3, -1)" class="w-7 h-7 bg-white hover:bg-rose-50 hover:text-rose-600 text-slate-400 rounded-lg flex items-center justify-center border border-slate-200 hover:border-rose-200 transition">
+                                <i class="fa-solid fa-minus text-xs"></i>
+                            </button>
+                            <button onclick="modifyCoins(3, 1)" class="w-7 h-7 bg-white hover:bg-emerald-50 hover:text-emerald-600 text-slate-400 rounded-lg flex items-center justify-center border border-slate-200 hover:border-emerald-200 transition">
+                                <i class="fa-solid fa-plus text-xs"></i>
+                            </button>
+                            <button onclick="deleteTeam(3)" class="w-7 h-7 bg-white hover:bg-slate-150 text-slate-400 hover:text-rose-600 rounded-lg flex items-center justify-center border border-slate-200 transition" title="刪除">
+                                <i class="fa-solid fa-trash-can text-[10px]"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fast Coin Adjustment Console -->
+            <div class="pt-4 border-t border-slate-200 mt-4 space-y-3">
+                <h4 class="text-xs font-bold text-slate-400 tracking-wider uppercase">快捷控制台</h4>
+                <div class="grid grid-cols-2 gap-2">
+                    <button onclick="allTeamsModify(1)" class="bg-emerald-50 hover:bg-emerald-100 border border-emerald-200 text-emerald-700 p-2 rounded-lg text-xs transition font-bold flex items-center justify-center gap-1 shadow-sm">
+                        <i class="fa-solid fa-circle-plus"></i> 全員 +1
+                    </button>
+                    <button onclick="allTeamsModify(-1)" class="bg-rose-50 hover:bg-rose-100 border border-rose-200 text-rose-700 p-2 rounded-lg text-xs transition font-bold flex items-center justify-center gap-1 shadow-sm">
+                        <i class="fa-solid fa-circle-minus"></i> 全員 -1
+                    </button>
+                </div>
+                
+                <!-- Extra Premature Settle Button in Sidebar -->
+                <button onclick="quickSettle()" class="w-full bg-amber-50 hover:bg-amber-100 border border-amber-200 text-amber-800 p-2.5 rounded-lg text-xs transition font-extrabold flex items-center justify-center gap-1.5 shadow-sm">
+                    <i class="fa-solid fa-calculator"></i> 提前結算賽果
+                </button>
+
+                <div class="text-center">
+                    <span class="text-[10px] text-slate-400 font-medium">提示：老師可在上課時直接點擊各組 +/- 金幣</span>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- App Bottom Footer -->
+    <footer class="bg-white border-t border-slate-200 py-3 text-center text-xs text-slate-400 font-medium shadow-sm">
+        © 2026 社會技巧情意課互動投影系統 - Designed for Educators
+    </footer>
+
+    <script>
+        // --- TONE.JS PROCEDURAL MUSIC GENERATION ---
+        let isPlayingMusic = false;
+        let ambientLoopId = null;
+        let fmSynth = null;
+        let delayEffect = null;
+
+        function initSynth() {
+            if (!fmSynth) {
+                try {
+                    // Set up soft ambient synthesizer
+                    delayEffect = new Tone.FeedbackDelay("4n.", 0.65).toDestination();
+                    delayEffect.wet.value = 0.45;
+
+                    fmSynth = new Tone.PolySynth(Tone.Synth, {
+                        oscillator: { type: "triangle" },
+                        envelope: { attack: 2.0, decay: 2.0, sustain: 0.8, release: 3.0 },
+                        volume: -25
+                    }).connect(delayEffect);
+                } catch(e) {
+                    console.log("Audio Init Blocked or Unsupported");
+                }
+            }
+        }
+
+        const chordProgression = [
+            ["C4", "E4", "G4", "B4"], // Cmaj7
+            ["A3", "C4", "E4", "G4"], // Am7
+            ["F3", "A3", "C4", "E4"], // Fmaj7
+            ["G3", "B3", "D4", "F4"]  // G7
+        ];
+        let currentChordIndex = 0;
+
+        function playNextAmbientChord() {
+            if (!isPlayingMusic || !fmSynth) return;
+            try {
+                const chords = chordProgression[currentChordIndex];
+                fmSynth.triggerAttackRelease(chords, "4n");
+                currentChordIndex = (currentChordIndex + 1) % chordProgression.length;
+                ambientLoopId = setTimeout(playNextAmbientChord, 4800);
+            } catch(e) {}
+        }
+
+        async function toggleHealingMusic() {
+            try {
+                await Tone.start();
+                initSynth();
+            } catch(e) {}
+
+            const musicIcon = document.getElementById('music-icon');
+            const musicText = document.getElementById('music-text');
+            const musicBtn = document.getElementById('music-btn');
+
+            if (!isPlayingMusic) {
+                isPlayingMusic = true;
+                musicIcon.className = "fa-solid fa-pause text-rose-600";
+                musicText.innerText = "暫停背景樂";
+                musicText.className = "text-xs font-bold text-rose-600";
+                musicBtn.className = "flex items-center space-x-2 bg-rose-50 hover:bg-rose-100 border border-rose-200 px-4 py-2 rounded-lg text-rose-700 transition duration-300 shadow-sm";
+                playNextAmbientChord();
+            } else {
+                isPlayingMusic = false;
+                musicIcon.className = "fa-solid fa-music text-emerald-700";
+                musicText.innerText = "播放療癒配樂";
+                musicText.className = "text-xs font-bold text-emerald-700";
+                musicBtn.className = "flex items-center space-x-2 bg-emerald-50 hover:bg-emerald-100 border border-emerald-200 px-4 py-2 rounded-lg text-emerald-700 transition duration-300 shadow-sm";
+                if (ambientLoopId) clearTimeout(ambientLoopId);
+            }
+        }
+
+        function playVictoryChime() {
+            try {
+                const chime = new Tone.Synth({
+                    oscillator: { type: "sine" },
+                    envelope: { attack: 0.05, decay: 0.4, sustain: 0.1, release: 0.4 },
+                    volume: -15
+                }).toDestination();
+                const now = Tone.now();
+                chime.triggerAttackRelease("C5", "8n", now);
+                chime.triggerAttackRelease("E5", "8n", now + 0.12);
+                chime.triggerAttackRelease("G5", "8n", now + 0.24);
+                chime.triggerAttackRelease("C6", "4n", now + 0.36);
+            } catch (e) {}
+        }
+
+        function startHealingScene() {
+            if (!isPlayingMusic) {
+                toggleHealingMusic();
+            }
+        }
+    </script>
+
+    <script>
+        // --- APPLICATION STATE & INTERACTIVE CONTROL ---
+        let currentSlide = 0;
+        const totalSlides = 5; // 0: Cover, 1: Setup, 2: Scenarios, 3: Leaderboard, 4: Reflections
+        
+        // 12 dynamic scenarios with completely randomized & scrambled A/B/C mapping
+        const scenarios = [
+            {
+                id: 1,
+                title: "打傳說/LOL時，隊友一直死",
+                desc: "打遊戲時，隊友狂送頭。你氣得要死，此時你會做出什麼回應？",
+                optA: "默默生悶氣、心裡狂怨、直接斷線擺爛。",
+                optB: "附和並一起口水戰大罵：「你到底是會不會玩啊？根本是智障雷隊友，跟你一隊算我倒楣！」",
+                optC: "理智轉換成好好表達：「我真的很想贏這場比賽，希望大家能發揮實力、好好配合。」",
+                applyA: { text: "心情完全被搞砸，一整天都在狂翻白眼，無法專注。心靈能量扣除 2 枚。", change: -2, type: "B" },
+                applyB: { text: "引爆口水戰！大家互嘴，這局徹底輸掉且信用分被扣。心靈能量扣除 4 枚。", change: -4, type: "A" },
+                applyC: { text: "隊友雖然打不好，但至少沒人開擺，大家和平打完。心靈能量加碼 +2 枚！", change: 2, type: "C" }
+            },
+            {
+                id: 2,
+                title: "上課急需借筆遭冷淡拒絕",
+                desc: "跟旁邊同學借筆，對方說「不要」冷漠拒絕。這時你的決定是：",
+                optA: "誠實向同學說明：「我現在遇到了小麻煩，大家同學一場，希望能得到你的幫忙。」",
+                optB: "直接翻白眼大聲咒罵：「借一支筆是會怎樣？小氣鬼！下次你最好不要有求於我！」",
+                optC: "憋在心裡生氣，在課堂上一邊咬牙一邊嘀咕自己被排擠。",
+                applyA: { text: "對方驚覺自己態度太差，有點不好意思地主動遞了一支筆給你。心靈能量加碼 +2 枚！", change: 2, type: "C" },
+                applyB: { text: "雙方徹底結下樑子，坐在旁邊像有殺父之仇一樣尷尬。心靈能量扣除 3 枚。", change: -3, type: "A" },
+                applyC: { text: "心結未解，一整節課根本沒聽進去，內耗值滿分。心靈能量扣除 2 枚。", change: -2, type: "B" }
+            },
+            {
+                id: 3,
+                title: "排隊買心愛商品遭插隊",
+                desc: "排了半小時的限量飲料，有人突然直接插進你的前方。你的即時反應是：",
+                optA: "敢怒不敢言，默默吞下不公平，回家發了一篇黑畫面限時動態怨天尤人。",
+                optB: "理智向所有人重申規則：「大家都辛苦在排隊，希望每個人都能遵守公共秩序，展現基本的禮貌。」",
+                optC: "火冒三丈大喊：「這人到底是懂不懂規矩啊？眼睛瞎掉了是不是？插隊還理所當然！」",
+                applyA: { text: "一整天都在懊悔「我剛為什麼不講話」，心情鬱悶。心靈能量扣除 2 枚。", change: -2, type: "B" },
+                applyB: { text: "對方自知理虧默默排到最後面，你贏得全隊伍的讚賞。心靈能量加碼 +2 枚！", change: 2, type: "C" },
+                applyC: { text: "插隊的人面紅耳赤跟你拉扯動手，搞得警察到場，你隊也沒排成。心靈能量扣除 4 枚。", change: -4, type: "A" }
+            },
+            {
+                id: 4,
+                title: "聚餐時對方一直滑手機不放下",
+                desc: "難得與好朋友聚餐，對方從頭到尾只狂刷手機，你被冷落一邊：",
+                optA: "酸溜溜地大罵：「你整天只會盯著那個螢幕，我看你遲早瞎掉算了！以後沒救了就不要回來哭！」",
+                optB: "誠實表達期待：「我很關心你的健康和未來，希望你能適度放下手機，多和現實世界互動。」",
+                optC: "賭氣也拿出手機狂滑，兩人餐桌上相對無言、徹底冰凍。",
+                applyA: { text: "對方直接不爽回：「要你管喔，管好你自己的成績吧」，不歡而散。心靈能量扣除 4 枚。", change: -4, type: "A" },
+                applyB: { text: "朋友向你道歉，收起手機，兩人聊了真正好笑的話題。心靈能量加碼 +2 枚！", change: 2, type: "C" },
+                applyC: { text: "一頓昂貴的飯吃得跟上墳一樣沉重，友情蒙上陰影。心靈能量扣除 3 枚。", change: -3, type: "B" }
+            },
+            {
+                id: 5,
+                title: "小組報告隊友不開會當躺分仔",
+                desc: "期末大報告迫在眉睫，同組某同學卻一直裝死不開會，你如何應對？",
+                optA: "就事論事劃分界線：「我希望每位組員都能盡到自己的責任，大家公平分擔一起完成報告。」",
+                optB: "到處發文公審，群組狂罵對方：「你永遠都在裝死，根本是我們這組的寄生蟲！拖累大家你很有成就感是不是？」",
+                optC: "自己咬牙苦幹通宵做完，一邊做一邊流淚、覺得全世界都對不起自己。",
+                applyA: { text: "成功設定界線並回報給老師，保全了自己的心血與權益。心靈能量加碼 +3 枚！", change: 3, type: "C" },
+                applyB: { text: "隊友被激怒乾脆連報告檔案都刪除，搞得大報告大開天窗。心靈能量扣除 4 枚。", change: -4, type: "A" },
+                applyC: { text: "報告勉強過關，但你肝指數過高病倒了，累得要死。心靈能量扣除 3 枚。", change: -3, type: "B" }
+            },
+            {
+                id: 6,
+                title: "借給對方的東西遲遲不還",
+                desc: "你的筆記本被借走兩個月，對方瘋狂推託，你氣得：",
+                optA: "酸言酸語當眾討債：「你是郭台銘喔？借個筆記要請神轎來抬才肯還，下輩子都不借你任何東西！」",
+                optB: "好好說清原則與承諾：「希望你能尊重我的財產，守信用按時歸還，這樣我下次才敢再借你。」",
+                optC: "不好意思再討，自己在心裡覺得對方人品有問題，默默跟他絕交。",
+                applyA: { text: "對方冷回「借一下是會少塊肉喔，還你就還你啦！」，從此撕破臉。心靈能量扣除 3 枚。", change: -3, type: "A" },
+                applyB: { text: "對方驚覺你的原則與誠意，立刻道歉將東西歸還，從此尊重你。心靈能量加碼 +2 枚！", change: 2, type: "C" },
+                applyC: { text: "丟了筆記本還白生悶氣了一整個月，悶出了內傷。心靈能量扣除 2 枚。", change: -2, type: "B" }
+            },
+            {
+                id: 7,
+                title: "急事聯絡，對方卻已讀不回",
+                desc: "有急事聯絡對方，看著已讀不回的畫面，你的第一決策是：",
+                optA: "瘋狂焦慮，一邊重刷手機一邊猜測對方是不是討厭自己，自責不已。",
+                optB: "冷靜表達自己的困擾：「我傳訊息是希望得到你的回應，我真的很困擾。」",
+                optC: "氣到打下：「現在是大明星當自己很紅是不是？已讀不回是瞧不起人喔？以後最好都不要來問我問題！」",
+                applyA: { text: "一整天都在盯著對話窗，焦慮到什麼事都沒做成，痛苦至極。心靈能量扣除 3 枚。", change: -3, type: "B" },
+                applyB: { text: "對方一有空立刻打來道歉說剛剛在考試，兩人感情順利。心靈能量加碼 +2 枚！", change: 2, type: "C" },
+                applyC: { text: "對方原本在忙，看到後覺得你神經質、不可理喻，索性真的封鎖你。心靈能量扣除 4 枚。", change: -4, type: "A" }
+            },
+            {
+                id: 8,
+                title: "打排位賽，隊友不小心按錯失誤",
+                desc: "大優勢局因為最後一波隊友大失誤被逆轉。你無法控制：",
+                optA: "重振旗鼓表達：「這場比賽對我很重要，我希望你能更專注，我們一起打出好表現。」",
+                optB: "狂嘆氣，一整天都在打字罵髒話，對所有遊戲都失去興趣、狂擺爛。",
+                optC: "用語音飆罵：「你剛剛那一波是手殘還是在夢遊？根本是對面派來的臥底，跟你同隊算我倒楣！」",
+                applyA: { text: "隊友拼命彌補，最後一波大家完美配合，實現奇蹟大反翻盤！心靈能量加碼 +3 枚！", change: 3, type: "C" },
+                applyB: { text: "為了這件小事不爽了一整天，連晚餐都氣到吃不下。心靈能量扣除 2 枚。", change: -2, type: "B" },
+                applyC: { text: "全隊起內鬨直接投降，你因為言語過激被禁賽了三天。心靈能量扣除 4 枚。", change: -4, type: "A" }
+            },
+            {
+                id: 9,
+                title: "精心出門，走到一半突然被放鴿子",
+                desc: "都已經精心打扮走到半路，對方突然傳一封訊說：「有事去不了。」此時你：",
+                optA: "電話狂撥怒吼逼問他理由，回嗆：「我都已經出門了你才說不來，你在耍我嗎？以後再約你我就是傻子！」",
+                optB: "冷靜而堅定地表達底線：「為了這次聚會我排開了時間，我希望你能尊重我的時間，若有變化提早通知。」",
+                optC: "打字回「喔沒事」假大度，然後默默走回家躲在被窩裡流淚。",
+                applyA: { text: "對方原本家裡有急事，見你這麼自私沒同理心，一氣之下決定斷交。心靈能量扣除 4 枚。", change: -4, type: "A" },
+                applyB: { text: "對方感到無比慚愧，隔天登門道歉並主動請你吃大餐賠罪。心靈能量加碼 +2 枚！", change: 2, type: "C" },
+                applyC: { text: "你憋著怒氣覺得自己是個沒價值的備胎，整天鬱鬱寡歡。心靈能量扣除 3 枚。", change: -3, type: "B" }
+            },
+            {
+                id: 10,
+                title: "小組討論事情有人堅持己見、不理人",
+                desc: "討論班級幹部活動，有人一意孤行，你的回應是：",
+                optA: "就事論事提醒合作核心：「我希望你能尊重大家的想法，一起討論，大家都是為了共同目標。」",
+                optB: "當眾嘲笑他「沒長腦袋」，拍桌大罵：「你這個人真的很獨裁耶！這組乾脆讓你一個人carry就好了！」",
+                optC: "隨便他搞，完全不在意了，心裡惡毒地盼望這場活動趕快搞砸看他笑話。",
+                applyA: { text: "大家恢復正常投票程序，活動順利落幕，全班開開心心。心靈能量加碼 +2 枚！", change: 2, type: "C" },
+                applyB: { text: "對方大哭直接不幹了，活動大擺爛，老師把你們整組都留下來訓話。心靈能量扣除 4 枚。", change: -4, type: "A" },
+                applyC: { text: "活動辦得一團亂，身為班級一份子的你也跟著被扣分、丟臉。心靈能量扣除 3 枚。", change: -3, type: "B" }
+            },
+            {
+                id: 11,
+                title: "校園大掃除，有人掃到一半偷溜去打球",
+                desc: "全班頂著大太陽搬桌椅，有人卻趁老師不在第一個溜走。你此時：",
+                optA: "明確召回對方責任：「打掃是大家的共同責任，希望你能負責任地把工作做完。」",
+                optB: "邊掃邊哭覺得命苦，事後偷偷去找老師打小報告，被大家說愛打小報告。",
+                optC: "大聲斥責：「你掃的地是瞎子在掃嗎？垃圾還一大堆，好意思去打球第一個溜走！」在走廊瘋狂吵架。",
+                applyA: { text: "對方心虛臉紅地走回來掃完，大家一起開開心心提早下課。心靈能量加碼 +2 枚！", change: 2, type: "C" },
+                applyB: { text: "被同學在背後說「打小報告的大嘴巴」，人際關係變差。心靈能量扣除 2 枚。", change: -2, type: "B" },
+                applyC: { text: "對方惱羞成怒跟你差點在操場打起來，結果兩人都被記警告。心靈能量扣除 4 枚。", change: -4, type: "A" }
+            },
+            {
+                id: 12,
+                title: "欠了 50 元拖了三個月不還",
+                desc: "借給對方的飲料錢過了三個月他提都不提，天天吃炸雞。你無法忍受：",
+                optA: "覺得50元太少催了丟臉，憋在心裡，但只要看到他一次，心裡就暗罵他一次。",
+                optB: "理性要求遵守承諾：「不管是多小的錢，都是我的心意。希望你能準時還錢。」",
+                optC: "當眾大喊：「你是要賴帳喔？才五十塊也要拖三個月，真的愛佔人便宜，欠錢不還的小偷！」",
+                applyA: { text: "一整年都在為這50塊糾結難受，友情徹底被這50元消磨殆盡。心靈能量扣除 2 枚。", change: -2, type: "B" },
+                applyB: { text: "對方大驚失色立刻還錢，並不斷解釋自己是真的常忘記。心靈能量加碼 +2 枚！", change: 2, type: "C" },
+                applyC: { text: "對方丟了一張皺巴巴的50元大吼：「還你就還你，小氣鬼！」，關係破裂。心靈能量扣除 3 枚。", change: -3, type: "A" }
+            }
+        ];
+
+        // 3 default initial teams (3 Groups as requested)
+        let teams = [
+            { id: 1, name: '第一組', coins: 10 },
+            { id: 2, name: '第二組', coins: 10 },
+            { id: 3, name: '第三組', coins: 10 },
+        ];
+
+        let currentScenarioIndex = 0; 
+
+        const phaseBadges = {
+            0: "準備開始",
+            1: "組建小組",
+            2: "生存商戰對決",
+            3: "終場資產清點",
+            4: "心靈對話與療癒"
+        };
+
+        document.addEventListener('DOMContentLoaded', () => {
+            renderSetupTeams();
+            renderScoreboard();
+            updatePhaseIndicators();
+        });
+
+        function updatePhaseIndicators() {
+            if (currentSlide === 2) {
+                document.getElementById('current-phase-badge').innerText = `生存商戰：關卡 ${currentScenarioIndex + 1}`;
+                document.getElementById('slide-num-indicator').innerText = `生存商戰 (情境 ${currentScenarioIndex + 1} / ${scenarios.length})`;
+            } else {
+                document.getElementById('current-phase-badge').innerText = phaseBadges[currentSlide];
+                document.getElementById('slide-num-indicator').innerText = `階段 ${currentSlide + 1} / ${totalSlides}`;
+            }
+
+            const nextBtn = document.getElementById('footer-next-btn');
+            const prevBtn = document.getElementById('footer-prev-btn');
+            
+            if (currentSlide === 0) {
+                prevBtn.classList.add('opacity-50', 'cursor-not-allowed');
+            } else {
+                prevBtn.classList.remove('opacity-50', 'cursor-not-allowed');
+            }
+
+            if (currentSlide === totalSlides - 1) {
+                nextBtn.innerHTML = `回到開頭 <i class="fa-solid fa-rotate-left ml-1"></i>`;
+            } else if (currentSlide === 2) {
+                nextBtn.innerHTML = `進入結算 <i class="fa-solid fa-trophy ml-1"></i>`;
+            } else {
+                nextBtn.innerHTML = `下一頁 <i class="fa-solid fa-chevron-right ml-1"></i>`;
+            }
+        }
+
+        function renderScoreboard() {
+            const container = document.getElementById('sidebar-teams-container');
+            const placeholder = document.getElementById('no-teams-placeholder');
+            
+            if (teams.length === 0) {
+                container.innerHTML = "";
+                container.appendChild(placeholder);
+                document.getElementById('team-count').innerText = "0 組";
+                return;
+            }
+
+            document.getElementById('team-count').innerText = `${teams.length} 組`;
+            
+            let html = "";
+            teams.forEach(team => {
+                html += `
+                    <div class="bg-slate-50 border border-slate-250 rounded-xl p-3.5 flex flex-col justify-between hover:border-slate-300 transition shadow-sm">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <span class="text-sm font-black text-slate-800">${team.name}</span>
+                            </div>
+                            <div class="flex items-center space-x-1.5 bg-white border border-slate-200 px-2.5 py-1 rounded-lg shadow-inner">
+                                <i class="fa-solid fa-coins text-amber-500 text-xs animate-bounce"></i>
+                                <span class="font-bold text-amber-600 text-sm" id="coins-team-${team.id}">${team.coins}</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-end space-x-1.5 mt-2.5 pt-2 border-t border-slate-200">
+                            <button onclick="modifyCoins(${team.id}, -1)" class="w-7 h-7 bg-white hover:bg-rose-50 hover:text-rose-600 text-slate-400 rounded-lg flex items-center justify-center border border-slate-200 hover:border-rose-200 transition">
+                                <i class="fa-solid fa-minus text-xs"></i>
+                            </button>
+                            <button onclick="modifyCoins(${team.id}, 1)" class="w-7 h-7 bg-white hover:bg-emerald-50 hover:text-emerald-600 text-slate-400 rounded-lg flex items-center justify-center border border-slate-200 hover:border-emerald-200 transition">
+                                <i class="fa-solid fa-plus text-xs"></i>
+                            </button>
+                            <button onclick="deleteTeam(${team.id})" class="w-7 h-7 bg-white hover:bg-slate-150 text-slate-400 hover:text-rose-600 rounded-lg flex items-center justify-center border border-slate-200 transition" title="刪除">
+                                <i class="fa-solid fa-trash-can text-[10px]"></i>
+                            </button>
+                        </div>
+                    </div>
+                `;
+            });
+            container.innerHTML = html;
+        }
+
+        function renderSetupTeams() {
+            const list = document.getElementById('setup-teams-list');
+            if (!list) return;
+            
+            list.innerHTML = teams.map(team => `
+                <div class="bg-white border border-slate-250 p-2.5 rounded-lg flex justify-between items-center text-xs shadow-sm">
+                    <span class="font-bold text-slate-700"><i class="fa-solid fa-users text-indigo-500 mr-1.5"></i>${team.name}</span>
+                    <button onclick="deleteTeam(${team.id})" class="text-rose-500 hover:text-rose-600 p-1 font-bold"><i class="fa-solid fa-times"></i></button>
+                </div>
+            `).join('');
+        }
+
+        function addNewTeam() {
+            const input = document.getElementById('new-team-name');
+            const name = input.value.trim();
+            if (!name) return;
+
+            const newId = teams.length > 0 ? Math.max(...teams.map(t => t.id)) + 1 : 1;
+            teams.push({ id: newId, name: name, coins: 10 });
+            input.value = "";
+            
+            renderSetupTeams();
+            renderScoreboard();
+        }
+
+        function deleteTeam(id) {
+            teams = teams.filter(t => t.id !== id);
+            renderSetupTeams();
+            renderScoreboard();
+        }
+
+        function modifyCoins(teamId, amount) {
+            const team = teams.find(t => t.id === teamId);
+            if (team) {
+                team.coins = Math.max(0, team.coins + amount);
+                renderScoreboard();
+                if (currentSlide === 3) renderFinalLeaderboard(); // Update if on leaderboard slide
+            }
+        }
+
+        function allTeamsModify(amount) {
+            teams.forEach(t => t.coins = Math.max(0, t.coins + amount));
+            renderScoreboard();
+            if (currentSlide === 3) renderFinalLeaderboard();
+        }
+
+        function goToSlide(slideIndex) {
+            if (slideIndex < 0 || slideIndex >= totalSlides) return;
+            
+            // Hide all slides
+            for (let i = 0; i < totalSlides; i++) {
+                const el = document.getElementById(`slide-${i}`);
+                if (el) el.classList.add('hidden');
+            }
+
+            // Show target slide
+            const targetEl = document.getElementById(`slide-${slideIndex}`);
+            if (targetEl) targetEl.classList.remove('hidden');
+
+            currentSlide = slideIndex;
+            updatePhaseIndicators();
+
+            if (slideIndex === 2) {
+                loadScenario(currentScenarioIndex);
+            }
+            if (slideIndex === 3) {
+                renderFinalLeaderboard();
+            }
+        }
+
+        function nextSlide() {
+            if (currentSlide === 2) {
+                goToSlide(3);
+                playVictoryChime();
+            } else if (currentSlide === totalSlides - 1) {
+                goToSlide(0);
+            } else {
+                goToSlide(currentSlide + 1);
+            }
+        }
+
+        function prevSlide() {
+            if (currentSlide === 0) return;
+            goToSlide(currentSlide - 1);
+        }
+
+        function quickSettle() {
+            goToSlide(3); // Jump straight to Leaderboard
+            playVictoryChime();
+        }
+
+        // --- DYNAMIC SCENARIO ENGINE ---
+        let selectedOption = null;
+
+        function loadScenario(index) {
+            selectedOption = null;
+            currentScenarioIndex = index;
+            const sc = scenarios[index];
+
+            document.getElementById('scenario-counter').innerText = `情境 ${index + 1} / ${scenarios.length}`;
+            document.getElementById('scenario-title').innerText = sc.title;
+            document.getElementById('scenario-desc').innerText = `「${sc.desc}」`;
+            
+            // Render text with bigger, clean font size
+            document.getElementById('scenario-opt-a').innerText = sc.optA;
+            document.getElementById('scenario-opt-b').innerText = sc.optB;
+            document.getElementById('scenario-opt-c').innerText = sc.optC;
+
+            // Reset selection borders
+            document.getElementById('card-opt-a').className = "bg-white hover:bg-slate-50 border border-slate-200 hover:border-brand-accent rounded-xl p-5 cursor-pointer transition-all duration-200 shadow-sm hover:shadow-md flex flex-col justify-between";
+            document.getElementById('card-opt-b').className = "bg-white hover:bg-slate-50 border border-slate-200 hover:border-brand-accent rounded-xl p-5 cursor-pointer transition-all duration-200 shadow-sm hover:shadow-md flex flex-col justify-between";
+            document.getElementById('card-opt-c').className = "bg-white hover:bg-slate-50 border border-slate-200 hover:border-brand-accent rounded-xl p-5 cursor-pointer transition-all duration-200 shadow-sm hover:shadow-md flex flex-col justify-between";
+
+            document.getElementById('option-apply-panel').classList.add('hidden');
+            updatePhaseIndicators();
+        }
+
+        function selectScenarioOption(optionCode) {
+            selectedOption = optionCode;
+            const sc = scenarios[currentScenarioIndex];
+            const apply = sc[`apply${optionCode}`];
+
+            // Highlight chosen card dynamically
+            document.getElementById('card-opt-a').className = "bg-white border border-slate-200 rounded-xl p-5 cursor-pointer transition-all duration-200 shadow-sm flex flex-col justify-between " + (optionCode === 'A' ? "ring-2 ring-brand-accent bg-slate-50/50" : "opacity-60");
+            document.getElementById('card-opt-b').className = "bg-white border border-slate-200 rounded-xl p-5 cursor-pointer transition-all duration-200 shadow-sm flex flex-col justify-between " + (optionCode === 'B' ? "ring-2 ring-brand-accent bg-slate-50/50" : "opacity-60");
+            document.getElementById('card-opt-c').className = "bg-white border border-slate-200 rounded-xl p-5 cursor-pointer transition-all duration-200 shadow-sm flex flex-col justify-between " + (optionCode === 'C' ? "ring-2 ring-brand-accent bg-slate-50/50" : "opacity-60");
+
+            const titleEl = document.getElementById('apply-option-title');
+            const descEl = document.getElementById('apply-option-desc');
+            const panelEl = document.getElementById('option-apply-panel');
+
+            // Apply light non-obvious color theme to the reveal panel based on internal type
+            let optColorClass = "text-slate-800";
+            titleEl.innerHTML = `選擇 <span class="${optColorClass} font-black">選項 ${optionCode}</span> 的決策結算：`;
+            descEl.innerHTML = `<span class="text-slate-900 text-base md:text-lg font-extrabold block leading-relaxed">${apply.text}</span>`;
+
+            // Setup team quick buttons
+            const container = document.getElementById('team-apply-container');
+            container.innerHTML = teams.map(team => {
+                return `
+                    <button onclick="applyOptionToTeam(${team.id}, this)" class="bg-white border border-slate-300 hover:border-slate-500 px-3.5 py-2 rounded-lg text-xs text-slate-700 font-extrabold transition flex items-center gap-1 shadow-sm">
+                        <i class="fa-solid fa-user-group text-indigo-500 mr-1"></i> ${team.name}
+                    </button>
+                `;
+            }).join('');
+
+            panelEl.classList.remove('hidden');
+        }
+
+        function applyOptionToTeam(teamId, buttonEl) {
+            const sc = scenarios[currentScenarioIndex];
+            const apply = sc[`apply${selectedOption}`];
+            const team = teams.find(t => t.id === teamId);
+
+            if (team) {
+                let coinDelta = apply.change;
+
+                // Rational/Wisdom option directly gives bonus
+                if (apply.type === 'C') {
+                    showEffectFloat(buttonEl, `理智應對：能量 +${coinDelta}`, "text-emerald-600");
+                } else {
+                    if (coinDelta < 0) {
+                        showEffectFloat(buttonEl, `能量變動：${coinDelta}`, "text-rose-600");
+                    } else {
+                        showEffectFloat(buttonEl, `變動：${coinDelta}`, "text-amber-600");
+                    }
+                }
+
+                team.coins = Math.max(0, team.coins + coinDelta);
+                renderScoreboard();
+
+                buttonEl.disabled = true;
+                buttonEl.className = "bg-emerald-50 border border-emerald-300 text-emerald-700 px-3.5 py-2 rounded-lg text-xs font-black flex items-center gap-1 cursor-not-allowed opacity-75 shadow-sm";
+                buttonEl.innerHTML = `<i class="fa-solid fa-circle-check"></i> ${team.name} 已套用`;
+            }
+        }
+
+        function showEffectFloat(element, text, colorClass) {
+            const float = document.createElement('div');
+            float.className = `absolute z-50 font-black text-xs pointer-events-none transition-all duration-1000 transform -translate-y-2 ${colorClass}`;
+            float.innerText = text;
+            float.style.top = `${element.offsetTop - 20}px`;
+            float.style.left = `${element.offsetLeft + 10}px`;
+            
+            element.parentElement.appendChild(float);
+            
+            setTimeout(() => {
+                float.style.transform = "translateY(-40px)";
+                float.style.opacity = "0";
+            }, 50);
+            
+            setTimeout(() => {
+                float.remove();
+            }, 1000);
+        }
+
+        function goToNextScenario() {
+            if (currentScenarioIndex < scenarios.length - 1) {
+                loadScenario(currentScenarioIndex + 1);
+            } else {
+                goToSlide(3); // Jump to Leaderboard
+                playVictoryChime();
+            }
+        }
+
+        function goToPrevScenario() {
+            if (currentScenarioIndex > 0) {
+                loadScenario(currentScenarioIndex - 1);
+            } else {
+                goToSlide(1); // Go back to Setup Teams
+            }
+        }
+
+        // --- FINAL RESULTS LEADERBOARD ---
+        function renderFinalLeaderboard() {
+            const container = document.getElementById('leaderboard-display');
+            if (!container) return;
+
+            const sorted = [...teams].sort((a, b) => b.coins - a.coins);
+
+            if (sorted.length === 0) {
+                container.innerHTML = `<p class="col-span-full text-center text-slate-400 font-bold">目前無小組數據</p>`;
+                return;
+            }
+
+            container.innerHTML = sorted.map((team, idx) => {
+                let medal = "";
+                let cardBorder = "border-slate-200";
+                let scaleClass = "";
+                let cardBg = "bg-white";
+                
+                if (idx === 0) {
+                    medal = `<span class="bg-amber-100 text-amber-800 border border-amber-300 text-xs px-2.5 py-0.5 rounded-full font-black shadow-sm"><i class="fa-solid fa-crown mr-1"></i> 第一名</span>`;
+                    cardBorder = "border-amber-400 shadow-lg shadow-amber-100";
+                    cardBg = "bg-amber-50/20";
+                    scaleClass = "scale-105 md:scale-105 relative z-10 pulse-soft";
+                } else if (idx === 1) {
+                    medal = `<span class="bg-slate-100 text-slate-800 border border-slate-300 text-xs px-2.5 py-0.5 rounded-full font-extrabold shadow-sm">第二名</span>`;
+                    cardBorder = "border-slate-300";
+                } else if (idx === 2) {
+                    medal = `<span class="bg-amber-50 text-amber-700 border border-amber-200 text-xs px-2.5 py-0.5 rounded-full font-extrabold shadow-sm">第三名</span>`;
+                    cardBorder = "border-amber-600/30";
+                }
+
+                return `
+                    <div class="${cardBg} border ${cardBorder} rounded-2xl p-6 ${scaleClass} flex flex-col justify-between transition-all duration-300 shadow-md">
+                        <div class="flex justify-between items-center pb-3 border-b border-slate-200">
+                            <span class="text-slate-400 font-bold text-xs uppercase tracking-wider">PODIUM</span>
+                            ${medal}
+                        </div>
+                        <div class="py-6 text-center space-y-2">
+                            <h4 class="text-2xl font-black text-slate-800">${team.name}</h4>
+                            <div class="flex items-center justify-center space-x-1.5">
+                                <i class="fa-solid fa-coins text-amber-500 text-xl animate-bounce"></i>
+                                <span class="text-4xl font-extrabold text-amber-600">${team.coins}</span>
+                                <span class="text-slate-500 text-sm font-bold">金幣</span>
+                            </div>
+                        </div>
+                        <div class="text-xs text-center text-slate-500 bg-slate-50 p-2.5 rounded-xl border border-slate-200">
+                            已盡全力完成了人際生存戰！
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function resetGame() {
+            teams = [
+                { id: 1, name: '第一組', coins: 10 },
+                { id: 2, name: '第二組', coins: 10 },
+                { id: 3, name: '第三組', coins: 10 },
+            ];
+            currentSlide = 0;
+            currentScenarioIndex = 0;
+            
+            if (isPlayingMusic) {
+                toggleHealingMusic();
+            }
+
+            renderSetupTeams();
+            renderScoreboard();
+            goToSlide(0);
+        }
+    </script>
+
+</body></html>
